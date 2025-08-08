@@ -1,0 +1,16 @@
+.page-nav
+  +flex(row wrap, flex-end, center)
+  gap: 5px
+  width: fit-content
+  &__item
+    +flex(row wrap, flex-start, center)
+    gap: 5px
+    color: var(--color1)
+    &:last-child
+      pointer-events: none
+      color: inherit
+      &:after
+        content: none
+    &:after
+      content: "/"
+      color: var(--color12)

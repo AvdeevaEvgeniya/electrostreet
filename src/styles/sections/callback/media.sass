@@ -1,0 +1,35 @@
++notebook()
+  .callback
+    &__inner
+      grid-template-columns: 40% 1fr
+
++tablet()
+  .callback
+    &__inner
+      grid-template-columns: initial
+      padding-top: 2.5rem
+      padding-bottom: var(--offset)
+    &__main
+      padding: 0
+    &__img
+      justify-self: center
+
++mobile()
+  .callback
+    text-align: center
+    &__btns
+      display: grid
+      gap: 2rem
+    &__block
+      justify-items: center
+    &__text
+      margin: 15px 0
+    &__social
+      justify-content: space-between
+
++small-mobile()
+  .callback
+    br
+      display: block
+    &__block
+      padding: 2rem

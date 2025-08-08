@@ -1,0 +1,64 @@
++tablet()
+  .filter-alt
+    justify-content: space-between
+    align-items: center
+    font-size: 14px
+    gap: 10px
+    background: #f2f2f2
+    padding: 10px 15px
+    position: sticky
+    top: var(--header-height)
+    z-index: 20
+    margin: 0 -15px
+    &__sort
+      +flex(row nowrap, flex-end, center)
+      .checkbox
+        order: 1
+        white-space: nowrap
+    &__main
+      +full()
+      position: fixed
+      background: white
+      z-index: 20
+      padding: var(--offset)
+      max-height: initial
+      max-height: 100vh
+      max-height: 100dvh
+      overflow-x: hidden
+      overflow-y: auto
+      display: none
+      align-content: start
+      justify-content: stretch
+      gap: 5px
+      &:after
+        content: none
+      .select
+        &__options
+          position: static
+          box-shadow: none
+    &__more
+      display: none
+    &__btn
+      display: flex
+    &__toggle
+      &:checked
+        & ~ .filter-alt__main
+          display: grid
+    &__header
+      +flex(row nowrap, space-between, center)
+      gap: 2rem
+      margin-bottom: 10px
+      padding-bottom: 10px
+      border-bottom: 1px solid lightgray
+    &__submit
+      display: block
+      margin-top: 10px
+    &__clear
+      order: 1
+    &__num
+      order: 2
+    &__clear-all
+      text-align: center
+      display: block
+      margin: 10px auto
+      order: 1

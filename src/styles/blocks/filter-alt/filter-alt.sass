@@ -1,0 +1,98 @@
+.filter-alt
+  +flex(row nowrap, flex-start, flex-start)
+  gap: 3rem
+  font-size: 16px
+  .select._filled
+    .filter-alt
+      &__clear,
+      &__num
+        display: flex
+  &._active
+    .filter-alt
+      &__clear-all
+        display: block
+      &__main
+        max-height: initial
+        &:after
+          content: none
+      &__more
+        background: none
+        position: static
+        &:after
+          content: none
+        &:before
+          content: "Свернуть"
+  &__main
+    +flex(row wrap, flex-start, center)
+    gap: 10px
+    flex-grow: 1
+    //max-height: 7rem
+    position: relative
+    //&:after
+    //  content: ""
+    //  width: 100%
+    //  background: #f2f2f2
+    //  display: block
+    //  top: 100%
+    //  left: 0
+    //  height: 5rem
+    //  position: absolute
+    //  z-index: 3
+
+    //& > *
+    //  flex-grow: 1
+  &__sort
+    display: grid
+    gap: 10px
+  &__more
+    +flex(row nowrap, center, center)
+    font-size: 16px
+    position: absolute
+    right: 0
+    bottom: 0
+    height: 3rem
+    background: #f2f2f2
+    padding-left: 10px
+    z-index: 2
+    &:before
+      content: "Все параметры"
+    &:after
+      content: ""
+      height: 100%
+      width: 3rem
+      display: block
+      background: linear-gradient(to right, rgba(242, 242, 242, 0), rgb(242 242 242))
+      position: absolute
+      right: 100%
+      top: 0
+      z-index: 2
+      pointer-events: none
+  &__btn
+    display: none
+    font-size: 2.5rem
+    color: var(--color1)
+  &__clear
+    color: var(--color3)
+    font-size: 12px
+  &__num
+    +flex(row nowrap, center, center)
+    min-width: 2rem
+    height: 2rem
+    border-radius: 2rem
+    background: #e4e4e4
+    font-size: 12px
+    padding: 0 5px
+  &__clear-all
+    color: var(--color3)
+    //padding-left: 10px
+  &__toggle,
+  &__header,
+  &__submit,
+  &__clear,
+  &__num
+    display: none
+  &__close
+    font-size: 2rem
+    color: var(--color1)
+
+@import "media"

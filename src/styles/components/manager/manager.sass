@@ -1,0 +1,35 @@
+.manager
+  background: white
+  border-radius: 10px
+  display: grid
+  grid-auto-rows: 1fr auto auto
+  overflow: hidden
+  font-size: 16px
+  position: relative
+  small
+    font-size: 14px
+    font-weight: 300
+  img
+    width: 100%
+    object-fit: cover
+    align-self: stretch
+    object-position: right top
+  &__header
+    display: grid
+    gap: 10px
+    background: var(--color1)
+    color: white
+    padding: 15px 2rem
+  &__social
+    display: grid
+    gap: 2rem
+    align-content: space-between
+    font-size: 3rem
+    color: #E6E6E6
+    position: absolute
+    top: 0
+    right: 0
+    padding: 2.5rem 18px
+    height: calc(100% - 8rem)
+    a
+      display: flex

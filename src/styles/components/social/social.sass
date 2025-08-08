@@ -1,0 +1,32 @@
+.social
+  display: grid
+  grid-template-columns: repeat(3, auto)
+  gap: 3rem
+  &._gray
+    gap: 2.5rem
+    a
+      filter: invert(0.5)
+      &._multicolor
+        filter: grayscale(1) invert(0.7) brightness(0.7)
+  &._3-el
+    a
+      &:nth-child(3n)
+        & ~ a
+          display: none
+  img
+    height: 3.5rem
+  a
+    position: relative
+    transition: all 0.5s
+    &:hover
+      filter: initial!important
+  span
+    position: absolute
+    color: #9B9B9B
+    right: -8px
+    top: 0
+    line-height: 1
+    writing-mode: vertical-lr
+    letter-spacing: 1px
+
+@import "media"

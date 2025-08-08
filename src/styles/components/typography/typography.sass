@@ -1,0 +1,93 @@
+.h1
+  font-size: 2.6rem
+.h2
+  font-size: 2.2rem
+
+.mb-20
+  margin-bottom: 2rem
+.mt-30
+  margin-top: 3rem
+.pt-40
+  padding-top: 4rem
+.pb-60
+  padding-bottom: 6rem
+
+.bg
+  background: #f2f2f2
+
+.link-line
+  color: var(--color1)
+  text-decoration: underline
+  text-decoration-skip-ink: none
+  text-decoration-thickness: 1px
+
+.link-arrow
+  +flex(row nowrap, flex-start, center)
+  gap: 10px
+  i.icon
+    font-size: 9px
+    color: var(--color1)
+
+.text-block
+  &._bg
+    background: white
+    blockquote, th, td
+      background: var(--color4)
+  table
+    width: 100%
+    border-spacing: 2px
+  th, td
+    padding: 10px
+    background: white
+    text-align: left
+  th
+    font-weight: 500
+  blockquote
+    padding: 3rem
+    background: white
+    line-height: 1.8
+    position: relative
+    &:before
+      content: "“"
+      left: 2rem
+      top: -15px
+      color: var(--color1)
+      font-size: 20rem
+      position: absolute
+      line-height: 1
+      opacity: 0.2
+      font-family: initial
+  &._alt
+    display: grid
+    gap: 2rem
+    font-size: 16px
+    line-height: 1.4
+    a
+      color: var(--color1)
+      text-decoration: underline
+      text-decoration-skip-ink: none
+      text-decoration-thickness: 1px
+    *
+      margin: 0
+    ul, ol
+      gap: 10px
+      padding-left: 2rem
+    ul
+      li
+        &::marker
+          font-size: 2rem
+          line-height: 1
+    h2
+      font-size: 2.6rem
+      font-weight: 400
+      margin-bottom: 10px
+    h3
+      font-size: 2.2rem
+      font-weight: 400
+      margin-top: 10px
+      &:first-child
+        margin-top: 0
+  &__gallery
+    +grid(25rem, 1fr, 15px, 15px)
+
+@import "media"

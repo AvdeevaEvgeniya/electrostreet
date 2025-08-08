@@ -1,0 +1,52 @@
+.callback
+  position: relative
+  z-index: 1
+  font-size: 16px
+  display: grid
+  small
+    font-size: 16px
+    font-weight: 300
+  br
+    display: none
+  &__bg
+    +full()
+    object-fit: cover
+    pointer-events: none
+    z-index: -1
+  &__inner
+    display: grid
+    grid-template-columns: 1fr 1fr
+    align-items: center
+    justify-items: center
+    picture
+      align-self: end
+  &__main
+    padding: 4.5rem 0
+  &__block
+    display: grid
+    gap: 10px
+    align-content: start
+    padding: 3rem
+    border-radius: 15px
+    backdrop-filter: blur(5px)
+    background: rgba(255, 255, 255, 0.8)
+    max-width: 57rem
+  &__social
+    +flex(row nowrap, flex-start, center)
+    gap: 3rem
+    font-size: 3rem
+    color: var(--color1)
+  &__btns
+    +flex(row nowrap, flex-start, center)
+    gap: 3rem
+  &__block
+    display: grid
+    gap: 10px
+    align-content: start
+  &__text
+    margin: 2rem 0
+    line-height: 1.4
+  &__img
+    align-self: end
+
+@import "media"

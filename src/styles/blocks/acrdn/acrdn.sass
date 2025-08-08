@@ -1,0 +1,48 @@
+.acrdn
+  &._animation
+    .acrdn
+      &__drop
+        margin-top: 3px
+  &._active
+    .acrdn
+      &__btn
+        &:after
+          transform: rotate(45deg)
+          color: red
+      &__drop
+        display: block
+  &__drop
+    display: none
+    transition: all 0.5s
+    overflow: hidden
+    background: white
+    border-radius: 5px
+    margin-top: 0
+    .text
+      padding: 15px 2rem
+  &__btn
+    +flex(row nowrap, space-between, center)
+    cursor: pointer
+    gap: 2rem
+    background: white
+    border-radius: 5px
+    padding: 2rem
+    font-size: 16px
+    font-weight: 500
+    &:after
+      content: "\e962"
+      font-family: "icomoon"
+      font-size: 18px
+      color: var(--color1)
+      transition: all 0.5s
+
+.acrdns
+  display: grid
+  gap: 10px 3rem
+  grid-template-columns: 1fr 1fr
+  align-items: start
+  .acrdns__col
+    display: grid
+    gap: 10px
+
+@import "media"

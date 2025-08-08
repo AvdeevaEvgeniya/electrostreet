@@ -1,0 +1,10 @@
++small-mobile()
+  .social
+    grid-template-columns: repeat(4, auto)
+    &._gray
+      gap: 3rem
+    &._3-el
+      a
+        &:nth-child(3n)
+          & ~ a
+            display: block

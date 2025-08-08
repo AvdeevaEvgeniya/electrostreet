@@ -1,0 +1,108 @@
+.filter-alt.mb-20
+    input.filter-alt__toggle#filter-alt-toggle(type="checkbox")
+    .filter-alt__main
+        .filter-alt__header
+            .h2 Фильтр
+            label.filter-alt__close(for="filter-alt-toggle")
+                i.icon.icon-close
+        .select._alt._filled
+            .select__main
+                a.filter-alt__clear(href="")
+                    i.icon.icon-close
+                .filter-alt__num 9
+                .select__value Тема
+                input.select__input(type="checkbox")
+            .select__options
+                label.checkbox
+                    input.checkbox__input(type="checkbox" checked="")
+                    span.checkbox__mask
+                    span.checkbox__label Новинки
+                label.checkbox
+                    input.checkbox__input(type="checkbox" checked="")
+                    span.checkbox__mask
+                    span.checkbox__label Обзоры
+                label.checkbox
+                    input.checkbox__input(type="checkbox" checked="")
+                    span.checkbox__mask
+                    span.checkbox__label Ремонт
+                label.checkbox
+                    input.checkbox__input(type="checkbox" checked="")
+                    span.checkbox__mask
+                    span.checkbox__label И т.д.
+        .select._alt._filled
+            .select__main
+                a.filter-alt__clear(href="")
+                    i.icon.icon-close
+                .filter-alt__num 9
+                .select__value Продукт
+                input.select__input(type="checkbox")
+            .select__options
+                label.checkbox
+                    input.checkbox__input(type="checkbox" checked="")
+                    span.checkbox__mask
+                    span.checkbox__label Велосипеды
+                label.checkbox
+                    input.checkbox__input(type="checkbox" checked="")
+                    span.checkbox__mask
+                    span.checkbox__label Моноколеса
+                label.checkbox
+                    input.checkbox__input(type="checkbox" checked="")
+                    span.checkbox__mask
+                    span.checkbox__label Мотоциклы
+                label.checkbox
+                    input.checkbox__input(type="checkbox" checked="")
+                    span.checkbox__mask
+                    span.checkbox__label И т.д.
+        .select._alt._filled
+            .select__main
+                a.filter-alt__clear(href="")
+                    i.icon.icon-close
+                .filter-alt__num 9
+                .select__value Год
+                input.select__input(type="checkbox")
+            .select__options
+                label.checkbox
+                    input.checkbox__input(type="checkbox" checked="")
+                    span.checkbox__mask
+                    span.checkbox__label 2025
+                label.checkbox
+                    input.checkbox__input(type="checkbox" checked="")
+                    span.checkbox__mask
+                    span.checkbox__label 2024
+                label.checkbox
+                    input.checkbox__input(type="checkbox" checked="")
+                    span.checkbox__mask
+                    span.checkbox__label 2023
+                label.checkbox
+                    input.checkbox__input(type="checkbox" checked="")
+                    span.checkbox__mask
+                    span.checkbox__label 2022
+                label.checkbox
+                    input.checkbox__input(type="checkbox" checked="")
+                    span.checkbox__mask
+                    span.checkbox__label 2021
+                label.checkbox
+                    input.checkbox__input(type="checkbox" checked="")
+                    span.checkbox__mask
+                    span.checkbox__label 2020
+                label.checkbox
+                    input.checkbox__input(type="checkbox" checked="")
+                    span.checkbox__mask
+                    span.checkbox__label Ранее 2020
+        a.filter-alt__clear-all.link-line(href="") Очистить все
+        .filter-alt__submit
+            a.btn._mini._full(href="")
+                span Показать
+                small (460)
+    .filter-alt__sort
+        .select._alt
+            .select__main
+                i.icon.icon-sort
+                .select__value Сортировка
+                input.select__input(type="checkbox")
+            .select__options
+                .select__option(data-value="По дате") По дате
+                .select__option(data-value="По актуальност") По актуальности
+                .select__option(data-value="По популярности") По популярности
+    label.filter-alt__btn(for="filter-alt-toggle")
+        i.icon.icon-filter

@@ -1,0 +1,109 @@
+.footer
+  background: #282828
+  font-size: 14px
+  padding: 5rem 0
+  color: #E6E6E6
+  a
+    &[href*="mailto"], &[href*="tel"]
+      font-size: 18px
+      font-weight: 500
+      color: white
+  p
+    margin: 0
+  &__inner
+    +flex(row nowrap, space-between, stretch)
+  &__logo
+    img
+      width: 18rem
+  &__menu
+    display: grid
+    gap: 15px
+    align-content: start
+    color: #9b9b9b
+    &:active
+      color: #9b9b9b
+    a
+      transition: all 0.5s
+      &:hover, &:active
+        color: white
+  &__col
+    max-width: 24rem
+    display: grid
+    gap: 3rem
+    grid-auto-rows: auto 1fr auto auto
+  &__contact
+    display: grid
+    gap: 2rem
+    padding: 0
+  &__title
+    font-size: 16px
+    text-transform: uppercase
+    margin: 0
+  &__phones
+    display: grid
+    gap: 10px
+  &__contacts
+    display: grid
+    gap: 2rem
+    align-content: space-between
+    small
+      font-size: inherit
+  &__footnote
+    +font(10px, 300, #9B9B9B)
+    display: grid
+    gap: 10px
+  &__main
+    display: grid
+    gap: 6rem
+    align-content: start
+  &__links
+    display: grid
+    gap: 4rem
+  &__link
+    +flex(row nowrap, flex-start, center)
+    gap: 2.5rem
+    font-size: 16px
+    line-height: 1.4
+    position: relative
+    img
+      width: 4.5rem
+  &__link-txt
+    display: grid
+    span
+      color: var(--color2)
+  &__info
+    +flex(row wrap, flex-start, center)
+    gap: 10px
+    a
+      text-decoration: underline
+      text-decoration-skip-ink: none
+    p
+      &:after
+        content: "•"
+        margin-left: 10px
+  &__payment
+    +flex(row nowrap, flex-start, center)
+    gap: 2rem
+    min-width: max-content
+    img
+      transition: all 0.5s
+      filter: grayscale(1)
+      opacity: 0.7
+      height: 3rem
+      &[src*="mir"]
+        opacity: 1
+      &:active
+        opacity: 1
+        filter: grayscale(0)
+
+.footer-bottom
+  +font(12px, 300, #9B9B9B)
+  background: #232323
+  padding: 3rem 0
+  p
+    margin: 0
+  &__inner
+    +flex(row nowrap, space-between, center)
+    gap: 2rem
+
+@import "media"

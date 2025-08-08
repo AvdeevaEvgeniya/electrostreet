@@ -1,0 +1,22 @@
+extends ../layout/layout
+block title
+    | index
+block head
+    script(src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" defer="")
+    script(src="js/_ion.rangeSlider.min.js" defer="")
+block content
+    include _brands
+    .catalog-page
+        .catalog.inner.mt-30
+            include _header
+            include _filter
+            include _catalog
+            include _pagination
+        include _tags
+        include _callback
+        include _videos
+        include _news
+        include _faq
+        include _text
+block end
+

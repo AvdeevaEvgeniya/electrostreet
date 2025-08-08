@@ -1,0 +1,100 @@
+.product
+  background: white
+  border-radius: 10px
+  padding: 15px
+  display: grid
+  gap: 10px
+  transition: all 0.5s
+  font-size: 16px
+  align-content: start
+  grid-auto-rows: auto 1fr auto auto
+  &:hover
+    box-shadow: 0 0 6px rgba(0, 0, 0, 0.25)
+    z-index: 2
+    .product
+      &__links
+        padding: 0 10px
+        width: 7rem
+  img
+    height: 22rem
+    width: 100%
+  .params
+    max-width: 6.5rem
+  .param
+    min-width: 0
+    &:hover
+      background: white
+      border-radius: 3px
+      padding-right: 5px
+      margin-right: -5px
+      .param
+        &__label,
+        &__value
+          overflow: visible
+          background: white
+    &__label,
+    &__value
+      white-space: nowrap
+      text-overflow: ellipsis
+      overflow: hidden
+  .rate
+    margin-left: auto
+  .swiper-pagination
+    +flex(row nowrap, center, center)
+    gap: 5px
+    margin: 0
+    z-index: 2
+  .swiper-pagination-bullet
+    background: var(--color1)
+    opacity: 0.3
+    width: 6px
+    height: 6px
+    margin: 0
+  .swiper-pagination-bullet-active
+    opacity: 1
+  &__main
+    display: grid
+    gap: 10px
+    grid-template-columns: 1fr auto
+    margin-bottom: 10px
+  &__slider
+    min-width: 0
+    border-right: 1px solid #EDEDED
+    position: relative
+    overflow: hidden
+  &__info
+    +flex(row nowrap, space-between, center)
+    position: absolute
+    top: 0
+    left: 0
+    width: 100%
+    z-index: 2
+    padding-right: 10px
+  &__price
+    +flex(row nowrap, space-between, flex-end)
+  &__btns
+    +flex(row nowrap, center, center)
+    background: #ebeef6
+    border-radius: 6px
+    margin-left: -10rem
+    position: relative
+    z-index: 2
+  &__links
+    +flex(row nowrap, center, center)
+    gap: 10px
+    font-size: 2rem
+    overflow: hidden
+    transition: all 0.5s
+    width: 0
+  &__yb
+    position: absolute
+    left: 0
+    bottom: 0
+    z-index: 3
+    color: red
+    font-size: 18px
+
+.product-list
+  +grid2(30rem, 1fr, 2rem, 2rem)
+
+@import "media"

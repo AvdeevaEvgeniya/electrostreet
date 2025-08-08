@@ -1,0 +1,84 @@
++notebook()
+  .footer
+    &__col
+      max-width: 18rem
+    &__main
+      gap: 4rem
+    &__info
+      a
+        width: 100%
+      p
+        &:last-of-type
+          &:after
+            content: none
+
++tablet()
+  .footer
+    &__col
+      &._menu
+        display: none
+    &__payment
+      display: none
+    &__info
+      justify-content: center
+      width: 100%
+      a
+        text-align: center
+
++mobile()
+  .footer
+    &__inner
+      justify-content: space-evenly
+    &__main
+      display: none
+    &__info
+      a
+        order: -1
+        padding-bottom: 3px
+      p
+        &:nth-of-type(2)
+          &:after
+            content: none
+        &:last-of-type
+          width: 100%
+          text-align: center
+
++small-mobile()
+  .footer
+    text-align: center
+    padding-top: 4rem
+    padding-bottom: 3rem
+    &__col
+      max-width: 100%
+    &__inner
+      display: grid
+      justify-items: center
+      gap: 4rem
+    &__info
+      row-gap: 15px
+    &__contact
+      a
+        &[href*="tel"]:last-child, &[href*="mailto"]
+          display: none
+    &__contacts
+      justify-items: center
+      gap: 3rem
+      small
+        font-size: 12px
+    &__title
+      &._no-mob
+        display: none
+
++media-hover()
+  .footer
+    &__menu
+      &:hover
+        color: #9b9b9b
+      a
+        &:hover
+          color: white
+    &__payment
+      img
+        &:hover
+          opacity: 1
+          filter: grayscale(0)

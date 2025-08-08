@@ -1,0 +1,43 @@
+.news
+  display: grid
+  grid-template-columns: 1fr 1fr
+  background: white
+  border-radius: 15px
+  font-size: 16px
+  position: relative
+  img
+    border-radius: 15px
+    width: 100%
+    object-fit: cover
+    align-self: stretch
+  &__main
+    padding: 2rem
+    display: grid
+    gap: 10px
+    align-content: start
+    grid-auto-rows: auto auto 1fr auto auto
+  &__text
+    margin: 10px 0
+    p
+      overflow: hidden
+      display: -webkit-box
+      -webkit-line-clamp: 3
+      line-clamp: 3
+      -webkit-box-orient: vertical
+  &__info
+    +flex(row nowrap, flex-start, center)
+    gap: 5px
+  &__infos
+    +flex(row nowrap, flex-start, center)
+    gap: 2rem
+    font-size: 14px
+    font-weight: 300
+    i.icon
+      opacity: 0.6
+
+.news-list
+  display: grid
+  grid-template-columns: 1fr 1fr
+  gap: 2.5rem
+
+@import "media"
