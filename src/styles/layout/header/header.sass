@@ -1,3 +1,73 @@
 .header
-  &._active
-    z-index: 21
+  z-index: 22
+
+.header-menu
+  &__footer
+    display: none
+
++tablet()
+  .header-menu
+    &__footer
+      background: #282828
+      padding: 2rem
+      display: grid
+      gap: 3rem
+    &__social
+      +flex(row nowrap, space-between, center)
+      gap: 3rem
+      img
+        height: 3
+      i.icon
+        font-size: 3.5rem
+        color: #C6C6C6
+      a
+        position: relative
+      span
+        position: absolute
+        color: #9B9B9B
+        right: -8px
+        top: 0
+        line-height: 1
+        writing-mode: vertical-lr
+        letter-spacing: 1px
+    &__contacts
+      flex-grow: 1
+      align-content: start
+      margin: 0
+    &__list
+      background: #F2F2F2
+      padding: 10px 0 15px 0
+
++mobile()
+  .header-menu
+    &__footnote
+      font-size: 10px
+      color: #9B9B9B
+    &__contacts
+      gap: 15px
+      font-size: 16px
+      padding: 3rem 2rem
+    &__contact
+      +flex(row nowrap, flex-start, center)
+      gap: 5px
+    &__list
+      margin: 0
+      background: #F2F2F2
+      padding: 3rem 2rem
+      display: grid
+      gap: 15px
+      .megamenu__item-1
+        border: none
+        & > a
+          padding: 0
+        ._dropdown:after
+          margin-left: 10px
+    &__title
+      padding: 0
+      margin-bottom: 10px
+      text-transform: none
+      font-size: 2.4rem
+      font-weight: 400
+
+  .prmn-cmngr__city
+    color: var(--color1) !important

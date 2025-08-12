@@ -42,8 +42,10 @@
       display: flex
     &__toggle
       &:checked
-        & ~ .filter-alt__main
-          display: grid
+        & ~ .filter-alt
+          z-index: 23
+          .filter-alt__main
+            display: grid
     &__header
       +flex(row nowrap, space-between, center)
       gap: 2rem

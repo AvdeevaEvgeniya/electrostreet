@@ -1,0 +1,169 @@
+.megamenu
+  &__title
+    display: none
+
++tablet()
+  .megamenu
+    &__lvl-3
+      top: 0
+      .megamenu__mobile-nav
+        display: none
+    &__lvl-header
+      +flex(row nowrap, space-between, center)
+      gap: 2.5rem
+      margin: 0 0 10px 0
+      background: var(--color1)
+      padding: 15px 2rem
+      color: white
+      font-size: 2.4rem
+      height: 6rem
+      box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25)
+    &__btn
+      padding: 0
+      background: none!important
+      position: static
+      width: auto
+      height: auto
+      min-width: initial
+      font-size: inherit
+    &__lvl-1
+      +flex(column nowrap, flex-start, stretch)
+      & > .megamenu
+        &__group
+          +flex(column nowrap, flex-start, stretch)
+    &__group
+      flex-grow: 1
+
++mobile()
+  .megamenu
+    color: var(--color10)
+    .megamenu__mobile-nav
+      display: flex
+    &__lvl-1
+      font-size: 16px
+      border: none
+      height: 100%
+      overflow: hidden
+    &__lvl-2
+      padding: 0
+      font-size: 16px
+      height: 100%
+      overflow: hidden
+      .megamenu__group
+        padding: 2rem 0
+    &__lvl-3
+      padding: 0
+      font-size: 16px
+      border-radius: 0
+      height: 100%
+      overflow: hidden
+      .megamenu__group
+        padding: 3rem 0 0 0
+      sup
+        bottom: -6px
+        position: relative
+        left: 10px
+    &__lvl-header
+      margin: 0
+    &__mobile-nav
+      +flex(row nowrap, space-between, center)
+      padding: 15px 2rem
+      background: var(--color1)
+      color: white
+      gap: 15px
+      font-size: 2.4rem
+      height: 6rem
+      box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25)
+      margin: 0
+      i.icon
+        color: white
+    &__item-1
+      border-bottom: 0
+      border: none
+      &._active
+        .megamenu__lvl-2
+          padding: 0
+      & + .megamenu__item-1
+        border-top: 1px solid #DFDFDF
+      & > a
+        padding: 10px 2rem
+        img
+          margin-right: 15px
+          width: 4rem
+      & > ._dropdown:after
+        content: "\e908"
+        font-family: "icomoon"
+        background: none
+        font-size: 10px
+        color: var(--color1)
+        width: auto
+        height: auto
+    &__item-2
+      & > a
+        padding: 8px 2rem
+        gap: 10px
+      & > ._dropdown:after
+        content: "\e908"
+        font-family: "icomoon"
+        background: none
+        font-size: 10px
+        color: var(--color1)
+        width: auto
+        height: auto
+      &._active
+        .megamenu__lvl-3
+          padding: 0
+    &__back
+      color: white
+      transform: rotate(180deg)
+      display: flex
+    &__dropdown
+      sup
+        align-self: baseline
+        line-height: 0.5
+        margin-left: 0
+        margin: 0
+    &__group
+      overflow-x: hidden
+      overflow-y: auto
+      max-height: calc(100vh - 6rem)
+      max-height: calc(100dvh - 6rem)
+      padding-top: 10px
+    &__cat
+      text-align: center
+      overflow: hidden
+      display: -webkit-box
+      -webkit-line-clamp: 2
+      line-clamp: 2
+      -webkit-box-orient: vertical
+      line-height: 1
+    &__all
+      text-align: left
+      padding: 0 2rem
+      color: var(--color1)
+      font-size: 18px
+    &__list
+      margin: 0
+      padding: 3rem 2rem
+      & > a
+        margin: 0
+        padding: 8px 0
+    &__lvl-other
+      margin: 0
+      border: none
+      font-size: 16px
+      padding: 0
+      a
+        padding: 0 0 16px 0
+        color: inherit
+    &__other
+      background: #F2F2F2
+      padding: 3rem 2rem 15px 2rem
+    &__title
+      padding: 0
+      margin-bottom: 2.5rem
+      text-transform: none
+      font-size: 2.4rem
+      font-weight: 400
+      color: inherit
+      display: block
