@@ -324,7 +324,6 @@
     <!--    }-->
     <link rel="stylesheet" href="css/style.css?ver=11" media="all">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" defer=""></script>
-    <script src="js/_ion.rangeSlider.min.js" defer=""></script>
 </head>
 
 <body class="common__body">
@@ -838,979 +837,492 @@
             </div>
         </header>
         <main class="main">
-            <div class="brands-line">
-                <div class="brands-line__list inner"><a href=""><img src="img/brand1.svg" alt=""></a><a href=""><img src="img/brand2.svg" alt=""></a><a href=""><img src="img/brand3.png" alt=""></a><a href=""><img src="img/brand4.png" alt=""></a><a href=""><img src="img/brand5.png" alt=""></a><a href=""><img src="img/brand6.svg" alt=""></a><a href=""><img src="img/brand7.png" alt=""></a></div>
-            </div>
-            <div class="catalog-page">
-                <div class="catalog inner mt-30">
-                    <div class="page-header">
-                        <div class="page-header__title">
-                            <h1 class="h1">Электровелосипеды</h1><small>(289 товаров)</small>
-                        </div>
-                        <div class="page-nav">
-                            <div class="page-nav__item"><a href="">Главная</a></div>
-                            <div class="page-nav__item"><a href="">Электротранспорт</a></div>
-                            <div class="page-nav__item"><a href="">Электровелосипеды</a></div>
-                        </div>
-                    </div>
-                    <input class="filter-alt__toggle" id="filter-alt-toggle" type="checkbox">
-                    <div class="filter-alt">
-                        <div class="filter-alt__main">
-                            <div class="filter-alt__header">
-                                <div class="h2">Фильтр</div>
-                                <label class="filter-alt__close" for="filter-alt-toggle"><i class="icon icon-close"></i></label>
-                            </div>
-                            <div class="select _alt _filled">
-                                <div class="select__main"><a class="filter-alt__clear" href=""><i class="icon icon-close"></i></a>
-                                    <div class="filter-alt__num">2 522 - 15 025</div>
-                                    <div class="select__value">Цена</div>
-                                    <input class="select__input" type="checkbox">
-                                </div>
-                                <div class="select__options">
-                                    <div class="range-double">
-                                        <div class="input-interval">
-                                            <input class="input _border _mini _range1" type="number">
-                                            <div class="input-interval__separator">—</div>
-                                            <input class="input _border _mini _range2" type="number">
-                                        </div>
-                                        <input class="input-range" type="text" data-min="0" data-max="100000" data-step="100">
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="select _alt _filled">
-                                <div class="select__main"><a class="filter-alt__clear" href=""><i class="icon icon-close"></i></a>
-                                    <div class="filter-alt__num">9</div>
-                                    <div class="select__value">Производитель</div>
-                                    <input class="select__input" type="checkbox">
-                                </div>
-                                <div class="select__options">
-                                    <label class="checkbox">
-                                        <input class="checkbox__input" type="checkbox" checked=""><span class="checkbox__mask"></span><span class="checkbox__label">Производитель 1</span>
-                                    </label>
-                                    <label class="checkbox">
-                                        <input class="checkbox__input" type="checkbox" checked=""><span class="checkbox__mask"></span><span class="checkbox__label">Производитель 2</span>
-                                    </label>
-                                    <label class="checkbox">
-                                        <input class="checkbox__input" type="checkbox" checked=""><span class="checkbox__mask"></span><span class="checkbox__label">Производитель 3</span>
-                                    </label>
-                                    <!--a.btn._mini(href="")-->
-                                    <!--    span Показать-->
-                                    <!--    small (30)-->
-                                </div>
-                            </div>
-                            <div class="select _alt">
-                                <div class="select__main"><a class="filter-alt__clear" href=""><i class="icon icon-close"></i></a>
-                                    <div class="filter-alt__num">0</div>
-                                    <div class="select__value">Аккумулятор, V</div>
-                                    <input class="select__input" type="checkbox">
-                                </div>
-                                <div class="select__options">
-                                    <div class="range-double">
-                                        <div class="input-interval">
-                                            <input class="input _border _mini _range1" type="number">
-                                            <div class="input-interval__separator">—</div>
-                                            <input class="input _border _mini _range2" type="number">
-                                        </div>
-                                        <input class="input-range" type="text" data-min="159" data-max="368" data-step="1">
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="select _alt">
-                                <div class="select__main"><a class="filter-alt__clear" href=""><i class="icon icon-close"></i></a>
-                                    <div class="filter-alt__num">0</div>
-                                    <div class="select__value">Емкость аккумулятора, Аh</div>
-                                    <input class="select__input" type="checkbox">
-                                </div>
-                                <div class="select__options">
-                                    <div class="range-double">
-                                        <div class="input-interval">
-                                            <input class="input _border _mini _range1" type="number">
-                                            <div class="input-interval__separator">—</div>
-                                            <input class="input _border _mini _range2" type="number">
-                                        </div>
-                                        <input class="input-range" type="text" data-min="159" data-max="368" data-step="1">
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="select _alt">
-                                <div class="select__main"><a class="filter-alt__clear" href=""><i class="icon icon-close"></i></a>
-                                    <div class="filter-alt__num">0</div>
-                                    <div class="select__value">Скорость до, км/ч</div>
-                                    <input class="select__input" type="checkbox">
-                                </div>
-                                <div class="select__options">
-                                    <div class="range-double">
-                                        <div class="input-interval">
-                                            <input class="input _border _mini _range1" type="number">
-                                            <div class="input-interval__separator">—</div>
-                                            <input class="input _border _mini _range2" type="number">
-                                        </div>
-                                        <input class="input-range" type="text" data-min="159" data-max="368" data-step="1">
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="select _alt">
-                                <div class="select__main"><a class="filter-alt__clear" href=""><i class="icon icon-close"></i></a>
-                                    <div class="filter-alt__num">0</div>
-                                    <div class="select__value">Запас хода до, км</div>
-                                    <input class="select__input" type="checkbox">
-                                </div>
-                                <div class="select__options">
-                                    <div class="range-double">
-                                        <div class="input-interval">
-                                            <input class="input _border _mini _range1" type="number">
-                                            <div class="input-interval__separator">—</div>
-                                            <input class="input _border _mini _range2" type="number">
-                                        </div>
-                                        <input class="input-range" type="text" data-min="159" data-max="368" data-step="1">
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="select _alt">
-                                <div class="select__main"><a class="filter-alt__clear" href=""><i class="icon icon-close"></i></a>
-                                    <div class="filter-alt__num">0</div>
-                                    <div class="select__value">Мощность двигателя, Вт</div>
-                                    <input class="select__input" type="checkbox">
-                                </div>
-                                <div class="select__options">
-                                    <div class="range-double">
-                                        <div class="input-interval">
-                                            <input class="input _border _mini _range1" type="number">
-                                            <div class="input-interval__separator">—</div>
-                                            <input class="input _border _mini _range2" type="number">
-                                        </div>
-                                        <input class="input-range" type="text" data-min="159" data-max="368" data-step="1">
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="select _alt">
-                                <div class="select__main"><a class="filter-alt__clear" href=""><i class="icon icon-close"></i></a>
-                                    <div class="filter-alt__num">0</div>
-                                    <div class="select__value">Диаметр колёс, дюйм</div>
-                                    <input class="select__input" type="checkbox">
-                                </div>
-                                <div class="select__options">
-                                    <div class="range-double">
-                                        <div class="input-interval">
-                                            <input class="input _border _mini _range1" type="number">
-                                            <div class="input-interval__separator">—</div>
-                                            <input class="input _border _mini _range2" type="number">
-                                        </div>
-                                        <input class="input-range" type="text" data-min="159" data-max="368" data-step="1">
-                                    </div>
-                                </div>
-                            </div>
-                            <!--.select._alt
-                .select__main
-                    a.filter-alt__clear(href="")
-                        i.icon.icon-close
-                    .filter-alt__num 0
-                    .select__value Время зарядки, ч
-                    input.select__input(type="checkbox")
-                .select__options
-                    .range-double
-                        .input-interval
-                            input.input._border._mini._range1(type='number')
-                            .input-interval__separator —
-                            input.input._border._mini._range2(type='number')
-                        input.input-range(type='text' data-min='159' data-max='368' data-step='1')
-                -->
-                            <!--.select._alt
-                .select__main
-                    a.filter-alt__clear(href="")
-                        i.icon.icon-close
-                    .filter-alt__num 0
-                    .select__value Амортизация
-                    input.select__input(type="checkbox")
-                .select__options
-                    label.checkbox
-                        input.checkbox__input(type="checkbox" checked="")
-                        span.checkbox__mask
-                        span.checkbox__label Амортизация 1
-                    label.checkbox
-                        input.checkbox__input(type="checkbox" checked="")
-                        span.checkbox__mask
-                        span.checkbox__label Амортизация 2
-                    label.checkbox
-                        input.checkbox__input(type="checkbox" checked="")
-                        span.checkbox__mask
-                        span.checkbox__label Амортизация 3
-                -->
-                            <!--.select._alt
-                .select__main
-                    a.filter-alt__clear(href="")
-                        i.icon.icon-close
-                    .filter-alt__num 0
-                    .select__value Привод
-                    input.select__input(type="checkbox")
-                .select__options
-                    label.checkbox
-                        input.checkbox__input(type="checkbox" checked="")
-                        span.checkbox__mask
-                        span.checkbox__label Привод 1
-                    label.checkbox
-                        input.checkbox__input(type="checkbox" checked="")
-                        span.checkbox__mask
-                        span.checkbox__label Привод 2
-                    label.checkbox
-                        input.checkbox__input(type="checkbox" checked="")
-                        span.checkbox__mask
-                        span.checkbox__label Привод 3
-                -->
-                            <!--.select._alt
-                .select__main
-                    a.filter-alt__clear(href="")
-                        i.icon.icon-close
-                    .filter-alt__num 0
-                    .select__value Максимальная нагрузка до, кг
-                    input.select__input(type="checkbox")
-                .select__options
-                    .range-double
-                        .input-interval
-                            input.input._border._mini._range1(type='number')
-                            .input-interval__separator —
-                            input.input._border._mini._range2(type='number')
-                        input.input-range(type='text' data-min='159' data-max='368' data-step='1')
-                -->
-                            <!--.select._alt
-                .select__main
-                    a.filter-alt__clear(href="")
-                        i.icon.icon-close
-                    .filter-alt__num 0
-                    .select__value Материал рамы
-                    input.select__input(type="checkbox")
-                .select__options
-                    label.checkbox
-                        input.checkbox__input(type="checkbox" checked="")
-                        span.checkbox__mask
-                        span.checkbox__label Материал рамы 1
-                    label.checkbox
-                        input.checkbox__input(type="checkbox" checked="")
-                        span.checkbox__mask
-                        span.checkbox__label Материал рамы 2
-                    label.checkbox
-                        input.checkbox__input(type="checkbox" checked="")
-                        span.checkbox__mask
-                        span.checkbox__label Материал рамы 3
-                -->
-                            <!--.select._alt
-                .select__main
-                    a.filter-alt__clear(href="")
-                        i.icon.icon-close
-                    .filter-alt__num 0
-                    .select__value Тип колес
-                    input.select__input(type="checkbox")
-                .select__options
-                    label.checkbox
-                        input.checkbox__input(type="checkbox" checked="")
-                        span.checkbox__mask
-                        span.checkbox__label Тип колес 1
-                    label.checkbox
-                        input.checkbox__input(type="checkbox" checked="")
-                        span.checkbox__mask
-                        span.checkbox__label Тип колес 2
-                    label.checkbox
-                        input.checkbox__input(type="checkbox" checked="")
-                        span.checkbox__mask
-                        span.checkbox__label Тип колес 3
-                -->
-                            <!--.select._alt
-                .select__main
-                    a.filter-alt__clear(href="")
-                        i.icon.icon-close
-                    .filter-alt__num 0
-                    .select__value Быстросъемная батарея
-                    input.select__input(type="checkbox")
-                .select__options
-                    label.checkbox
-                        input.checkbox__input(type="checkbox" checked="")
-                        span.checkbox__mask
-                        span.checkbox__label Да
-                    label.checkbox
-                        input.checkbox__input(type="checkbox" checked="")
-                        span.checkbox__mask
-                        span.checkbox__label Нет
-                -->
-                            <!--.select._alt
-                .select__main
-                    a.filter-alt__clear(href="")
-                        i.icon.icon-close
-                    .filter-alt__num 0
-                    .select__value Сиденье
-                    input.select__input(type="checkbox")
-                .select__options
-                    label.checkbox
-                        input.checkbox__input(type="checkbox" checked="")
-                        span.checkbox__mask
-                        span.checkbox__label Сиденье 1
-                    label.checkbox
-                        input.checkbox__input(type="checkbox" checked="")
-                        span.checkbox__mask
-                        span.checkbox__label Сиденье 2
-                    label.checkbox
-                        input.checkbox__input(type="checkbox" checked="")
-                        span.checkbox__mask
-                        span.checkbox__label Сиденье 3
-                -->
-                            <!--.select._alt
-                .select__main
-                    a.filter-alt__clear(href="")
-                        i.icon.icon-close
-                    .filter-alt__num 0
-                    .select__value Тормоза
-                    input.select__input(type="checkbox")
-                .select__options
-                    label.checkbox
-                        input.checkbox__input(type="checkbox" checked="")
-                        span.checkbox__mask
-                        span.checkbox__label Тормоза 1
-                    label.checkbox
-                        input.checkbox__input(type="checkbox" checked="")
-                        span.checkbox__mask
-                        span.checkbox__label Тормоза 2
-                    label.checkbox
-                        input.checkbox__input(type="checkbox" checked="")
-                        span.checkbox__mask
-                        span.checkbox__label Тормоза 3
-                -->
-                            <!--.select._alt
-                .select__main
-                    a.filter-alt__clear(href="")
-                        i.icon.icon-close
-                    .filter-alt__num 0
-                    .select__value Складной
-                    input.select__input(type="checkbox")
-                .select__options
-                    label.checkbox
-                        input.checkbox__input(type="checkbox" checked="")
-                        span.checkbox__mask
-                        span.checkbox__label Да
-                    label.checkbox
-                        input.checkbox__input(type="checkbox" checked="")
-                        span.checkbox__mask
-                        span.checkbox__label Нет
-                --><a class="filter-alt__clear-all link-line" href="">Очистить все</a>
-                            <!--a.filter-alt__more.link-line(href="")-->
-                            <div class="filter-alt__submit"><a class="btn _mini _full" href=""><span>Показать</span><small>(460)</small></a></div>
-                        </div>
-                        <label class="filter-alt__btn" for="filter-alt-toggle"><i class="icon icon-filter"></i></label>
-                        <div class="filter-alt__sort">
-                            <label class="checkbox _alt">
-                                <input class="checkbox__input" type="checkbox" checked=""><span class="checkbox__mask"></span><span class="checkbox__label">В наличии</span>
-                            </label>
-                            <div class="select _alt">
-                                <div class="select__main"><i class="icon icon-sort"></i>
-                                    <div class="select__value">Сортировка</div>
-                                    <input class="select__input" type="checkbox">
-                                </div>
-                                <div class="select__options">
-                                    <div class="select__option" data-value="популярные">Сначала популярные</div>
-                                    <div class="select__option" data-value="дешевле">Сначала дешевле</div>
-                                    <div class="select__option" data-value="дороже">Сначала дороже</div>
-                                    <div class="select__option" data-value="новинки">Сначала новинки</div>
+            <div class="faq-page bg">
+                <div class="inner faq">
+                    <aside class="sidebar"><a class="anchorlink" href="#block1">Покупка и оформление заказа</a><a class="anchorlink" href="#block2">Наличие и ассортимент</a><a class="anchorlink" href="#block3">Оплата</a><a class="anchorlink" href="#block4">Доставка</a><a class="anchorlink" href="#block5">Самовывоз и шоурумы</a><a class="anchorlink" href="#block6">Гарантия</a><a class="anchorlink" href="#block7">Возврат и обмен</a><a class="anchorlink" href="#block8">Сервис и ремонт</a><a class="anchorlink" href="#block9">Аккумуляторы и зарядка</a><a class="anchorlink" href="#block10">Правовые вопросы</a><a class="anchorlink" href="#block11">Безопасность и эксплуатация</a><a class="anchorlink" href="#block12">Скидки, акции и лояльность</a><a class="anchorlink" href="#block13">B2B / корпоративным клиентам</a><a class="anchorlink" href="#block14">Документы и отчётность</a><a class="anchorlink" href="#block15">Персональный кабинет и заказы</a><a class="anchorlink" href="#block16">Конфиденциальность и данные</a><a class="anchorlink" href="#block17">Контакты и поддержка</a></aside>
+                    <article class="faq__list">
+                        <h2 class="h2 scrollwatch" id="block1">Покупка и оформление заказа</h2>
+                        <div class="acrdn" data-accordion="item">
+                            <div class="acrdn__btn" data-accordion="header">Как оформить заказ на сайте?</div>
+                            <div class="acrdn__drop" data-accordion="dropdown">
+                                <div class="text">
+                                    <p>Добавьте товар в корзину → заполните контакты и адрес → выберите способ оплаты/доставки → подтвердите. Менеджер свяжется для уточнения деталей.</p>
                                 </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="product-list">
-                        <div class="product">
-                            <div class="product__main">
-                                <div class="product__slider swiper-parent">
-                                    <div class="product__info">
-                                        <div class="label _green">NEW</div>
-                                        <div class="rate"><i class="icon icon-star"></i><span>4.8</span></div>
-                                    </div>
-                                    <div class="swiper _single">
-                                        <div class="swiper-wrapper">
-                                            <div class="swiper-slide"><a href=""><img src="img/product1.jpg" alt=""></a></div>
-                                            <div class="swiper-slide"><a href=""><img src="img/product2.jpg" alt=""></a></div>
-                                        </div>
-                                        <div class="swiper-pagination"></div>
-                                    </div>
-                                </div>
-                                <div class="params">
-                                    <div class="param">
-                                        <div class="param__value">300 куб.см</div>
-                                        <div class="param__label">Объем двигателя</div>
-                                    </div>
-                                    <div class="param">
-                                        <div class="param__value">90 км</div>
-                                        <div class="param__label">Запас хода</div>
-                                    </div>
-                                    <div class="param">
-                                        <div class="param__value">1500 W</div>
-                                        <div class="param__label">Мощность</div>
-                                    </div>
-                                </div>
-                            </div><a href=""><b>Электровелосипед Coswheel CT20s 48V 35AH</b></a>
-                            <div class="product__price">
-                                <div class="price">
-                                    <s>255 000 ₽</s><span>199 000 ₽</span>
-                                </div>
-                                <div class="product__btns">
-                                    <div class="product__links">
-                                        <label class="add-icon">
-                                            <input class="add-icon__input" type="checkbox"><i class="icon icon-scale"></i>
-                                        </label>
-                                        <label class="add-icon">
-                                            <input class="add-icon__input" type="checkbox"><i class="icon icon-heart-empty"></i>
-                                        </label>
-                                    </div><a class="btn" href="">В корзину</a>
+                        <div class="acrdn" data-accordion="item">
+                            <div class="acrdn__btn" data-accordion="header">Можно изменить или отменить заказ?</div>
+                            <div class="acrdn__drop" data-accordion="dropdown">
+                                <div class="text">
+                                    <p>Да, до передачи в доставку. Напишите/позвоните с номером заказа — оперативно внесём изменения.</p>
                                 </div>
                             </div>
                         </div>
-                        <div class="product">
-                            <div class="product__main">
-                                <div class="product__slider swiper-parent"><a class="product__yb" href=""><i class="icon icon-yb"></i></a>
-                                    <div class="product__info">
-                                        <div class="label _red">- 12 568 ₽</div>
-                                        <div class="rate"><i class="icon icon-star"></i><span>4.8</span></div>
-                                    </div>
-                                    <div class="swiper _single">
-                                        <div class="swiper-wrapper">
-                                            <div class="swiper-slide"><a href=""><img src="img/product1.jpg" alt=""></a></div>
-                                            <div class="swiper-slide"><a href=""><img src="img/product2.jpg" alt=""></a></div>
-                                        </div>
-                                        <div class="swiper-pagination"></div>
-                                    </div>
-                                </div>
-                                <div class="params">
-                                    <div class="param">
-                                        <div class="param__value">50 км/ч</div>
-                                        <div class="param__label">Скорость</div>
-                                    </div>
-                                    <div class="param">
-                                        <div class="param__value">90 км</div>
-                                        <div class="param__label">Запас хода</div>
-                                    </div>
-                                    <div class="param">
-                                        <div class="param__value">1500 W</div>
-                                        <div class="param__label">Мощность</div>
-                                    </div>
-                                    <div class="param">
-                                        <div class="param__value">20"</div>
-                                        <div class="param__label">Диаметр</div>
-                                    </div>
-                                    <div class="param">
-                                        <div class="param__value">46 кг</div>
-                                        <div class="param__label">Вес</div>
-                                    </div>
-                                </div>
-                            </div><a href=""><b>Электровелосипед Coswheel CT20s 48V 35AH</b></a>
-                            <div class="product__price">
-                                <div class="price">
-                                    <s>255 000 ₽</s><span>199 000 ₽</span>
-                                </div>
-                                <div class="product__btns">
-                                    <div class="product__links">
-                                        <label class="add-icon">
-                                            <input class="add-icon__input" type="checkbox"><i class="icon icon-scale"></i>
-                                        </label>
-                                        <label class="add-icon">
-                                            <input class="add-icon__input" type="checkbox"><i class="icon icon-heart-empty"></i>
-                                        </label>
-                                    </div><a class="btn" href="">В корзину</a>
+                        <div class="acrdn" data-accordion="item">
+                            <div class="acrdn__btn" data-accordion="header">Делаете предзаказ и резерв?</div>
+                            <div class="acrdn__drop" data-accordion="dropdown">
+                                <div class="text">
+                                    <p>Да. Резерв/предзаказ возможен по согласованию с менеджером; условия и срок ожидания зависят от модели и поставки.</p>
                                 </div>
                             </div>
                         </div>
-                        <div class="product">
-                            <div class="product__main">
-                                <div class="product__slider swiper-parent">
-                                    <div class="product__info">
-                                        <div class="label _yellow">hit</div>
-                                        <div class="rate"><i class="icon icon-star"></i><span>4.8</span></div>
-                                    </div>
-                                    <div class="swiper _single">
-                                        <div class="swiper-wrapper">
-                                            <div class="swiper-slide"><a href=""><img src="img/product1.jpg" alt=""></a></div>
-                                            <div class="swiper-slide"><a href=""><img src="img/product2.jpg" alt=""></a></div>
-                                        </div>
-                                        <div class="swiper-pagination"></div>
-                                    </div>
-                                </div>
-                                <div class="params">
-                                    <div class="param">
-                                        <div class="param__value">50 км/ч</div>
-                                        <div class="param__label">Скорость</div>
-                                    </div>
-                                    <div class="param">
-                                        <div class="param__value">90 км</div>
-                                        <div class="param__label">Запас хода</div>
-                                    </div>
-                                    <div class="param">
-                                        <div class="param__value">1500 W</div>
-                                        <div class="param__label">Мощность</div>
-                                    </div>
-                                    <div class="param">
-                                        <div class="param__value">20"</div>
-                                        <div class="param__label">Диаметр</div>
-                                    </div>
-                                    <div class="param">
-                                        <div class="param__value">46 кг</div>
-                                        <div class="param__label">Вес</div>
-                                    </div>
-                                </div>
-                            </div><a href=""><b>Электровелосипед Coswheel CT20s 48V 35AH</b></a>
-                            <div class="product__price">
-                                <div class="price">
-                                    <s>255 000 ₽</s><span>199 000 ₽</span>
-                                </div>
-                                <div class="product__btns">
-                                    <div class="product__links">
-                                        <label class="add-icon">
-                                            <input class="add-icon__input" type="checkbox" checked=""><i class="icon icon-scale"></i>
-                                        </label>
-                                        <label class="add-icon">
-                                            <input class="add-icon__input" type="checkbox" checked=""><i class="icon icon-heart-empty"></i>
-                                        </label>
-                                    </div><a class="btn" href="">В корзину</a>
+                        <div class="acrdn" data-accordion="item">
+                            <div class="acrdn__btn" data-accordion="header">Поможете выбрать модель под мои задачи?</div>
+                            <div class="acrdn__drop" data-accordion="dropdown">
+                                <div class="text">
+                                    <p>Да. Эксперты подберут по росту/весу, маршруту, запасу хода и бюджету, предложат 2–3 оптимальных варианта.</p>
                                 </div>
                             </div>
                         </div>
-                        <div class="manager"><img src="img/manager2.png" alt="">
-                            <div class="manager__header"><b>Задайте вопрос эксперту</b><small>Мы на связи с 10:00 до 20:00 ежедневно</small></div>
-                            <div class="manager__social"><a href=""><i class="icon icon-telegram"></i></a><a href=""><i class="icon icon-whatsapp-fill"></i></a><a href=""><i class="icon icon-call"></i></a><a href=""><i class="icon icon-email2"></i></a></div>
-                        </div>
-                        <div class="product">
-                            <div class="product__main">
-                                <div class="product__slider swiper-parent">
-                                    <div class="product__info">
-                                        <div class="label _green">NEW</div>
-                                        <div class="rate"><i class="icon icon-star"></i><span>4.8</span></div>
-                                    </div>
-                                    <div class="swiper _single">
-                                        <div class="swiper-wrapper">
-                                            <div class="swiper-slide"><a href=""><img src="img/product1.jpg" alt=""></a></div>
-                                            <div class="swiper-slide"><a href=""><img src="img/product2.jpg" alt=""></a></div>
-                                        </div>
-                                        <div class="swiper-pagination"></div>
-                                    </div>
-                                </div>
-                                <div class="params">
-                                    <div class="param">
-                                        <div class="param__value">50 км/ч</div>
-                                        <div class="param__label">Скорость</div>
-                                    </div>
-                                    <div class="param">
-                                        <div class="param__value">90 км</div>
-                                        <div class="param__label">Запас хода</div>
-                                    </div>
-                                    <div class="param">
-                                        <div class="param__value">1500 W</div>
-                                        <div class="param__label">Мощность</div>
-                                    </div>
-                                    <div class="param">
-                                        <div class="param__value">20"</div>
-                                        <div class="param__label">Диаметр</div>
-                                    </div>
-                                    <div class="param">
-                                        <div class="param__value">46 кг</div>
-                                        <div class="param__label">Вес</div>
-                                    </div>
-                                    <div class="param">
-                                        <div class="param__value">46 кг</div>
-                                        <div class="param__label">Вес</div>
-                                    </div>
-                                </div>
-                            </div><a href=""><b>Электровелосипед Coswheel CT20s 48V 35AH</b></a>
-                            <div class="product__price">
-                                <div class="price">
-                                    <s>255 000 ₽</s><span>199 000 ₽</span>
-                                </div>
-                                <div class="product__btns">
-                                    <div class="product__links">
-                                        <label class="add-icon">
-                                            <input class="add-icon__input" type="checkbox"><i class="icon icon-scale"></i>
-                                        </label>
-                                        <label class="add-icon">
-                                            <input class="add-icon__input" type="checkbox"><i class="icon icon-heart-empty"></i>
-                                        </label>
-                                    </div><a class="btn" href="">В корзину</a>
+                        <h2 class="h2 scrollwatch" id="block2">Наличие и ассортимент</h2>
+                        <div class="acrdn" data-accordion="item">
+                            <div class="acrdn__btn" data-accordion="header">Что означает «в наличии», «на складе», «под заказ»?</div>
+                            <div class="acrdn__drop" data-accordion="dropdown">
+                                <div class="text">
+                                    <p>«В наличии» — на точке/складе и готов к выдаче. «На складе» — доступен к отгрузке в ближайшие сроки. «Под заказ» — требуется поставка; срок уточнит менеджер.</p>
                                 </div>
                             </div>
                         </div>
-                        <div class="product">
-                            <div class="product__main">
-                                <div class="product__slider swiper-parent"><a class="product__yb" href=""><i class="icon icon-yb"></i></a>
-                                    <div class="product__info">
-                                        <div class="label _red">- 12 568 ₽</div>
-                                        <div class="rate"><i class="icon icon-star"></i><span>4.8</span></div>
-                                    </div>
-                                    <div class="swiper _single">
-                                        <div class="swiper-wrapper">
-                                            <div class="swiper-slide"><a href=""><img src="img/product1.jpg" alt=""></a></div>
-                                            <div class="swiper-slide"><a href=""><img src="img/product2.jpg" alt=""></a></div>
-                                        </div>
-                                        <div class="swiper-pagination"></div>
-                                    </div>
-                                </div>
-                                <div class="params">
-                                    <div class="param">
-                                        <div class="param__value">50 км/ч</div>
-                                        <div class="param__label">Скорость</div>
-                                    </div>
-                                    <div class="param">
-                                        <div class="param__value">90 км</div>
-                                        <div class="param__label">Запас хода</div>
-                                    </div>
-                                    <div class="param">
-                                        <div class="param__value">1500 W</div>
-                                        <div class="param__label">Мощность</div>
-                                    </div>
-                                    <div class="param">
-                                        <div class="param__value">20"</div>
-                                        <div class="param__label">Диаметр</div>
-                                    </div>
-                                    <div class="param">
-                                        <div class="param__value">46 кг</div>
-                                        <div class="param__label">Вес</div>
-                                    </div>
-                                </div>
-                            </div><a href=""><b>Электровелосипед Coswheel CT20s 48V 35AH</b></a>
-                            <div class="product__price">
-                                <div class="price">
-                                    <s>255 000 ₽</s><span>199 000 ₽</span>
-                                </div>
-                                <div class="product__btns">
-                                    <div class="product__links">
-                                        <label class="add-icon">
-                                            <input class="add-icon__input" type="checkbox"><i class="icon icon-scale"></i>
-                                        </label>
-                                        <label class="add-icon">
-                                            <input class="add-icon__input" type="checkbox"><i class="icon icon-heart-empty"></i>
-                                        </label>
-                                    </div><a class="btn" href="">В корзину</a>
+                        <div class="acrdn" data-accordion="item">
+                            <div class="acrdn__btn" data-accordion="header">Товар в шоуруме можно посмотреть/потрогать?</div>
+                            <div class="acrdn__drop" data-accordion="dropdown">
+                                <div class="text">
+                                    <p>Да, по наличию на конкретной точке. Рекомендуем уточнить доступность заранее у менеджеров.</p>
                                 </div>
                             </div>
                         </div>
-                        <div class="product">
-                            <div class="product__main">
-                                <div class="product__slider swiper-parent">
-                                    <div class="product__info">
-                                        <div class="label _yellow">hit</div>
-                                        <div class="rate"><i class="icon icon-star"></i><span>4.8</span></div>
-                                    </div>
-                                    <div class="swiper _single">
-                                        <div class="swiper-wrapper">
-                                            <div class="swiper-slide"><a href=""><img src="img/product1.jpg" alt=""></a></div>
-                                            <div class="swiper-slide"><a href=""><img src="img/product2.jpg" alt=""></a></div>
-                                        </div>
-                                        <div class="swiper-pagination"></div>
-                                    </div>
-                                </div>
-                                <div class="params">
-                                    <div class="param">
-                                        <div class="param__value">50 км/ч</div>
-                                        <div class="param__label">Скорость</div>
-                                    </div>
-                                    <div class="param">
-                                        <div class="param__value">90 км</div>
-                                        <div class="param__label">Запас хода</div>
-                                    </div>
-                                    <div class="param">
-                                        <div class="param__value">1500 W</div>
-                                        <div class="param__label">Мощность</div>
-                                    </div>
-                                    <div class="param">
-                                        <div class="param__value">20"</div>
-                                        <div class="param__label">Диаметр</div>
-                                    </div>
-                                    <div class="param">
-                                        <div class="param__value">46 кг</div>
-                                        <div class="param__label">Вес</div>
-                                    </div>
-                                </div>
-                            </div><a href=""><b>Электровелосипед Coswheel CT20s 48V 35AH</b></a>
-                            <div class="product__price">
-                                <div class="price">
-                                    <s>255 000 ₽</s><span>199 000 ₽</span>
-                                </div>
-                                <div class="product__btns">
-                                    <div class="product__links">
-                                        <label class="add-icon">
-                                            <input class="add-icon__input" type="checkbox" checked=""><i class="icon icon-scale"></i>
-                                        </label>
-                                        <label class="add-icon">
-                                            <input class="add-icon__input" type="checkbox" checked=""><i class="icon icon-heart-empty"></i>
-                                        </label>
-                                    </div><a class="btn" href="">В корзину</a>
+                        <div class="acrdn" data-accordion="item">
+                            <div class="acrdn__btn" data-accordion="header">Подбор аксессуаров и совместимости делаете?</div>
+                            <div class="acrdn__drop" data-accordion="dropdown">
+                                <div class="text">
+                                    <p>Да. Подскажем совместимость (багажники, АКБ, резина, сиденья), укажем, что нужно для установки.</p>
                                 </div>
                             </div>
                         </div>
-                        <div class="product">
-                            <div class="product__main">
-                                <div class="product__slider swiper-parent">
-                                    <div class="product__info">
-                                        <div class="rate"><i class="icon icon-star"></i><span>4.8</span></div>
-                                    </div>
-                                    <div class="swiper _single">
-                                        <div class="swiper-wrapper">
-                                            <div class="swiper-slide"><a href=""><img src="img/product1.jpg" alt=""></a></div>
-                                            <div class="swiper-slide"><a href=""><img src="img/product2.jpg" alt=""></a></div>
-                                        </div>
-                                        <div class="swiper-pagination"></div>
-                                    </div>
-                                </div>
-                                <div class="params">
-                                    <div class="param">
-                                        <div class="param__value">50 км/ч</div>
-                                        <div class="param__label">Скорость</div>
-                                    </div>
-                                    <div class="param">
-                                        <div class="param__value">90 км</div>
-                                        <div class="param__label">Запас хода</div>
-                                    </div>
-                                    <div class="param">
-                                        <div class="param__value">1500 W</div>
-                                        <div class="param__label">Мощность</div>
-                                    </div>
-                                    <div class="param">
-                                        <div class="param__value">20"</div>
-                                        <div class="param__label">Диаметр</div>
-                                    </div>
-                                    <div class="param">
-                                        <div class="param__value">46 кг</div>
-                                        <div class="param__label">Вес</div>
-                                    </div>
-                                </div>
-                            </div><a href=""><b>Электровелосипед Coswheel CT20s 48V 35AH</b></a>
-                            <div class="product__price">
-                                <div class="price">
-                                    <s>255 000 ₽</s><span>199 000 ₽</span>
-                                </div>
-                                <div class="product__btns">
-                                    <div class="product__links">
-                                        <label class="add-icon">
-                                            <input class="add-icon__input" type="checkbox"><i class="icon icon-scale"></i>
-                                        </label>
-                                        <label class="add-icon">
-                                            <input class="add-icon__input" type="checkbox"><i class="icon icon-heart-empty"></i>
-                                        </label>
-                                    </div><a class="btn" href="">В корзину</a>
+                        <div class="acrdn" data-accordion="item">
+                            <div class="acrdn__btn" data-accordion="header">Обновляете линейку новинок?</div>
+                            <div class="acrdn__drop" data-accordion="dropdown">
+                                <div class="text">
+                                    <p>Да, ассортимент регулярно пополняется, мы одни из самых первых получаем новые модели, по хорошим ценам!</p>
                                 </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="catalog__nav"><a class="btn _mini _fill" href="">Показать еще ...</a>
-                        <div class="pagination-alt"><a href=""><i class="icon icon-arrow _reverse"></i></a><a href=""><i class="icon icon-double-arrow _reverse"></i></a><a href="">1</a><a class="_simple" href="">...</a><a href="">8</a><a class="_active" href="">9</a><a href="">10</a><a class="_simple" href="">...</a><a href="">89</a><a href=""><i class="icon icon-arrow"></i></a><a href=""><i class="icon icon-double-arrow"></i></a></div><small>Показано 36 из 268 товаров</small>
-                    </div>
-                </div>
-                <div class="inner">
-                    <div class="tags"><a href="">1000W</a><a href="">Велоприцепы</a><a href="">Для взрослых</a><a href="">Грузовые</a><a href="">Фэтбайки</a><a href="">С корзиной и багажником</a><a href="">GreenCame</a></div>
-                </div>
-                <div class="callback">
-                    <picture>
-                        <source srcset="img/bg_mob.png" media="(max-width: 530px)"><img class="callback__bg" src="img/bg.png" alt="">
-                    </picture>
-                    <div class="callback__inner inner">
-                        <picture>
-                            <source srcset="img/manager_mob.png" media="(max-width: 530px)"><img class="callback__img" src="img/manager.png" alt="">
-                        </picture>
-                        <div class="callback__main">
-                            <div class="callback__block">
-                                <h2 class="h1">Поможем подобрать <br>модель за 2 минуты</h2><small>Мы на связи <br>с 10:00 до 20:00 ежедневно</small>
-                                <div class="callback__text">Не знаете, с чего начать? <br>Подскажем, какая модель подойдёт именно вам — быстро и по делу.</div>
-                                <div class="callback__btns"><a class="btn _fill _big" href="">Получить консультацию</a>
-                                    <div class="callback__social"><a href=""><i class="icon icon-telegram"></i></a><a href=""><i class="icon icon-whatsapp-fill"></i></a><a href=""><i class="icon icon-call"></i></a><a href=""><i class="icon icon-email2"></i></a></div>
+                        <h2 class="h2 scrollwatch" id="block3">Оплата</h2>
+                        <div class="acrdn" data-accordion="item">
+                            <div class="acrdn__btn" data-accordion="header">Какие способы оплаты доступны?</div>
+                            <div class="acrdn__drop" data-accordion="dropdown">
+                                <div class="text">
+                                    <p>Банковская карта онлайн, наличные/карта в шоуруме,картой курьеру,безнал для юрлиц+6%. Доступны рассрочка и кредит — условия зависят от банка-партнёра.</p>
                                 </div>
                             </div>
                         </div>
-                    </div>
-                </div>
-                <div class="inner swiper-parent">
-                    <div class="page-header mb-20">
-                        <h2 class="h1">Видеообзоры</h2>
-                        <div class="page-header__links"><a class="link-line" href="">Все видеообзоры</a>
-                            <div class="swiper-button-prev"></div>
-                            <div class="swiper-button-next"></div>
-                        </div>
-                    </div>
-                    <div class="swiper _3-col">
-                        <div class="swiper-wrapper">
-                            <div class="swiper-slide">
-                                <div class="video-news"><a class="link-full" href="https://youtu.be/lyh2kAjcmSY?si=L9tyFI5HyDlI4Kfm" data-fancybox="videos"></a>
-                                    <div class="video-news__img"><img src="img/shop1.jpg" alt=""></div><b>Короткое содержательное название видеообзора</b>
-                                </div>
-                            </div>
-                            <div class="swiper-slide">
-                                <div class="video-news"><a class="link-full" href="https://youtu.be/lyh2kAjcmSY?si=L9tyFI5HyDlI4Kfm" data-fancybox="videos"></a>
-                                    <div class="video-news__img"><img src="img/shop2.jpg" alt=""></div><b>Короткое содержательное название видеообзора</b>
-                                </div>
-                            </div>
-                            <div class="swiper-slide">
-                                <div class="video-news"><a class="link-full" href="https://youtu.be/lyh2kAjcmSY?si=L9tyFI5HyDlI4Kfm" data-fancybox="videos"></a>
-                                    <div class="video-news__img"><img src="img/shop3.jpg" alt=""></div><b>Короткое содержательное название видеообзора</b>
-                                </div>
-                            </div>
-                            <div class="swiper-slide">
-                                <div class="video-news"><a class="link-full" href="https://youtu.be/lyh2kAjcmSY?si=L9tyFI5HyDlI4Kfm" data-fancybox="videos"></a>
-                                    <div class="video-news__img"><img src="img/shop1.jpg" alt=""></div><b>Короткое содержательное название видеообзора</b>
+                        <div class="acrdn" data-accordion="item">
+                            <div class="acrdn__btn" data-accordion="header">Работаете с НДС?</div>
+                            <div class="acrdn__drop" data-accordion="dropdown">
+                                <div class="text">
+                                    <p>Нет</p>
                                 </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="swiper-pagination _static _mob"></div>
-                </div>
-                <div class="inner swiper-parent">
-                    <div class="page-header mb-20">
-                        <h2 class="h1">Блог</h2>
-                        <div class="page-header__links"><a class="link-line" href="">Все статьи</a>
-                            <div class="swiper-button-prev"></div>
-                            <div class="swiper-button-next"></div>
-                        </div>
-                    </div>
-                    <div class="swiper _2-col">
-                        <div class="swiper-wrapper">
-                            <div class="swiper-slide">
-                                <div class="news"><a class="link-full"></a><img src="img/shop1.jpg" alt="">
-                                    <div class="news__main"><b>Короткое содержательное название статьи</b>
-                                        <div class="news__infos">
-                                            <div class="news__info"><i class="icon icon-eye"></i><span>86</span></div>
-                                            <div class="news__info"><i class="icon icon-calendar2"></i><span>25.06.2025</span></div>
-                                        </div>
-                                        <div class="news__text">
-                                            <p>Небольшой текст из статьи, краткое содержание, буквально на две-три строки. Небольшой текст из статьи, краткое содержание, буквально на две-три строки.</p>
-                                        </div><a class="link-arrow" href=""><span>Читать полностью</span><i class="icon icon-long-arrow"></i></a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="swiper-slide">
-                                <div class="news"><a class="link-full"></a><img src="img/shop2.jpg" alt="">
-                                    <div class="news__main"><b>Короткое содержательное название статьи</b>
-                                        <div class="news__infos">
-                                            <div class="news__info"><i class="icon icon-eye"></i><span>86</span></div>
-                                            <div class="news__info"><i class="icon icon-calendar2"></i><span>25.06.2025</span></div>
-                                        </div>
-                                        <div class="news__text">
-                                            <p>Небольшой текст из статьи, краткое содержание, буквально на две-три строки. Небольшой текст из статьи, краткое содержание, буквально на две-три строки.</p>
-                                        </div><a class="link-arrow" href=""><span>Читать полностью</span><i class="icon icon-long-arrow"></i></a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="swiper-slide">
-                                <div class="news"><a class="link-full"></a><img src="img/shop3.jpg" alt="">
-                                    <div class="news__main"><b>Короткое содержательное название статьи</b>
-                                        <div class="news__infos">
-                                            <div class="news__info"><i class="icon icon-eye"></i><span>86</span></div>
-                                            <div class="news__info"><i class="icon icon-calendar2"></i><span>25.06.2025</span></div>
-                                        </div>
-                                        <div class="news__text">
-                                            <p>Небольшой текст из статьи, краткое содержание, буквально на две-три строки. Небольшой текст из статьи, краткое содержание, буквально на две-три строки.</p>
-                                        </div><a class="link-arrow" href=""><span>Читать полностью</span><i class="icon icon-long-arrow"></i></a>
-                                    </div>
+                        <div class="acrdn" data-accordion="item">
+                            <div class="acrdn__btn" data-accordion="header">Рассрочка/кредит на любые модели?</div>
+                            <div class="acrdn__drop" data-accordion="dropdown">
+                                <div class="text">
+                                    <p>На большинство позиций; решение и условия — по анкете банка.</p>
                                 </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="swiper-pagination _static _mob"></div>
-                </div>
-                <div class="inner swiper-parent">
-                    <div class="page-header mb-20">
-                        <h2 class="h1">Часто задаваемые вопросы</h2>
-                    </div>
-                    <div class="acrdns">
-                        <div class="acrdns__col">
-                            <div class="acrdn" data-accordion="item">
-                                <div class="acrdn__btn" data-accordion="header">Какие типы электровелосипедов вы предлагаете?</div>
-                                <div class="acrdn__drop" data-accordion="dropdown">
-                                    <div class="text">
-                                        <p>В Electrostreet.ru вы найдете широкий выбор электровелосипедов: городские, горные, складные, грузовые и другие.</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="acrdn" data-accordion="item">
-                                <div class="acrdn__btn" data-accordion="header">Как рассчитывается дальность хода электровелосипеда?</div>
-                                <div class="acrdn__drop" data-accordion="dropdown">
-                                    <div class="text">
-                                        <p>Дальность хода зависит от емкости аккумулятора, мощности двигателя, веса райдера и рельефа местности. В описании каждой модели указан примерный запас хода.</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="acrdn" data-accordion="item">
-                                <div class="acrdn__btn" data-accordion="header">Как долго заряжается аккумулятор электровелосипеда?</div>
-                                <div class="acrdn__drop" data-accordion="dropdown">
-                                    <div class="text">
-                                        <p>Время зарядки аккумулятора обычно составляет от 3 до 8 часов в зависимости от его емкости и типа зарядного устройства.</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="acrdn" data-accordion="item">
-                                <div class="acrdn__btn" data-accordion="header">Какова максимальная скорость электровелосипеда?</div>
-                                <div class="acrdn__drop" data-accordion="dropdown">
-                                    <div class="text">
-                                        <p>Максимальная скорость электровелосипеда в соответствии с законодательством составляет 25 км/ч при использовании ассистента педалирования, но некоторые модели могут развивать более высокую скорость.</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="acrdn" data-accordion="item">
-                                <div class="acrdn__btn" data-accordion="header">Нужны ли водительские права для управления электровелосипедом?</div>
-                                <div class="acrdn__drop" data-accordion="dropdown">
-                                    <div class="text">
-                                        <p>В большинстве случаев, если мощность двигателя не превышает 250 Вт и скорость не более 25 км/ч, водительские права не требуются.</p>
-                                    </div>
+                        <div class="acrdn" data-accordion="item">
+                            <div class="acrdn__btn" data-accordion="header">Можно внести предоплату и доплатить при получении?</div>
+                            <div class="acrdn__drop" data-accordion="dropdown">
+                                <div class="text">
+                                    <p>Да, по согласованию с менеджером и типом доставки.</p>
                                 </div>
                             </div>
                         </div>
-                        <div class="acrdns__col">
-                            <div class="acrdn" data-accordion="item">
-                                <div class="acrdn__btn" data-accordion="header">Можно ли ездить на электровелосипеде в дождь?</div>
-                                <div class="acrdn__drop" data-accordion="dropdown">
-                                    <div class="text">
-                                        <p>Да, большинство современных электровелосипедов имеют защиту от влаги, но рекомендуется избегать глубоких луж и сильного ливня.</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="acrdn" data-accordion="item">
-                                <div class="acrdn__btn" data-accordion="header">Как ухаживать за аккумулятором электровелосипеда?</div>
-                                <div class="acrdn__drop" data-accordion="dropdown">
-                                    <div class="text">
-                                        <p>Для продления срока службы аккумулятора рекомендуется заряжать его после каждой поездки, не допускать полного разряда и хранить в сухом, прохладном месте.</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="acrdn" data-accordion="item">
-                                <div class="acrdn__btn" data-accordion="header">Есть ли у вас гарантия на электровелосипеды?</div>
-                                <div class="acrdn__drop" data-accordion="dropdown">
-                                    <div class="text">
-                                        <p>Да, на все электровелосипеды, приобретенные в нашем магазине, распространяется гарантия от производителя. Срок гарантии указывается в описании каждой модели.</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="acrdn" data-accordion="item">
-                                <div class="acrdn__btn" data-accordion="header">Могу ли я протестировать электровелосипед перед покупкой?</div>
-                                <div class="acrdn__drop" data-accordion="dropdown">
-                                    <div class="text">
-                                        <p>Да, мы предоставляем возможность проведения тест-драйва, чтобы вы могли лично оценить все преимущества электровелосипедов.</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="acrdn" data-accordion="item">
-                                <div class="acrdn__btn" data-accordion="header">Какие способы оплаты вы принимаете?</div>
-                                <div class="acrdn__drop" data-accordion="dropdown">
-                                    <div class="text">
-                                        <p>Мы принимаем оплату банковскими картами, наличными и предоставляем возможность покупки в рассрочку или кредит.</p>
-                                    </div>
+                        <h2 class="h2 scrollwatch" id="block4">Доставка</h2>
+                        <div class="acrdn" data-accordion="item">
+                            <div class="acrdn__btn" data-accordion="header">Куда доставляете?</div>
+                            <div class="acrdn__drop" data-accordion="dropdown">
+                                <div class="text">
+                                    <p>По всей России. По Москве и области — курьером, по регионам — ТК.</p>
                                 </div>
                             </div>
                         </div>
-                    </div>
-                </div>
-                <div class="text-block _alt inner">
-                    <h2>Откройте для себя мир электровелосипедов с ElectroStreet.ru: Ваш путь к свободе и комфорту</h2>
-                    <p>Мечтаете о легких и увлекательных поездках без границ? Хотите забыть о пробках и при этом заботиться об окружающей среде? Тогда электровелосипед – это именно то, что вам нужно!</p>
-                    <p>Electrostreet.ru предлагает широкий выбор электровелосипедов, сочетающих в себе передовые технологии, стильный дизайн и безупречный комфорт. Присоединяйтесь к нам и откройте для себя новый уровень мобильности и удовольствия от поездок.</p>
-                    <h3>Почему стоит выбрать электровелосипед?</h3>
-                    <p>Электровелосипед – это больше, чем просто транспорт. Это инвестиция в ваше здоровье, экономия времени и забота об экологии. Давайте рассмотрим его преимущества:</p>
-                    <ul>
-                        <li><a href=""><b>Легкость передвижения:</b></a><br>Забудьте об усталости! Электромотор сделает ваши поездки легкими и приятными, позволяя вам покорять любые расстояния и подъемы.</li>
-                        <li><b>Городские электровелосипеды</b><br>Идеальное сочетание комфорта и практичности для повседневных поездок по городу.</li>
-                    </ul>
-                    <h3>Найдите свой идеальный электровелосипед</h3>
-                    <p>В electrostreet.ru вы найдете электровелосипеды на любой вкус и для любых целей:</p>
-                    <ul>
-                        <li>Различные типы и мощность двигателей.</li>
-                        <li>Современные аккумуляторы с большим запасом хода.</li>
-                    </ul>
+                        <div class="acrdn" data-accordion="item">
+                            <div class="acrdn__btn" data-accordion="header">Сроки и стоимость?</div>
+                            <div class="acrdn__drop" data-accordion="dropdown">
+                                <div class="text">
+                                    <p>Зависят от адреса и габаритов. Рассчитаем при оформлении; по Москве возможна быстрая доставка (по наличию).</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="acrdn" data-accordion="item">
+                            <div class="acrdn__btn" data-accordion="header">Можно проверить товар при получении?</div>
+                            <div class="acrdn__drop" data-accordion="dropdown">
+                                <div class="text">
+                                    <p>Да, осмотр и базовая проверка включены.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="acrdn" data-accordion="item">
+                            <div class="acrdn__btn" data-accordion="header">Доставка с полной сборкой?</div>
+                            <div class="acrdn__drop" data-accordion="dropdown">
+                                <div class="text">
+                                    <p>По Москве — возможно. В регионы — частично собранный/в фирменной упаковке; при необходимости дадим видео-инструкции и рекомендации по сборке.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <h2 class="h2 scrollwatch" id="block5">Самовывоз и шоурумы</h2>
+                        <div class="acrdn" data-accordion="item">
+                            <div class="acrdn__btn" data-accordion="header">Где находятся магазины?</div>
+                            <div class="acrdn__drop" data-accordion="dropdown">
+                                <div class="text">
+                                    <p>Москва, Краснодар ,Самара, Нижний Новгород, Екатеринбург, Челябинск, Новосибирск, Пермь.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="acrdn" data-accordion="item">
+                            <div class="acrdn__btn" data-accordion="header">График работы?</div>
+                            <div class="acrdn__drop" data-accordion="dropdown">
+                                <div class="text">
+                                    <p>Актуальный — на странице контактов; консультации и поддержка ежедневно 10:00–20:00.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="acrdn" data-accordion="item">
+                            <div class="acrdn__btn" data-accordion="header">Можно забронировать и забрать самовывозом?</div>
+                            <div class="acrdn__drop" data-accordion="dropdown">
+                                <div class="text">
+                                    <p>Да. Оформите резерв через менеджера, согласуем точку и время.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="acrdn" data-accordion="item">
+                            <div class="acrdn__btn" data-accordion="header">Доступен тест-драйв?</div>
+                            <div class="acrdn__drop" data-accordion="dropdown">
+                                <div class="text">
+                                    <p>На части моделей — да, по наличию в конкретном шоуруме.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <h2 class="h2 scrollwatch" id="block6">Гарантия</h2>
+                        <div class="acrdn" data-accordion="item">
+                            <div class="acrdn__btn" data-accordion="header">Какие гарантийные сроки?</div>
+                            <div class="acrdn__drop" data-accordion="dropdown">
+                                <div class="text">
+                                    <p>12 месяцев на изделие , 6 месяцев на электронику,3 месяца на АКБ.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="acrdn" data-accordion="item">
+                            <div class="acrdn__btn" data-accordion="header">Что покрывает гарантия?</div>
+                            <div class="acrdn__drop" data-accordion="dropdown">
+                                <div class="text">
+                                    <p>Заводские дефекты комплектующих/сборки при штатной эксплуатации.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="acrdn" data-accordion="item">
+                            <div class="acrdn__btn" data-accordion="header">Что не является гарантийным случаем?</div>
+                            <div class="acrdn__drop" data-accordion="dropdown">
+                                <div class="text">
+                                    <p>Механические повреждения, следы воды/грязи внутри, нарушения правил эксплуатации/зарядки, естественный износ расходников.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="acrdn" data-accordion="item">
+                            <div class="acrdn__btn" data-accordion="header">Как оформить гарантийное обращение?</div>
+                            <div class="acrdn__drop" data-accordion="dropdown">
+                                <div class="text">
+                                    <p>Сообщите номер заказа, опишите проблему, приложите фото/видео. Организуем диагностику в сервисе и согласуем дальнейшие шаги.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <h2 class="h2 scrollwatch" id="block7">Возврат и обмен</h2>
+                        <div class="acrdn" data-accordion="item">
+                            <div class="acrdn__btn" data-accordion="header">Можно вернуть или обменять товар?</div>
+                            <div class="acrdn__drop" data-accordion="dropdown">
+                                <div class="text">
+                                    <p>Да, в рамках законодательства РФ и условий магазина. Для техники ненадлежащего качества — возврат/обмен после диагностики.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="acrdn" data-accordion="item">
+                            <div class="acrdn__btn" data-accordion="header">Сроки рассмотрения?</div>
+                            <div class="acrdn__drop" data-accordion="dropdown">
+                                <div class="text">
+                                    <p>Зависит от диагностики и комплектации; обычно 3–10 рабочих дней.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="acrdn" data-accordion="item">
+                            <div class="acrdn__btn" data-accordion="header">Как вернуть деньги?</div>
+                            <div class="acrdn__drop" data-accordion="dropdown">
+                                <div class="text">
+                                    <p>Тем же способом, которым оплачивали (или по договорённости), после принятия решения и оформления акта.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <h2 class="h2 scrollwatch" id="block8">Сервис и ремонт</h2>
+                        <div class="acrdn" data-accordion="item">
+                            <div class="acrdn__btn" data-accordion="header">Где обслуживаете технику?</div>
+                            <div class="acrdn__drop" data-accordion="dropdown">
+                                <div class="text">
+                                    <p>В собственном сервисном центре; также консультируем удалённо.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="acrdn" data-accordion="item">
+                            <div class="acrdn__btn" data-accordion="header">Сколько стоит ремонт и сколько по времени?</div>
+                            <div class="acrdn__drop" data-accordion="dropdown">
+                                <div class="text">
+                                    <p>После диагностики согласуем смету и срок. Большинство типовых работ выполняем быстро, запчасти держим на складе.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="acrdn" data-accordion="item">
+                            <div class="acrdn__btn" data-accordion="header">Делаете профилактику/ТО?</div>
+                            <div class="acrdn__drop" data-accordion="dropdown">
+                                <div class="text">
+                                    <p>Да: регулировки, смазки, диагностика батареи/контроллера, обновления.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <h2 class="h2 scrollwatch" id="block9">Аккумуляторы и зарядка</h2>
+                        <div class="acrdn" data-accordion="item">
+                            <div class="acrdn__btn" data-accordion="header">Сколько живёт АКБ?</div>
+                            <div class="acrdn__drop" data-accordion="dropdown">
+                                <div class="text">
+                                    <p>В среднем 500–1000 циклов при правильной эксплуатации; срок зависит от режимов езды и хранения.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="acrdn" data-accordion="item">
+                            <div class="acrdn__btn" data-accordion="header">Как правильно заряжать?</div>
+                            <div class="acrdn__drop" data-accordion="dropdown">
+                                <div class="text">
+                                    <p>Использовать штатное ЗУ, не разряжать «в ноль», не держать постоянно на 100%, не заряжать/не хранить при экстремальных температурах и ниже 0.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="acrdn" data-accordion="item">
+                            <div class="acrdn__btn" data-accordion="header">Как хранить зимой?</div>
+                            <div class="acrdn__drop" data-accordion="dropdown">
+                                <div class="text">
+                                    <p>При +5…+20 °C, заряд 40–60%, раз в 1–2 месяца доводить до 60–70%.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="acrdn" data-accordion="item">
+                            <div class="acrdn__btn" data-accordion="header">Утилизируете старые батареи?</div>
+                            <div class="acrdn__drop" data-accordion="dropdown">
+                                <div class="text">
+                                    <p>Помогаем с утилизацией через партнёров по согласованию.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <h2 class="h2 scrollwatch" id="block10">Правовые вопросы</h2>
+                        <div class="acrdn" data-accordion="item">
+                            <div class="acrdn__btn" data-accordion="header">Нужны ли права?</div>
+                            <div class="acrdn__drop" data-accordion="dropdown">
+                                <div class="text">
+                                    <p>Зависит от мощности/скорости и местного законодательства. Для маломощных моделей — как правило, не нужны; для более мощных — категория M/A1/A.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="acrdn" data-accordion="item">
+                            <div class="acrdn__btn" data-accordion="header">Нужна ли регистрация?</div>
+                            <div class="acrdn__drop" data-accordion="dropdown">
+                                <div class="text">
+                                    <p>Для части мощных моделей/скутеров — может потребоваться. Уточняем по модели и региону.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="acrdn" data-accordion="item">
+                            <div class="acrdn__btn" data-accordion="header">Где можно ездить?</div>
+                            <div class="acrdn__drop" data-accordion="dropdown">
+                                <div class="text">
+                                    <p>По ПДД и локальным правилам: велодорожки/проезжая часть/частные территории — зависит от класса ТС и региона.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <h2 class="h2 scrollwatch" id="block11">Безопасность и эксплуатация</h2>
+                        <div class="acrdn" data-accordion="item">
+                            <div class="acrdn__btn" data-accordion="header">Какая экипировка обязательна?</div>
+                            <div class="acrdn__drop" data-accordion="dropdown">
+                                <div class="text">
+                                    <p>Шлем — обязательно. Рекомендуем перчатки, налокотники/наколенники, куртку с защитой.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="acrdn" data-accordion="item">
+                            <div class="acrdn__btn" data-accordion="header">Можно ездить под дождём/зимой?</div>
+                            <div class="acrdn__drop" data-accordion="dropdown">
+                                <div class="text">
+                                    <p>Можно при аккуратной эксплуатации и защите электроники, сделанной гидроизоляцией в специализированном центре ; избегайте глубоких луж/реагентов, после поездки просушивайте.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="acrdn" data-accordion="item">
+                            <div class="acrdn__btn" data-accordion="header">Какой вес пользователя допускается?</div>
+                            <div class="acrdn__drop" data-accordion="dropdown">
+                                <div class="text">
+                                    <p>Смотрите паспорт модели; обычно 100–150 кг для взрослых, меньше — для детских.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <h2 class="h2 scrollwatch" id="block12">Скидки, акции и лояльность</h2>
+                        <div class="acrdn" data-accordion="item">
+                            <div class="acrdn__btn" data-accordion="header">Бывают ли скидки/акции?</div>
+                            <div class="acrdn__drop" data-accordion="dropdown">
+                                <div class="text">
+                                    <p>Да. Отдельные позиции, витринные образцы, сезонные предложения — следите за анонсами.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="acrdn" data-accordion="item">
+                            <div class="acrdn__btn" data-accordion="header">Есть трейд-ин?</div>
+                            <div class="acrdn__drop" data-accordion="dropdown">
+                                <div class="text">
+                                    <p>Нет</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="acrdn" data-accordion="item">
+                            <div class="acrdn__btn" data-accordion="header">Промокоды и накопительные программы?</div>
+                            <div class="acrdn__drop" data-accordion="dropdown">
+                                <div class="text">
+                                    <p>Периодически — да. Подписывайтесь на рассылку и соцсети.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <h2 class="h2 scrollwatch" id="block13">B2B / корпоративным клиентам</h2>
+                        <div class="acrdn" data-accordion="item">
+                            <div class="acrdn__btn" data-accordion="header">Работаете с юрлицами?</div>
+                            <div class="acrdn__drop" data-accordion="dropdown">
+                                <div class="text">
+                                    <p>Да. Счёт, договор, закрывающие документы — предоставляем.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="acrdn" data-accordion="item">
+                            <div class="acrdn__btn" data-accordion="header">Оптовые закупки и цены?</div>
+                            <div class="acrdn__drop" data-accordion="dropdown">
+                                <div class="text">
+                                    <p>Оптовые прайсы, спецусловия на объём и фрейм-контракты. Возможна фиксация цены на партию/период.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="acrdn" data-accordion="item">
+                            <div class="acrdn__btn" data-accordion="header">Лизинг/рассрочка для компаний?</div>
+                            <div class="acrdn__drop" data-accordion="dropdown">
+                                <div class="text">
+                                    <p>Да, через партнёров. Условия — по заявке.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="acrdn" data-accordion="item">
+                            <div class="acrdn__btn" data-accordion="header">Сервис и отчётность по парку?</div>
+                            <div class="acrdn__drop" data-accordion="dropdown">
+                                <div class="text">
+                                    <p>Ведём учёт по серийникам, делаем ТО, поставляем запчасти, готовим отчёты.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <h2 class="h2 scrollwatch" id="block14">Документы и отчётность</h2>
+                        <div class="acrdn" data-accordion="item">
+                            <div class="acrdn__btn" data-accordion="header">Что получу вместе с покупкой?</div>
+                            <div class="acrdn__drop" data-accordion="dropdown">
+                                <div class="text">
+                                    <p>Кассовый чек/счёт-фактуру (для юрлица), гарантийный талон, инструкцию, при необходимости — акт.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="acrdn" data-accordion="item">
+                            <div class="acrdn__btn" data-accordion="header">Где найти договор оферты/политику?</div>
+                            <div class="acrdn__drop" data-accordion="dropdown">
+                                <div class="text">
+                                    <p>На сайте в разделе «Документы»/«Публичная оферта»/«Политика конфиденциальности».</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="acrdn" data-accordion="item">
+                            <div class="acrdn__btn" data-accordion="header">Как получить копию чека/акта повторно?</div>
+                            <div class="acrdn__drop" data-accordion="dropdown">
+                                <div class="text">
+                                    <p>Напишите в поддержку, и направьте обращение в письменной форме — пришлём дубликаты на почту.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <h2 class="h2 scrollwatch" id="block15">Персональный кабинет и заказы</h2>
+                        <div class="acrdn" data-accordion="item">
+                            <div class="acrdn__btn" data-accordion="header">Зачем регистрироваться?</div>
+                            <div class="acrdn__drop" data-accordion="dropdown">
+                                <div class="text">
+                                    <p>Для отслеживания статуса, истории покупок, быстрого повторного заказа и персональных предложений.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="acrdn" data-accordion="item">
+                            <div class="acrdn__btn" data-accordion="header">Где смотреть статус заказа?</div>
+                            <div class="acrdn__drop" data-accordion="dropdown">
+                                <div class="text">
+                                    <p>В личном кабинете и по ссылке-трекеру из письма/мессенджера.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="acrdn" data-accordion="item">
+                            <div class="acrdn__btn" data-accordion="header">Можно менять адрес/телефон после оформления?</div>
+                            <div class="acrdn__drop" data-accordion="dropdown">
+                                <div class="text">
+                                    <p>Да, до передачи в доставку — через поддержку.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <h2 class="h2 scrollwatch" id="block16">Конфиденциальность и данные</h2>
+                        <div class="acrdn" data-accordion="item">
+                            <div class="acrdn__btn" data-accordion="header">Как вы защищаете мои данные?</div>
+                            <div class="acrdn__drop" data-accordion="dropdown">
+                                <div class="text">
+                                    <p>Используем защищённые соединения и сертифицированных платёжных провайдеров; доступ ограничен регламентами.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="acrdn" data-accordion="item">
+                            <div class="acrdn__btn" data-accordion="header">Храните данные карты?</div>
+                            <div class="acrdn__drop" data-accordion="dropdown">
+                                <div class="text">
+                                    <p>Нет, платёж обрабатывает провайдер; мы не видим и не храним реквизиты карты.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <h2 class="h2 scrollwatch" id="block17">Контакты и поддержка</h2>
+                        <div class="acrdn" data-accordion="item">
+                            <div class="acrdn__btn" data-accordion="header">Как связаться?</div>
+                            <div class="acrdn__drop" data-accordion="dropdown">
+                                <div class="text">
+                                    <p>Телефон, мессенджеры, онлайн-чат на сайте, e-mail — выберите удобный канал.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="acrdn" data-accordion="item">
+                            <div class="acrdn__btn" data-accordion="header">Когда отвечает поддержка?</div>
+                            <div class="acrdn__drop" data-accordion="dropdown">
+                                <div class="text">
+                                    <p>Ежедневно с 10:00 до 20:00 (по местному времени).</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="acrdn" data-accordion="item">
+                            <div class="acrdn__btn" data-accordion="header">Как ускорить решение?</div>
+                            <div class="acrdn__drop" data-accordion="dropdown">
+                                <div class="text">
+                                    <p>Укажите номер заказа, фото/видео проблемы, контакт для связи — это сократит время обработки.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
                 </div>
             </div>
         </main>
