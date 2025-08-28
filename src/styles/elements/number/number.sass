@@ -1,0 +1,47 @@
+.number
+  display: grid
+  gap: 2rem
+  justify-items: stretch
+  text-align: center
+  padding: 2.5rem 4rem
+  background: rgba(0, 0, 0, 0.15)
+  backdrop-filter: blur(7.5px)
+  border-radius: var(--border-radius3)
+  align-content: start
+  max-width: 30rem
+  &__label
+    font-size: 2.6rem
+    font-weight: 300
+    padding-bottom: 15px
+    border-bottom: 1px solid rgba(255, 255, 255, 0.8)
+    span
+      font-size: 5rem
+      font-weight: 500
+
+.numbers
+  color: white
+  position: relative
+  z-index: 1
+  padding-top: 8rem
+  padding-bottom: 8rem
+  &__inner
+    display: grid
+    gap: 5rem
+  &__bg
+    +full()
+    z-index: -1
+    pointer-events: none
+    &:after
+      +full()
+      content: ""
+      background: linear-gradient(128.26deg, rgba(55, 86, 166, 0) -12.7%, rgba(21, 33, 64, 0.7) 62.65%, #152140 119.17%)
+      z-index: 2
+    img
+      object-fit: cover
+      width: 100%
+      height: 100%
+  &__list
+    +grid(20rem, 1fr, 2rem, 2rem)
+    justify-content: space-between
+
+@import "media"

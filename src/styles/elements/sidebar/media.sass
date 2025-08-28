@@ -1,6 +1,45 @@
 +mobile()
   .sidebar
     margin-top: 0
-    position: static
-    padding: 2rem
+    padding: 0
     gap: 10px
+    top: calc(var(--header-height) + 15px)
+    .select
+      &:after
+        width: 100vw
+        height: 100vh
+        display: block
+        position: absolute
+        top: -15px
+        left: -15px
+        background: rgba(0, 0, 0, 0.6)
+        content: ""
+        z-index: -1
+        opacity: 0
+        transition: all 0.5s
+        pointer-events: none
+      &._active
+        &:after
+          opacity: 1
+      &__main
+        display: flex
+        box-shadow: 0 4px 10px 0 rgba(0,0,0,.15)
+      &__options
+        max-height: 70vh
+        border-radius: var(--border-radius)
+        box-shadow: 0 4px 10px 0 rgba(0,0,0,.15)
+        margin-top: 5px
+
++custom-adaptive(min, 768px)
+  .sidebar
+    .select
+      &__option
+        padding: 0
+      &__options
+        display: grid
+        position: static
+        max-height: initial
+        height: auto
+        box-shadow: none
+        padding: 0
+        gap: 15px

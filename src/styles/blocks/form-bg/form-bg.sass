@@ -1,0 +1,38 @@
+.form-bg
+  padding: 5rem
+  border-radius: var(--border-radius3)
+  background: linear-gradient(98.69deg, rgba(55, 86, 166, 0.6) 0%, rgba(21, 33, 64, 0.6) 100%), rgba(0, 0, 0, 0.8)
+  backdrop-filter: blur(10px)
+  color: white
+  display: grid
+  gap: 3rem
+  width: 100%
+  max-width: 55rem
+  p
+    margin: 0
+  &__consent
+    font-size: 12px
+    font-weight: 300
+    color: rgba(255, 255, 255, 0.8)
+    line-height: 1.4
+    a
+      color: white
+      text-decoration: underline
+      text-decoration-skip-ink: none
+  &__btns
+    +flex(row nowrap, flex-start, center)
+    gap: 3rem
+  &__inputs
+    display: grid
+    gap: 2rem
+  &__row
+    display: grid
+    grid-template-columns: 1fr 1fr
+    gap: 2rem
+  &__header
+    display: grid
+    gap: 15px
+    p
+      opacity: 0.8
+
+@import "media"

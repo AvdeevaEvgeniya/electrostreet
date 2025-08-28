@@ -1,0 +1,56 @@
++notebook()
+  .v-tabs
+    img
+      display: none
+    &__content
+      grid-template-columns: initial
+
++tablet()
+  .v-tabs
+    grid-template-columns: 25rem 2fr
+    &__list
+      padding: 10px 2.5rem
+    &__content
+      padding: 3rem 3rem 3rem 6rem
+
++mobile()
+  .v-tabs
+    grid-template-columns: initial
+    .text-block
+      display: none
+    &__header
+      +flex(row nowrap, space-between, center)
+      gap: 2rem
+      cursor: pointer
+      pointer-events: auto
+      &:after
+        content: "\e908"
+        font-family: "icomoon"
+        font-size: 12px
+        transform: rotate(90deg)
+        transition: all 0.5s
+    &__list
+      display: none
+    &__contents
+      gap: 10px
+    &__content
+      display: grid
+      background: white
+      box-shadow: none
+      margin: 0
+      border-radius: var(--border-radius3)
+      padding: 2rem 3rem
+      &._active
+        .text-block
+          display: grid
+        .v-tabs
+          &__header
+            &:after
+              transform: rotate(-90deg)
+
++small-mobile()
+  .v-tabs
+    .text-block
+      font-size: 16px
+    &__content
+      padding: 2rem

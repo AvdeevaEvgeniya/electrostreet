@@ -1,24 +1,51 @@
 .inner.faq
     aside.sidebar
-        a.anchorlink(href="#block1") Покупка и оформление заказа
-        a.anchorlink(href="#block2") Наличие и ассортимент
-        a.anchorlink(href="#block3") Оплата
-        a.anchorlink(href="#block4") Доставка
-        a.anchorlink(href="#block5") Самовывоз и шоурумы
-        a.anchorlink(href="#block6") Гарантия
-        a.anchorlink(href="#block7") Возврат и обмен
-        a.anchorlink(href="#block8") Сервис и ремонт
-        a.anchorlink(href="#block9") Аккумуляторы и зарядка
-        a.anchorlink(href="#block10") Правовые вопросы
-        a.anchorlink(href="#block11") Безопасность и эксплуатация
-        a.anchorlink(href="#block12") Скидки, акции и лояльность
-        a.anchorlink(href="#block13") B2B / корпоративным клиентам
-        a.anchorlink(href="#block14") Документы и отчётность
-        a.anchorlink(href="#block15") Персональный кабинет и заказы
-        a.anchorlink(href="#block16") Конфиденциальность и данные
-        a.anchorlink(href="#block17") Контакты и поддержка
+        .select
+            .select__main
+                .h2 Оглавление
+                .select__value
+                input.select__input(type="checkbox")
+            .select__options
+                a.anchorlink.select__option(href="#block1") Покупка и оформление заказа
+                a.anchorlink.select__option(href="#block2") Наличие и ассортимент
+                a.anchorlink.select__option(href="#block3") Оплата
+                a.anchorlink.select__option(href="#block4") Доставка
+                a.anchorlink.select__option(href="#block5") Самовывоз и шоурумы
+                a.anchorlink.select__option(href="#block6") Гарантия
+                a.anchorlink.select__option(href="#block7") Возврат и обмен
+                a.anchorlink.select__option(href="#block8") Сервис и ремонт
+                a.anchorlink.select__option(href="#block9") Аккумуляторы и зарядка
+                a.anchorlink.select__option(href="#block10") Правовые вопросы
+                a.anchorlink.select__option(href="#block11") Безопасность и эксплуатация
+                a.anchorlink.select__option(href="#block12") Скидки, акции и лояльность
+                a.anchorlink.select__option(href="#block13") B2B / корпоративным клиентам
+                a.anchorlink.select__option(href="#block14") Документы и отчётность
+                a.anchorlink.select__option(href="#block15") Персональный кабинет и заказы
+                a.anchorlink.select__option(href="#block16") Конфиденциальность и данные
+                a.anchorlink.select__option(href="#block17") Контакты и поддержка
+        //.sidebar__mob-menu
+        //    .h2 Оглавление
+        //    i.icon.icon-arrow
+        //a.anchorlink(href="#block1") Покупка и оформление заказа
+        //a.anchorlink(href="#block2") Наличие и ассортимент
+        //a.anchorlink(href="#block3") Оплата
+        //a.anchorlink(href="#block4") Доставка
+        //a.anchorlink(href="#block5") Самовывоз и шоурумы
+        //a.anchorlink(href="#block6") Гарантия
+        //a.anchorlink(href="#block7") Возврат и обмен
+        //a.anchorlink(href="#block8") Сервис и ремонт
+        //a.anchorlink(href="#block9") Аккумуляторы и зарядка
+        //a.anchorlink(href="#block10") Правовые вопросы
+        //a.anchorlink(href="#block11") Безопасность и эксплуатация
+        //a.anchorlink(href="#block12") Скидки, акции и лояльность
+        //a.anchorlink(href="#block13") B2B / корпоративным клиентам
+        //a.anchorlink(href="#block14") Документы и отчётность
+        //a.anchorlink(href="#block15") Персональный кабинет и заказы
+        //a.anchorlink(href="#block16") Конфиденциальность и данные
+        //a.anchorlink(href="#block17") Контакты и поддержка
     article.faq__list
-        h2.h2.scrollwatch#block1 Покупка и оформление заказа
+        h2.h2 Покупка и оформление заказа
+            .scrollwatch#block1
         .acrdn(data-accordion='item')
             .acrdn__btn(data-accordion='header') Как оформить заказ на сайте?
             .acrdn__drop(data-accordion='dropdown')
@@ -39,7 +66,8 @@
             .acrdn__drop(data-accordion='dropdown')
                 .text
                     p Да. Эксперты  подберут по росту/весу, маршруту, запасу хода и бюджету, предложат 2–3 оптимальных варианта.
-        h2.h2.scrollwatch#block2 Наличие и ассортимент
+        h2.h2 Наличие и ассортимент
+            .scrollwatch#block2
         .acrdn(data-accordion='item')
             .acrdn__btn(data-accordion='header') Что означает «в наличии», «на складе», «под заказ»?
             .acrdn__drop(data-accordion='dropdown')
@@ -60,7 +88,8 @@
             .acrdn__drop(data-accordion='dropdown')
                 .text
                     p Да, ассортимент регулярно пополняется, мы одни из самых первых получаем новые модели, по хорошим ценам!
-        h2.h2.scrollwatch#block3 Оплата
+        h2.h2 Оплата
+            .scrollwatch#block3
         .acrdn(data-accordion='item')
             .acrdn__btn(data-accordion='header') Какие способы оплаты доступны?
             .acrdn__drop(data-accordion='dropdown')
@@ -81,7 +110,8 @@
             .acrdn__drop(data-accordion='dropdown')
                 .text
                     p Да, по согласованию с менеджером и типом доставки.
-        h2.h2.scrollwatch#block4 Доставка
+        h2.h2 Доставка
+            .scrollwatch#block4
         .acrdn(data-accordion='item')
             .acrdn__btn(data-accordion='header') Куда доставляете?
             .acrdn__drop(data-accordion='dropdown')
@@ -102,7 +132,8 @@
             .acrdn__drop(data-accordion='dropdown')
                 .text
                     p По Москве — возможно. В регионы — частично собранный/в фирменной упаковке; при необходимости дадим видео-инструкции и рекомендации  по сборке.
-        h2.h2.scrollwatch#block5 Самовывоз и шоурумы
+        h2.h2 Самовывоз и шоурумы
+            .scrollwatch#block5
         .acrdn(data-accordion='item')
             .acrdn__btn(data-accordion='header') Где находятся магазины?
             .acrdn__drop(data-accordion='dropdown')
@@ -123,7 +154,8 @@
             .acrdn__drop(data-accordion='dropdown')
                 .text
                     p На части моделей — да, по наличию в конкретном шоуруме.
-        h2.h2.scrollwatch#block6 Гарантия
+        h2.h2 Гарантия
+            .scrollwatch#block6
         .acrdn(data-accordion='item')
             .acrdn__btn(data-accordion='header') Какие гарантийные сроки?
             .acrdn__drop(data-accordion='dropdown')
@@ -144,7 +176,8 @@
             .acrdn__drop(data-accordion='dropdown')
                 .text
                     p Сообщите номер заказа, опишите проблему, приложите фото/видео. Организуем диагностику в сервисе и согласуем дальнейшие шаги.
-        h2.h2.scrollwatch#block7 Возврат и обмен
+        h2.h2 Возврат и обмен
+            .scrollwatch#block7
         .acrdn(data-accordion='item')
             .acrdn__btn(data-accordion='header') Можно вернуть или обменять товар?
             .acrdn__drop(data-accordion='dropdown')
@@ -160,7 +193,8 @@
             .acrdn__drop(data-accordion='dropdown')
                 .text
                     p Тем же способом, которым оплачивали (или по договорённости), после принятия решения и оформления акта.
-        h2.h2.scrollwatch#block8 Сервис и ремонт
+        h2.h2 Сервис и ремонт
+            .scrollwatch#block8
         .acrdn(data-accordion='item')
             .acrdn__btn(data-accordion='header') Где обслуживаете технику?
             .acrdn__drop(data-accordion='dropdown')
@@ -176,7 +210,8 @@
             .acrdn__drop(data-accordion='dropdown')
                 .text
                     p Да: регулировки, смазки, диагностика батареи/контроллера, обновления.
-        h2.h2.scrollwatch#block9 Аккумуляторы и зарядка
+        h2.h2 Аккумуляторы и зарядка
+            .scrollwatch#block9
         .acrdn(data-accordion='item')
             .acrdn__btn(data-accordion='header') Сколько живёт АКБ?
             .acrdn__drop(data-accordion='dropdown')
@@ -197,7 +232,8 @@
             .acrdn__drop(data-accordion='dropdown')
                 .text
                     p Помогаем с утилизацией через партнёров по согласованию.
-        h2.h2.scrollwatch#block10 Правовые вопросы
+        h2.h2 Правовые вопросы
+            .scrollwatch#block10
         .acrdn(data-accordion='item')
             .acrdn__btn(data-accordion='header') Нужны ли права?
             .acrdn__drop(data-accordion='dropdown')
@@ -213,7 +249,8 @@
             .acrdn__drop(data-accordion='dropdown')
                 .text
                     p По ПДД и локальным правилам: велодорожки/проезжая часть/частные территории — зависит от класса ТС и региона.
-        h2.h2.scrollwatch#block11 Безопасность и эксплуатация
+        h2.h2 Безопасность и эксплуатация
+            .scrollwatch#block11
         .acrdn(data-accordion='item')
             .acrdn__btn(data-accordion='header') Какая экипировка обязательна?
             .acrdn__drop(data-accordion='dropdown')
@@ -229,7 +266,8 @@
             .acrdn__drop(data-accordion='dropdown')
                 .text
                     p Смотрите паспорт модели; обычно 100–150 кг для взрослых, меньше — для детских.
-        h2.h2.scrollwatch#block12 Скидки, акции и лояльность
+        h2.h2 Скидки, акции и лояльность
+            .scrollwatch#block12
         .acrdn(data-accordion='item')
             .acrdn__btn(data-accordion='header') Бывают ли скидки/акции?
             .acrdn__drop(data-accordion='dropdown')
@@ -245,7 +283,8 @@
             .acrdn__drop(data-accordion='dropdown')
                 .text
                     p Периодически — да. Подписывайтесь на рассылку и соцсети.
-        h2.h2.scrollwatch#block13 B2B / корпоративным клиентам
+        h2.h2 B2B / корпоративным клиентам
+            .scrollwatch#block13
         .acrdn(data-accordion='item')
             .acrdn__btn(data-accordion='header') Работаете с юрлицами?
             .acrdn__drop(data-accordion='dropdown')
@@ -266,7 +305,8 @@
             .acrdn__drop(data-accordion='dropdown')
                 .text
                     p Ведём учёт по серийникам, делаем ТО, поставляем запчасти, готовим отчёты.
-        h2.h2.scrollwatch#block14 Документы и отчётность
+        h2.h2 Документы и отчётность
+            .scrollwatch#block14
         .acrdn(data-accordion='item')
             .acrdn__btn(data-accordion='header') Что получу вместе с покупкой?
             .acrdn__drop(data-accordion='dropdown')
@@ -282,7 +322,8 @@
             .acrdn__drop(data-accordion='dropdown')
                 .text
                     p Напишите в поддержку, и направьте обращение в письменной форме — пришлём дубликаты на почту.
-        h2.h2.scrollwatch#block15 Персональный кабинет и заказы
+        h2.h2 Персональный кабинет и заказы
+            .scrollwatch#block15
         .acrdn(data-accordion='item')
             .acrdn__btn(data-accordion='header') Зачем регистрироваться?
             .acrdn__drop(data-accordion='dropdown')
@@ -298,7 +339,8 @@
             .acrdn__drop(data-accordion='dropdown')
                 .text
                     p Да, до передачи в доставку — через поддержку.
-        h2.h2.scrollwatch#block16 Конфиденциальность и данные
+        h2.h2 Конфиденциальность и данные
+            .scrollwatch#block16
         .acrdn(data-accordion='item')
             .acrdn__btn(data-accordion='header') Как вы защищаете мои данные?
             .acrdn__drop(data-accordion='dropdown')
@@ -309,7 +351,8 @@
             .acrdn__drop(data-accordion='dropdown')
                 .text
                     p Нет, платёж обрабатывает провайдер; мы не видим и не храним реквизиты карты.
-        h2.h2.scrollwatch#block17 Контакты и поддержка
+        h2.h2 Контакты и поддержка
+            .scrollwatch#block17
         .acrdn(data-accordion='item')
             .acrdn__btn(data-accordion='header') Как связаться?
             .acrdn__drop(data-accordion='dropdown')

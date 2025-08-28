@@ -1,0 +1,23 @@
++custom-adaptive(max, 2000px)
+  .form-banner
+    &__bg
+      &:after,
+      &:before
+        content: none
+
++tablet()
+  .form-banner
+    padding: 0
+    display: grid
+    background: none
+    .form-bg
+      margin-left: 0
+      max-width: 100%
+      border-radius: 0
+    &__bg
+      position: static
+      height: auto
+      order: 1
+    &__inner
+      padding: 0
+      background: #222a3f

@@ -1,0 +1,16 @@
+extends ../layout/layout
+block title
+    | index
+block head
+    script(src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" defer="")
+block content
+    .business-page.bg
+        include _header
+        .grid.gap-60
+            include _advants
+            include _numbers
+            include _steps
+            include _services
+            include _callback
+block end
+

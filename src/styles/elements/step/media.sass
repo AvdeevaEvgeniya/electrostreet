@@ -1,0 +1,49 @@
++notebook()
+  .step
+    padding: 2rem
+    gap: 10px 2rem
+    grid-template-columns: 6rem 1fr
+    &:after
+      top: 7rem
+    &:nth-child(2)
+      &:after
+        width: 8rem
+    &:nth-child(3)
+      &:after
+        width: 9rem
+    &:nth-child(5)
+      &:after
+        width: 6rem
+    &__main
+      padding: 0
+    &__num
+      font-size: 12rem
+
++tablet()
+  .step
+    &:after
+      left: -2rem
+    &:nth-child(3)
+      &:after
+        width: 8rem
+    &:nth-child(5)
+      &:after
+        width: 5rem
+    &:nth-child(2)
+      &:after
+        content: none
+  .steps
+    grid-template-columns: 1fr 1fr
+    gap: 2rem
+    &__img
+      order: 1
+
++mobile()
+  .step
+    &:after
+      content: none
+
+  .steps
+    grid-template-columns: initial
+    &__img
+      display: none

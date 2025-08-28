@@ -1,9 +1,11 @@
 .page-nav
-  +flex(row wrap, flex-end, center)
+  +flex(row nowrap, flex-end, center)
   gap: 5px
   width: fit-content
+  white-space: nowrap
+  max-width: 100%
   &__item
-    +flex(row wrap, flex-start, center)
+    +flex(row nowrap, flex-start, center)
     gap: 5px
     color: var(--color1)
     &:last-child
@@ -14,3 +16,5 @@
     &:after
       content: "/"
       color: var(--color12)
+
+@import "media"

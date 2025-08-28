@@ -7,5 +7,20 @@
   position: sticky
   top: calc(var(--header-height) + 4rem)
   margin-top: 4rem
+  z-index: 5
+  .select
+    &__main
+      display: none
+      border: none
+      height: auto
+      padding: 2rem
+      &:after
+        font-size: 12px
+        right: 2rem
+    &__value
+      display: none
+    &__option
+      &._choosed
+        background: none
 
 @import "media"

@@ -1,0 +1,83 @@
+.step
+  padding: 3rem
+  background: white
+  border-radius: var(--border-radius3)
+  display: grid
+  grid-template-columns: 8rem 1fr
+  align-items: start
+  gap: 10px 3rem
+  position: relative
+  &._contacts
+    background: linear-gradient(98.69deg, #3756A6 0%, #152140 100%)
+    grid-template-columns: initial
+    align-content: space-between
+  &__social
+    +flex(row nowrap, space-between, center)
+    a
+      +flex(row nowrap, center, center)
+      width: 4.5rem
+      height: 4.5rem
+      &:hover
+        i.icon
+          transform: scale(1.2)
+    i.icon
+      font-size: 3rem
+      color: white
+      transition: all 0.5s
+  &:nth-child(2)
+    &:after
+      width: 10rem
+  &:nth-child(3)
+    &:after
+      width: 11rem
+  &:nth-child(4)
+    &:after
+      content: none
+  &:nth-child(5)
+    &:after
+      width: 8rem
+  &:after
+    content: ""
+    width: 3rem
+    left: -3rem
+    border-bottom: 1px dashed #3756A6
+    height: 1px
+    position: absolute
+    top: 9rem
+  &__num
+    +font(14rem, 300, var(--color1))
+    justify-self: center
+    line-height: 0.8
+    text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25)
+  &__main
+    padding-top: 15px
+    display: grid
+    gap: 15px
+    p
+      margin: 0
+
+.steps
+  display: grid
+  grid-template-columns: repeat(3, 1fr)
+  gap: 3rem
+  &__img
+    position: relative
+    display: grid
+    align-items: stretch
+    &:after
+      content: ""
+      width: 18rem
+      height: 7rem
+      display: block
+      background: url("../img/steps-logo..svg") no-repeat
+      background-size: contain
+      position: absolute
+      left: 15px
+      bottom: 15px
+      z-index: 1
+    img
+      width: 100%
+      object-fit: cover
+      border-radius: var(--border-radius3)
+
+@import "media"

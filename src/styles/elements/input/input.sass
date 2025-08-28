@@ -1,11 +1,24 @@
 .input-alt
-  background: rgba(255, 255, 255, 0.7)
-  border: 1px solid white
-  border-radius: 6px
-  height: 4.5rem
-  padding: 0 2rem
+  border-bottom: 1px solid
+  height: 4rem
+  width: 100%
+  color: inherit
+  opacity: 0.8
+  transition: all 0.5s
+  &:not(:placeholder-shown),
+  &:focus
+    opacity: 1
+
+.input-alt::-webkit-input-placeholder
+  +font(inherit, inherit, inherit)
+.input-alt:-moz-placeholder
+  +font(inherit, inherit, inherit)
+.input-alt::-moz-placeholder
+  +font(inherit, inherit, inherit)
+.input-alt:-ms-input-placeholder
+  +font(inherit, inherit, inherit)
 
 textarea.input-alt
-  min-height: 10rem
-  padding-top: 15px
+  min-height: 13.5rem
+  padding-top: 10px
   resize: none

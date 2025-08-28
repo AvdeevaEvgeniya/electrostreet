@@ -1,6 +1,8 @@
 .page-header
-  +flex(row nowrap, space-between, center)
-  gap: 10px 2rem
+  +flex(row nowrap, space-between, flex-start)
+  gap: 15px 2rem
+  .page-nav
+    padding-top: 8px
   .swiper-button-prev,
   .swiper-button-next
     +flex(row nowrap, center, center)
@@ -20,6 +22,11 @@
       color: rgba(0, 0, 0, 0.5)
       font-weight: 300
       font-size: 16px
+  &__descr
+    font-size: 18px
+    line-height: 1.4
+    font-weight: 300
+    max-width: 70%
   &__links
     +flex(row nowrap, flex-start, center)
     gap: 10px

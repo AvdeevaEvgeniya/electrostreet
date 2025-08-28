@@ -1,6 +1,6 @@
 const visibleElements = new Map(),
 initScrollWatcher = function () {
-    if (! document.querySelector(".scrollwatch") || window.innerWidth <= 1200) {
+    if (! document.querySelector(".scrollwatch") || window.innerWidth <= 767) {
         return;
     }
     const observer = new IntersectionObserver((entries) => {

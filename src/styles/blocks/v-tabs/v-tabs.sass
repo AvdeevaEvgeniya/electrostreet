@@ -1,0 +1,59 @@
+.v-tabs
+  display: grid
+  grid-template-columns: 32% 2fr
+  .text-block
+    font-size: 18px
+    font-weight: 300
+    ul, ol
+      gap: 15px
+  img
+    align-self: stretch
+    width: 100%
+    object-fit: cover
+    border-radius: var(--border-radius3)
+  &__list
+    display: grid
+    background: white
+    border-radius: var(--border-radius3)
+    padding: 2rem 4rem
+    box-shadow: 10px 0 20px rgba(0, 0, 0, 0.05)
+    position: relative
+    z-index: 1
+    a
+      +flex(row nowrap, space-between, center)
+      gap: 2rem
+      padding: 15px 0
+      border-bottom: 1px solid #DFDFDF
+      transition: all 0.5s
+      &._active
+        color: var(--color1)
+        &:after
+          color: var(--color1)
+      &:after
+        content: "\e90d"
+        font-family: "icomoon"
+        color: rgba(156, 156, 156, 0.5)
+        transition: all 0.5s
+      &:last-child
+        border-bottom: none
+  &__contents
+    display: grid
+  &__content
+    display: none
+    background: rgba(255, 255, 255, 0.95)
+    border-radius: 0 var(--border-radius3) var(--border-radius3) 0
+    padding: 5rem 5rem 5rem 7rem
+    margin-left: -2rem
+    gap: 3rem
+    grid-template-columns: 1.1fr 1fr
+    box-shadow: inset 3rem 0 20px rgba(0,0,0,.05)
+    align-items: start
+    &._active
+      display: grid
+  &__main
+    display: grid
+    gap: 2rem
+  &__header
+    pointer-events: none
+
+@import "media"
