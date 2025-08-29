@@ -1,0 +1,19 @@
++desktop()
+  .cart
+    grid-template-columns: 1fr 1fr 1fr
+
++notebook()
+  .cart
+    grid-template-columns: 1fr 1fr
+    &__list._products
+      grid-column: span 2
+
++mobile()
+  .cart
+    grid-template-columns: initial
+    &__list._products
+      grid-column: initial
+    &__title
+      display: block
+      margin-bottom: 2rem
+      margin-top: 4rem

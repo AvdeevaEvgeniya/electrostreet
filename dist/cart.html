@@ -838,14 +838,169 @@
         </header>
         <main class="main">
             <div class="cart-page bg">
-                <div class="page-header inner pb-30 pt-30">
-                    <div class="page-header__title">
-                        <h1 class="h1">Корзина</h1>
+                <div class="inner">
+                    <div class="page-header pb-30 pt-30">
+                        <div class="page-header__title">
+                            <h1 class="h1">Корзина</h1>
+                        </div>
+                        <div class="page-nav">
+                            <div class="page-nav__item"><a href="">Главная</a></div>
+                            <div class="page-nav__item"><a href="">Оформление заказа</a></div>
+                        </div>
                     </div>
-                    <div class="page-nav">
-                        <div class="page-nav__item"><a href="">Главная</a></div>
-                        <div class="page-nav__item"><a href="">Оформление заказа</a></div>
-                    </div>
+                    <section class="cart pb-60">
+                        <div class="cart__list _products">
+                            <div class="cart__block">
+                                <div class="product-cart"><img src="img/product1.jpg" alt="">
+                                    <div class="product-cart__main">
+                                        <div class="product-cart__header">
+                                            <p>Электровелосипед Coswheel CT20s 48V 35AH</p><a class="product-cart__remove" href=""><i class="icon icon-trash"></i></a>
+                                        </div>
+                                        <div class="product-cart__price">
+                                            <div class="product-cart__count">
+                                                <div class="quantity">
+                                                    <div class="quantity__btn _minus">—</div>
+                                                    <input type="number" value="1">
+                                                    <div class="quantity__btn _plus">+</div>
+                                                </div><small>199 000 ₽/шт.</small>
+                                            </div>
+                                            <div class="price _right">
+                                                <s>305 000 ₽</s><span>1 389 000 ₽</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="product-services">
+                                    <label class="checkbox _gray _start">
+                                        <input class="checkbox__input" type="checkbox"><span class="checkbox__mask"></span><span class="checkbox__label">Предпродажная подготовка</span><span class="checkbox__price">6 000 ₽</span>
+                                    </label>
+                                    <label class="checkbox _gray _start">
+                                        <input class="checkbox__input" type="checkbox"><span class="checkbox__mask"></span><span class="checkbox__label">Гидроизоляция</span><span class="checkbox__price">12 000 ₽</span>
+                                    </label>
+                                    <label class="checkbox _gray _start">
+                                        <input class="checkbox__input" type="checkbox"><span class="checkbox__mask"></span><span class="checkbox__label">Предпродажная подготовка + гидроизоляция</span><span class="checkbox__price">15 000 ₽</span>
+                                    </label>
+                                </div>
+                                <div class="total">
+                                    <div class="total__main">
+                                        <p>Стоимость комплекта:</p>
+                                        <div class="price">425 000 ₽</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="cart__block">
+                                <div class="product-cart"><img src="img/product1.jpg" alt="">
+                                    <div class="product-cart__main">
+                                        <div class="product-cart__header">
+                                            <p>Электровелосипед Coswheel CT20s 48V 35AH</p><a class="product-cart__remove" href=""><i class="icon icon-trash"></i></a>
+                                        </div>
+                                        <div class="product-cart__price">
+                                            <div class="product-cart__count">
+                                                <div class="quantity">
+                                                    <div class="quantity__btn _minus">—</div>
+                                                    <input type="number" value="1">
+                                                    <div class="quantity__btn _plus">+</div>
+                                                </div><small></small>
+                                            </div>
+                                            <div class="price">389 000 ₽</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="cart__title">
+                            <h1 class="h1">Оформление заказа</h1>
+                        </div>
+                        <div class="cart__list">
+                            <div class="cart__block">
+                                <div class="h2">Данные покупателя</div>
+                                <input class="input-alt _gray" type="text" placeholder="Имя">
+                                <div class="form-bg__row">
+                                    <input class="input-alt _gray" type="tel" placeholder="Телефон *">
+                                    <input class="input-alt _gray" type="email" placeholder="Email *">
+                                </div>
+                                <textarea class="input-alt _gray" placeholder="Сообщение"></textarea>
+                            </div>
+                            <div class="cart__block">
+                                <div class="h2">Доставка и оплата</div>
+                                <div class="select _clear _gray">
+                                    <div class="select__main">
+                                        <div class="select__value">
+                                            <div class="select__placeholder">Способ оплаты</div>
+                                        </div>
+                                        <input class="select__input" type="checkbox">
+                                    </div>
+                                    <div class="select__options">
+                                        <div class="select__option" data-value="payment1">Способ оплаты 1</div>
+                                        <div class="select__option" data-value="payment2">Способ оплаты 2</div>
+                                        <div class="select__option" data-value="payment3">Способ оплаты 3</div>
+                                    </div>
+                                </div>
+                                <div class="select _clear _gray">
+                                    <div class="select__main">
+                                        <div class="select__value">
+                                            <div class="select__placeholder">Способ доставки</div>
+                                        </div>
+                                        <input class="select__input" type="checkbox">
+                                    </div>
+                                    <div class="select__options">
+                                        <div class="select__option" data-value="delivery1">Способ доставки 1</div>
+                                        <div class="select__option" data-value="delivery2">Способ доставки 2</div>
+                                        <div class="select__option" data-value="delivery3">Способ доставки 3</div>
+                                    </div>
+                                </div>
+                                <input class="input-alt _gray" type="text" placeholder="Адрес">
+                            </div>
+                        </div>
+                        <div class="cart__total">
+                            <div class="cart__block">
+                                <div class="h2">Итого</div>
+                            </div>
+                            <div class="cart__block">
+                                <div class="price-rows">
+                                    <div class="price-row _main">
+                                        <div class="price-row__label">Электровелосипед Coswheel CT20s 48V 35AH</div>
+                                        <div class="price-row__value"><span>28 000 ₽</span><small>2 x 199 000 ₽</small></div>
+                                    </div>
+                                    <div class="price-row">
+                                        <div class="price-row__label">Предпродажная подготовка</div>
+                                        <div class="price-row__value">28 000 ₽</div>
+                                    </div>
+                                    <div class="price-row">
+                                        <div class="price-row__label">Гидроизоляция</div>
+                                        <div class="price-row__value">6 000 ₽</div>
+                                    </div>
+                                    <div class="price-row">
+                                        <div class="price-row__label">Предпродажная подготовка + гидроизоляция</div>
+                                        <div class="price-row__value">12 000 ₽</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="cart__block">
+                                <div class="price-rows">
+                                    <div class="price-row">
+                                        <div class="price-row__label">Доставка курьером</div>
+                                        <div class="price-row__value">2 500 ₽</div>
+                                    </div>
+                                    <div class="price-row">
+                                        <div class="price-row__label">Скидка</div>
+                                        <div class="price-row__value green">- 6 000 ₽</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="cart__block">
+                                <div class="total"><small>Оплата наличными</small>
+                                    <div class="total__main">
+                                        <p>Итого:</p>
+                                        <div class="price">1 256 000 ₽</div>
+                                    </div>
+                                </div><a class="btn _fill _big _full" href="">Оформить заказ</a>
+                                <label class="checkbox _start consent _gray">
+                                    <input class="checkbox__input" type="checkbox"><span class="checkbox__mask"></span><span class="checkbox__label">Lorem ipsum dolor sit amet, <a class="link-line" href="">consectetur adipisicing</a> elit. Cumque delectus esse et expedita illo inventore ipsam magnam nihil similique vero!</span>
+                                </label>
+                            </div>
+                        </div>
+                    </section>
                 </div>
             </div>
         </main>

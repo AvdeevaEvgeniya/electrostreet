@@ -1,0 +1,33 @@
+.product-cart
+  display: grid
+  grid-template-columns: 9rem 1fr
+  gap: 2rem
+  align-items: center
+  &__main
+    display: grid
+    gap: 10px
+    align-content: start
+  &__header
+    +flex(row nowrap, space-between, flex-start)
+    gap: 2rem
+  &__remove
+    color: var(--color3)
+  &__price
+    +flex(row nowrap, space-between, center)
+    gap: 2rem
+  &__count
+    +flex(row nowrap, flex-start, center)
+    gap: 5px 10px
+    small
+      font-size: 14px
+      color: rgba(0, 0, 0, 0.4)
+      white-space: nowrap
+
+.product-services
+  display: grid
+  gap: 10px
+  padding: 2rem 0
+  border-top: 1px solid #DFDFDF
+  border-bottom: 1px solid #DFDFDF
+
+@import "media"

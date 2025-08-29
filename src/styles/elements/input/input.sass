@@ -5,20 +5,30 @@
   color: inherit
   opacity: 0.8
   transition: all 0.5s
+  padding: 0
   &:not(:placeholder-shown),
   &:focus
     opacity: 1
+  &._gray
+    color: #9C9C9C
+    opacity: 1
+    border-color: rgba(156, 156, 156, 0.5)
+    &:focus
+      color: black
+      border-color: black
+    &:not(:placeholder-shown)
+      color: black
 
 .input-alt::-webkit-input-placeholder
-  +font(inherit, inherit, inherit)
+  +font(inherit, 300, inherit)
 .input-alt:-moz-placeholder
-  +font(inherit, inherit, inherit)
+  +font(inherit, 300, inherit)
 .input-alt::-moz-placeholder
-  +font(inherit, inherit, inherit)
+  +font(inherit, 300, inherit)
 .input-alt:-ms-input-placeholder
-  +font(inherit, inherit, inherit)
+  +font(inherit, 300, inherit)
 
 textarea.input-alt
   min-height: 13.5rem
-  padding-top: 10px
+  padding: 10px 0 0 0
   resize: none

@@ -1,0 +1,28 @@
+.price-row
+  +flex(row nowrap, space-between, flex-start)
+  gap: 2rem
+  &._main
+    margin-bottom: 5px
+    &:last-child
+      margin-bottom: 0
+    .price-row
+      &__label
+        font-weight: 400
+      &__value
+        font-weight: 500
+        font-size: 18px
+  &__label
+    font-weight: 300
+  &__value
+    text-align: right
+    display: grid
+    justify-items: end
+    white-space: nowrap
+    small
+      font-weight: 400
+      font-size: 14px
+      color: rgba(0, 0, 0, 0.4)
+
+.price-rows
+  display: grid
+  gap: 10px

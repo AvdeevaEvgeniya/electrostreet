@@ -1,0 +1,30 @@
+.cart
+  display: grid
+  grid-template-columns: 1fr 30% 30%
+  gap: 10px
+  align-items: start
+  font-size: 16px
+  p
+    margin: 0
+  &__block
+    background: white
+    display: grid
+    gap: 2rem
+    border-radius: var(--border-radius3)
+    padding: 2rem
+  &__list
+    display: grid
+    gap: 10px
+  &__total
+    display: grid
+    gap: 2px
+    .cart__block
+      border-radius: 0
+      &:first-child
+        border-radius: var(--border-radius3) var(--border-radius3) 0 0
+      &:last-child
+        border-radius: 0 0 var(--border-radius3) var(--border-radius3)
+  &__title
+    display: none
+
+@import "media"

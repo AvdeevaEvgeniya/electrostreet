@@ -1,6 +1,29 @@
 .checkbox
+  gap: 10px
+  &._start
+    align-items: flex-start
+    .checkbox__mask
+      margin-top: 0.15em
+  &._gray
+    span
+      color: #777777
+    .checkbox
+      &__label
+        font-weight: 300
+      &__input
+        &:checked
+          & ~ span
+            color: black
+          & ~ .checkbox__mask
+            background: white
+      &__mask:after
+        color: var(--color1)
   &._alt
     background: white
     height: 3rem
     padding: 5px 10px
     border-radius: var(--border-radius)
+  &__label
+    margin: 0
+  &__price
+    white-space: nowrap

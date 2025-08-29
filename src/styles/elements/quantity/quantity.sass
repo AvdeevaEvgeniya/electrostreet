@@ -1,0 +1,23 @@
+.quantity
+  +flex(row nowrap, flex-start, stretch)
+  border-radius: 6px
+  height: 3.5rem
+  width: fit-content
+  border: 1px solid rgba(156, 156, 156, 0.5)
+  input
+    width: 4rem
+    text-align: center
+    padding: 0
+    flex-grow: 1
+  &__btn
+    +flex(row nowrap, center, center)
+    height: 100%
+    cursor: pointer
+    font-size: 16px
+    color: #777777
+    &._minus
+      padding: 0 5px 0 15px
+    &._plus
+      padding: 0 15px 0 5px
+
+@import "media"
