@@ -47,6 +47,7 @@ const initRanges = function () {
                 item.querySelector("._range1").dispatchEvent(new Event('input',{bubbles: true, cancelable: false, composed: false}));
             }
             $inputFrom.on("change", function () {
+                const to = $range.ionRangeSlider().data("ionRangeSlider").old_to;
                 var val = $(this).prop("value");
                 // validate
                 if (val < min) {
@@ -60,6 +61,7 @@ const initRanges = function () {
                 $(this).prop("value", val);
             });
             $inputTo.on("change", function () {
+                const from = $range.ionRangeSlider().data("ionRangeSlider").old_from;
                 var val = $(this).prop("value");
                 // validate
                 if (val < from) {
