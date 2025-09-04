@@ -2,9 +2,9 @@
   .page-nav
     justify-content: flex-start
     overflow-x: auto
-    max-width: calc(100% + 30px)
+    max-width: 100vw
+    max-width: 100dvw
     margin: 0 -15px
-    padding: 0 15px
     &::-webkit-scrollbar-track
       width: 0
       height: 0
@@ -17,3 +17,8 @@
       width: 0
       height: 0
       background: transparent
+    &__item
+      &:first-child
+        padding-left: 15px
+      &:last-child
+        padding-right: 15px
