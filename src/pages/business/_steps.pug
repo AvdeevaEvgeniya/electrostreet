@@ -25,7 +25,7 @@ section.inner
                 .h2 Поддержка
                 p.light Регламентное ТО, ремонт, расширение парка, замена техники
         .step._contacts
-            a.btn._big._hover(href="")
+            a.btn._big._hover.popupActivation(href="" data-popup="callback")
                 b Отправить заявку
             .step__social
                 a(href="")
@@ -36,3 +36,13 @@ section.inner
                     i.icon.icon-call
                 a(href="")
                     i.icon.icon-email2
+        .popup(data-popup="callback")
+            .popup__scroll
+                .popup__content._bg
+                    .popup__close
+                        i.icon.icon-close
+                    form.form
+                        .h2 Оставить заявку
+                        input.input(type="text" placeholder="Имя")
+                        input.input.mask(type="tel" placeholder="Телефон")
+                        button.btn._fill._big(type="submit") Отправить
