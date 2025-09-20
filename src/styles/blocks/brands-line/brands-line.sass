@@ -1,6 +1,13 @@
 .brands-line
   background: #303132
   padding: 10px 0
+  &._alt
+    padding: 4rem 0
+    img
+      filter: brightness(0) invert(1)
+      transition: all 0.5s
+      &:hover
+        filter: brightness(1) invert(0)
   &__list
     +flex(row nowrap, space-between, stretch)
     gap: 3rem

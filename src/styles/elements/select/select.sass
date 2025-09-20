@@ -48,9 +48,31 @@
           right: 10px
       &__option
         padding: 0
+        &._choosed
+          background: none
+          color: var(--color1)
       &__options
         padding: 15px
         border-radius: var(--border-radius)
         top: calc(100% + 2px)
         gap: 10px
-        max-height: 20rem
+        max-height: 25.25rem
+        font-size: 16px
+  &._bg
+    .select
+      &__main
+        background: #F2F2F2
+        height: 3.5rem
+      &__value
+        font-weight: 300
+        color: black
+      &__options
+        font-size: 14px
+  &._filled
+    .select
+      &__value
+        font-weight: 400
+    .filter-alt
+      &__clear,
+      &__num
+        display: flex

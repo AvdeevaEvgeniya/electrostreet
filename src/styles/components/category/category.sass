@@ -1,0 +1,46 @@
+.category
+  background: white
+  border-radius: var(--border-radius3)
+  padding: 2rem
+  display: grid
+  grid-template-columns: 15.5rem 1fr
+  grid-auto-rows: auto 1fr
+  gap: 2rem
+  align-items: start
+  .tags
+    max-height: 9.5rem
+    overflow: hidden
+  &._main
+    grid-row: span 3
+    grid-column: initial
+    grid-template-columns: initial
+    background: var(--color1)
+    grid-auto-rows: initial
+    .category
+      &__img
+        background-image: url("../img/ellipse2.svg")
+        img
+          filter: brightness(0) saturate(100%) invert(92%) sepia(8%) saturate(25) hue-rotate(184deg) brightness(104%) contrast(96%)
+  .h1
+    color: white
+  .h2
+    color: var(--color1)
+  &__img
+    background: url("../img/ellipse.svg") no-repeat center
+    background-size: 90%
+    align-self: center
+    grid-row: span 2
+    img
+      filter: brightness(0) saturate(100%) invert(14%) sepia(11%) saturate(65) hue-rotate(194deg) brightness(89%) contrast(90%)
+      max-height: 100%
+      aspect-ratio: 1/1
+  &__main
+    display: grid
+    gap: 2rem
+
+.categories
+  display: grid
+  gap: 2rem
+  grid-template-columns: 4.75fr 5fr 5fr
+
+@import "media"

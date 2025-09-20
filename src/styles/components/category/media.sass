@@ -1,0 +1,71 @@
++desktop()
+  .category
+    grid-template-columns: 12rem 1fr
+
+  .categories
+    grid-template-columns: 4fr 5fr 5fr
+
++notebook()
+  .category
+    &._main
+      grid-row: initial
+      grid-column: span 2
+      grid-template-columns: 12rem 1fr
+      align-items: center
+
+  .categories
+    grid-template-columns: 1fr 1fr
+
++tablet()
+  .category
+    grid-template-columns: 10rem 1fr
+    padding: 2rem 15px
+
++mobile()
+  .category
+    &._main
+      grid-column: initial
+
+  .categories
+    grid-template-columns: initial
+    .tags
+      flex-wrap: wrap
+      padding: 0
+      margin: 0
+
++small-mobile()
+  .category
+    grid-template-columns: 7.5rem 1fr auto
+    padding: 5px 15px
+    gap: 10px
+    align-items: center
+    &._active
+      padding-bottom: 15px
+      &:after
+        transform: rotate(-90deg)
+      .tags
+        display: flex
+    &:after
+      content: "\e908"
+      font-family: "icomoon"
+      color: var(--color1)
+      transition: all 0.5s
+      transform: rotate(90deg)
+      width: fit-content
+      font-size: 16px
+      grid-row: 1
+      grid-column: 3
+    .h1
+      font-size: 18px
+    .tags
+      grid-column: span 3
+      display: none
+    &._main
+      grid-template-columns: 7.5rem 1fr
+      &:after
+        color: white
+    &__img
+      grid-row: initial
+
+  .categories
+    gap: 10px

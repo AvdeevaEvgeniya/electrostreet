@@ -1,0 +1,44 @@
+.contacts-alt
+  position: relative
+  z-index: 1
+  overflow: hidden
+  .social
+    margin-top: 10px
+  p
+    margin: 0
+    font-weight: 300
+    line-height: 1.4
+    font-size: 16px
+  iframe
+    +full()
+    z-index: -1
+    filter: grayscale(1)
+  img
+    border-radius: var(--border-radius3)
+  &__inner
+    pointer-events: none
+  &__main
+    background: rgba(255, 255, 255, 0.85)
+    box-shadow: -4px 0px 10px rgba(0, 0, 0, 0.2)
+    backdrop-filter: blur(2.5px)
+    padding: 5rem
+    display: grid
+    gap: 3rem
+    max-width: 35%
+    margin-left: auto
+    pointer-events: auto
+  &__list
+    display: grid
+    gap: 10px
+  &__slider
+    position: relative
+    .swiper-button-prev,
+    .swiper-button-next
+      &:after
+        font-size: 2rem
+    .swiper-button-prev
+      left: -4rem
+    .swiper-button-next
+      right: -4rem
+
+@import "media"

@@ -1,6 +1,7 @@
 +notebook()
   .page-header
-    display: grid
+    &:not([class*="_no-wrap"])
+      display: grid
     .page-nav
       padding-top: 0
       order: -1

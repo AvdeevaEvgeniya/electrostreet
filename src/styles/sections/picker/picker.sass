@@ -1,0 +1,45 @@
+.picker
+  background: white url("../img/double-ellipse.svg") no-repeat right center
+  background-size: contain
+  border-radius: var(--border-radius3)
+  display: grid
+  grid-template-columns: auto auto 1fr
+  align-items: center
+  padding: 5rem
+  gap: 6rem
+  position: relative
+  justify-content: start
+  z-index: 1
+  &__title
+    width: min-content
+    font-weight: 900
+    font-size: 5rem
+    text-transform: uppercase
+    line-height: 1.5
+    span
+      color: var(--color1)
+  &__form
+    display: grid
+    grid-template-columns: 1fr 1fr
+    gap: 10px
+    justify-self: center
+    min-width: 45rem
+    .btn
+      grid-column: span 2
+  &__bg
+    position: relative
+    width: 100%
+    align-self: stretch
+    img
+      position: absolute
+      right: -5rem
+      bottom: -5rem
+      height: calc(100% + 10rem)
+      max-width: calc(100% + 10rem)
+      min-width: 100%
+      transition: all 0.5s
+      opacity: 0
+      &._active
+        opacity: 1
+
+@import "media"

@@ -6,6 +6,10 @@ const initBreadCrumbs = function () {
     cont.scrollLeft = cont.scrollWidth;
 }
 initBreadCrumbs();
+
+
+
+
 const initCounter = function () {
     const counter = function (e) {
         const btn =  e.target.closest(".quantity__btn");
@@ -25,6 +29,87 @@ const initCounter = function () {
     document.addEventListener("click", counter);
 };
 initCounter();
+const initFillSelect = function () {
+    if (!document.querySelector(".select._range")) {
+        return;
+    }
+    const fillSelect = function (e) {
+        const input = e.target.closest(".select._range input");
+        if (!input) {
+            return;
+        }
+        const cont = input.closest(".select"),
+            min = cont.querySelector(".irs-hidden-input").dataset.min,
+            max = cont.querySelector(".irs-hidden-input").dataset.max,
+            curMin = cont.querySelector("._range1").value,
+            curMax = cont.querySelector("._range2").value;
+        if (curMin == min && curMax == max) {
+            input.closest(".select._range").classList.remove("_filled");
+        }
+        else {
+            input.closest(".select._range").classList.add("_filled");
+        }
+    },
+    clearRange = function (e) {
+        const btn = e.target.closest(".select._range .filter-alt__clear");
+        if (!btn) {
+            return;
+        }
+        e.preventDefault();
+        const cont = btn.closest(".select");
+        cont.click();
+        const min = cont.querySelector(".irs-hidden-input").dataset.min,
+            max = cont.querySelector(".irs-hidden-input").dataset.max,
+            curMin = cont.querySelector("._range1"),
+            curMax = cont.querySelector("._range2");
+        curMin.value = min;
+        curMax.value = max;
+        curMin.dispatchEvent(new Event('change',{bubbles: true, cancelable: false, composed: false}));
+        curMax.dispatchEvent(new Event('change',{bubbles: true, cancelable: false, composed: false}));
+        cont.classList.remove("_filled");
+    }
+    document.addEventListener("input", fillSelect);
+    document.addEventListener("click", clearRange);
+}
+initFillSelect();
+const initFilterItems = function () {
+    if (!document.querySelector("[data-filters]")) {
+        return;
+    }
+    const filterItems = function (e) {
+        const btn = e.target.closest("[data-filter-btn]");
+        if (!btn) {
+            return;
+        }
+        const name = btn.dataset.filterBtn,
+            cont = btn.closest("[data-filters]"),
+            items = cont.querySelectorAll("[data-filter-item]"),
+            sliders = cont.querySelectorAll(".swiper");
+            items.forEach(function (item) {
+                if (item.dataset.filterItem == name || name == "all") {
+                    item.style.display = "";
+                }
+                else {
+                    item.style.display = "none";
+                }
+            })
+            if (sliders.length > 0) {
+                sliders.forEach(function (item) {
+                    item.swiper?.slideTo(0);
+                    item.swiper?.update();
+                })
+            }
+    },
+    loadFilter = function () {
+        const filter = document.querySelectorAll("[data-filters]");
+        filter.forEach(function (item) {
+            item.querySelector("[data-filter-btn]").closest("label").click();
+        })
+    }
+    document.addEventListener("change", filterItems);
+    loadFilter();
+}
+initFilterItems();
 const initAltFilter = function() {
     const filter = document.querySelector(".filter-alt");
     if (!filter) {
@@ -65,6 +150,23 @@ const initMegamenuCorrection = function () {
 }
 
 initMegamenuCorrection();
+const initPickerImgs = function () {
+    const picker = document.getElementById("picker");
+    if (!picker) {
+        return;
+    }
+    const pickerImgs = function (e) {
+        const btn = e.target.closest("[data-picker]");
+        if (!btn) {
+            return;
+        }
+        const name = btn.dataset.picker;
+        picker.querySelector("img._active").classList.remove("_active");
+        picker.querySelector(`img[src*="${name}"]`).classList.add("_active");
+    }
+    document.addEventListener("click", pickerImgs);
+}
+initPickerImgs();
 const initClearInput = function () {
     const inputs = document.querySelectorAll(".input-interval__value input");
     if (inputs.length < 1) {
@@ -258,11 +360,6 @@ const initOtherSliders = function () {
                     type: fraction ? 'fraction' : 'bullets',
                     clickable: true,
                 },
-                breakpoints: {
-                    530: {
-                        autoplay: false,
-                    }
-                }
             })
         })
     }
@@ -310,6 +407,63 @@ const initOtherSliders = function () {
         })
     }
 
+    const sliders4cols = document.querySelectorAll(".swiper._4-col");
+    if (sliders4cols.length > 0) {
+        sliders4cols.forEach(function (item) {
+            const cont = item.closest(".swiper-parent");
+            let prev, next, pagination, autoheight, fraction, loop;
+            if (cont) {
+                prev = cont.querySelector(".swiper-button-prev");
+                next = cont.querySelector(".swiper-button-next");
+                pagination = cont.querySelector(".swiper-pagination");
+                fraction = cont.dataset.fraction;
+                autoheight = cont.dataset.autoheight;
+                loop = cont.dataset.loop;
+            }
+            new Swiper(item, {
+                slidesPerView: 1,
+                spaceBetween: 10,
+                loop: loop ? true : false,
+                navigation: {
+                    nextEl: next ? next : "",
+                    prevEl: prev ? prev : "",
+                },
+                autoHeight: autoheight ? true : false,
+                speed: 1000,
+                watchSlidesProgress: true,
+                pagination: {
+                    el: pagination ? pagination : "",
+                    type: fraction ? 'fraction' : 'bullets',
+                    clickable: true,
+                },
+                breakpoints: {
+                    767: {
+                        slidesPerView: 2,
+                        spaceBetween: 20
+                    },
+                    1023: {
+                        slidesPerView: 3,
+                        spaceBetween: 20
+                    },
+                    1500: {
+                        slidesPerView: 4,
+                        spaceBetween: 20
+                    },
+                },
+                on: {
+                    afterInit: function (e) {
+                        const sliders = e.$el[0].querySelectorAll(".swiper");
+                        if (sliders.length > 0) {
+                            sliders.forEach(function (item) {
+                                item.swiper.update();
+                            })
+                        }
+                    }
+                }
+            })
+        })
+    }
+
     const sliders2cols = document.querySelectorAll(".swiper._2-col");
     if (sliders2cols.length > 0) {
         sliders2cols.forEach(function (item) {
@@ -348,9 +502,56 @@ const initOtherSliders = function () {
             })
         })
     }
+
+    const slidersMob = document.querySelectorAll(".swiper._mob");
+    if (slidersMob.length > 0 && window.innerWidth < 530) {
+        slidersMob.forEach(function (item) {
+            const cont = item.closest(".swiper-parent");
+            let prev, next, pagination, autoheight, fraction, loop;
+            if (cont) {
+                prev = cont.querySelector(".swiper-button-prev");
+                next = cont.querySelector(".swiper-button-next");
+                pagination = cont.querySelector(".swiper-pagination");
+                fraction = cont.dataset.fraction;
+                autoheight = cont.dataset.autoheight;
+                loop = cont.dataset.loop;
+            }
+            new Swiper(item, {
+                slidesPerView: 1,
+                spaceBetween: 10,
+                loop: loop ? true : false,
+                navigation: {
+                    nextEl: next ? next : "",
+                    prevEl: prev ? prev : "",
+                },
+                autoHeight: autoheight ? true : false,
+                speed: 1000,
+                watchSlidesProgress: true,
+                pagination: {
+                    el: pagination ? pagination : "",
+                    type: fraction ? 'fraction' : 'bullets',
+                    clickable: true,
+                },
+            })
+        })
+    }
 }
 
 initOtherSliders();
+const initToogelCategory = function () {
+    if (!document.querySelector(".categories")) {
+        return;
+    }
+    const toogelCategory = function (e) {
+        const category = e.target.closest(".category");
+        if (!category) {
+            return;
+        }
+        category.classList.toggle("_active");
+    }
+    document.addEventListener("click", toogelCategory);
+}
+initToogelCategory();
 const initVerticalTabs = function () {
     if (!document.querySelector("[data-v-tabs]")) {
         return;

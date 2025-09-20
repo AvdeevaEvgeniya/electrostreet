@@ -62,6 +62,8 @@
     border-right: 1px solid #EDEDED
     position: relative
     overflow: hidden
+    .swiper
+      min-width: 0
   &__info
     +flex(row nowrap, space-between, center)
     position: absolute
@@ -96,5 +98,9 @@
 
 .product-list
   +grid2(30rem, 1fr, 2rem, 2rem)
+
+.product-slider
+  min-width: 0
+  width: 100%
 
 @import "media"

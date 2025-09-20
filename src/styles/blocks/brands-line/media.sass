@@ -1,3 +1,25 @@
 +mobile()
   .brands-line
     display: none
+    &._alt
+      display: flex
+      overflow-x: auto
+      a
+        min-width: max-content
+      img
+        max-height: 3rem
+        min-width: fit-content
+      &::-webkit-scrollbar-track
+        width: 0
+        height: 0
+        background: transparent
+      &::-webkit-scrollbar
+        width: 0
+        height: 0
+        background: transparent
+      &::-webkit-scrollbar-thumb
+        width: 0
+        height: 0
+        background: transparent
+    &__list
+      width: fit-content

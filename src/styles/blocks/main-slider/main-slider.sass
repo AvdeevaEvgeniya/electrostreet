@@ -1,0 +1,53 @@
+.main-slider
+  min-width: 0
+  position: relative
+  background: var(--color03)
+  border-radius: var(--border-radius3)
+  overflow: hidden
+  p
+    margin: 0
+    display: -webkit-box
+    -webkit-line-clamp: 7
+    line-clamp: 7
+    -webkit-box-orient: vertical
+    overflow: hidden
+  .btn
+    margin-top: 10px
+  img
+    height: 47rem
+    width: 100%
+    object-fit: cover
+  .swiper-pagination-bullet
+    background: var(--color02)
+  .swiper-pagination-bullet-active
+    background: var(--color1)
+  .swiper-pagination
+    position: absolute
+    width: 35rem
+    right: 0
+    bottom: 0
+    justify-content: flex-start
+    display: flex
+    padding: 0 5rem 3rem 5rem
+  &__item
+    position: relative
+  &__main
+    position: absolute
+    right: 0
+    top: 0
+    height: 100%
+    width: 35rem
+    background: linear-gradient(98.69deg, rgba(55, 86, 166, 0.4) 0%, rgba(21, 33, 64, 0.4) 100%), rgba(0, 0, 0, 0.6)
+    box-shadow: -4px 0px 4px rgba(0, 0, 0, 0.25)
+    backdrop-filter: blur(5px)
+    padding: 5rem
+    color: white
+    display: grid
+    gap: 15px
+    align-content: start
+    p
+      font-size: 18px
+      font-weight: 300
+      line-height: 1.4
+
+@import "media"

@@ -1,32 +1,34 @@
-section.inner.main-screen
+section.inner.main-screen#main-screen
     .swiper-parent.main-slider
         .swiper._single
             .swiper-wrapper
                 .swiper-slide.main-slider__item
                     picture
-                        source(srcset="img/banner_mob.png" media="(max-width: 530px)")
+                        source(srcset="img/banner_mob.png" media="(max-width: 767px)")
                         img(src="img/banner.png" alt="")
                     .main-slider__main
-                        .h0 Надпись на баннере
+                        .h0 Надпись на&nbsp;баннере
                         p Сеть официальных велосипедных мастерских компании «ВелоСтрана», где вы можете недорого произвести ремонт велосипеда.
                         a.btn._fill._big(href="") Перейти в каталог
                 .swiper-slide.main-slider__item
                     picture
-                        source(srcset="img/banner_mob.png" media="(max-width: 530px)")
+                        source(srcset="img/banner_mob.png" media="(max-width: 767px)")
                         img(src="img/banner.png" alt="")
                     .main-slider__main
-                        .h0 Надпись на баннере
-                        p Сеть официальных велосипедных мастерских компании «ВелоСтрана», где вы можете недорого произвести ремонт велосипеда.
+                        .h0 2 Надпись на&nbsp;баннере
+                        p 2 Сеть официальных велосипедных мастерских компании «ВелоСтрана», где вы можете недорого произвести ремонт велосипеда.
                         a.btn._fill._big(href="") Перейти в каталог
         .swiper-pagination
-    .grid.gap-20
+    .mini-banners.grid.notebook
         .mini-banner
+            a.link-full(href="")
             .mini-banner__header
-                .h1 Станьте нашим партнёром
+                h2.h1 Станьте нашим партнёром
                 i.icon.icon-franchise
             p Откройте магазин ElectroStreet в своём городе и присоединяйтесь к команде, которая развивает рынок электротранспорта
         .mini-banner
+            a.link-full(href="")
             .mini-banner__header
-                .h1 Отремонтируем ваш транспорт
-                i.icon.icon-repair
+                h2.h1 Отремонтируем ваш транспорт
+                i.icon.icon-repair3
             p Наши эксперты вернут в строй электросамокат, велосипед или скутер — быстро, надёжно и по разумной цене

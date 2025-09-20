@@ -1,0 +1,20 @@
+.mini-banner
+  background: var(--color02)
+  padding: 2.5rem
+  border-radius: var(--border-radius3)
+  display: grid
+  gap: 15px
+  position: relative
+  p
+    margin: 0
+    font-size: 16px
+    font-weight: 300
+    line-height: 1.4
+  i.icon
+    font-size: 6.5rem
+  &__header
+    +flex(row nowrap, space-between, center)
+    gap: 10px
+
+.mini-banners
+  grid-auto-rows: 1fr

@@ -1,0 +1,32 @@
++desktop()
+  .main-slider
+    .swiper-pagination
+      width: 30rem
+      padding: 3rem
+    &__main
+      padding: 3rem
+      width: 30rem
+
++mobile()
+  .main-slider
+    margin-top: -3rem
+    margin-bottom: -6rem
+    border-radius: 0
+    img
+      height: calc(100vh - 5rem)
+    .swiper-pagination
+      width: 100%
+      justify-content: center
+      padding: 2rem
+    &__main
+      width: 100%
+      background: none
+      backdrop-filter: none
+      text-align: center
+      justify-items: center
+      grid-auto-rows: auto 1fr auto
+      padding: 2rem var(--offset) 5rem var(--offset)
+      .h0
+        font-size: 2.6rem
+      p
+        font-size: 14px

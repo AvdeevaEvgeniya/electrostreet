@@ -1,0 +1,155 @@
+section.inner#picker
+    .picker
+        .picker__title Подберем идеальный #[span транспорт?]
+        .picker__form
+            .select._alt._bg._filled
+                .select__main
+                    .select__value
+                        .select__placeholder Тип
+                    input.select__input(type="checkbox")
+                .select__options
+                    .select__option._choosed(data-value="электровелосипед" data-picker="picker1.png") Электровелосипед
+                    .select__option(data-value="электросамокат" data-picker="picker2.png") Электросамокат
+                    .select__option(data-value="электромотоцикл" data-picker="picker3.png") Электромотоцикл
+                    .select__option(data-value="электроквадроцикл" data-picker="picker4.png") Электроквадроцикл
+                    .select__option(data-value="электроскутер" data-picker="picker5.png") Электроскутер
+                    .select__option(data-value="электротрицикл" data-picker="picker6.png") Электротрицикл
+                    .select__option(data-value="электроснегокат" data-picker="picker7.png") Электроснегокат
+            .select._alt._bg._range
+                .select__main
+                    a.filter-alt__clear(href="")
+                        i.icon.icon-close
+                    .select__value Цена
+                    input.select__input(type="checkbox")
+                .select__options
+                    .range-double
+                        .input-interval
+                            input.input._border._mini._range1(type='number')
+                            .input-interval__separator —
+                            input.input._border._mini._range2(type='number')
+                        input.input-range(type='text' data-min='0' data-max='100000' data-step='100')
+            .select._alt._bg._range
+                .select__main
+                    a.filter-alt__clear(href="")
+                        i.icon.icon-close
+                    .select__value Вес, кг
+                    input.select__input(type="checkbox")
+                .select__options
+                    .range-double
+                        .input-interval
+                            input.input._border._mini._range1(type='number')
+                            .input-interval__separator —
+                            input.input._border._mini._range2(type='number')
+                        input.input-range(type='text' data-min='0' data-max='100000' data-step='100')
+            .select._alt._bg._range
+                .select__main
+                    a.filter-alt__clear(href="")
+                        i.icon.icon-close
+                    .select__value Производитель
+                    input.select__input(type="checkbox")
+                .select__options
+                    label.checkbox
+                        input.checkbox__input(type="checkbox")
+                        span.checkbox__mask
+                        span.checkbox__label Производитель 1
+                    label.checkbox
+                        input.checkbox__input(type="checkbox")
+                        span.checkbox__mask
+                        span.checkbox__label Производитель 2
+                    label.checkbox
+                        input.checkbox__input(type="checkbox")
+                        span.checkbox__mask
+                        span.checkbox__label Производитель 3
+                    label.checkbox
+                        input.checkbox__input(type="checkbox")
+                        span.checkbox__mask
+                        span.checkbox__label Производитель 3
+                    label.checkbox
+                        input.checkbox__input(type="checkbox")
+                        span.checkbox__mask
+                        span.checkbox__label Производитель 3
+                    label.checkbox
+                        input.checkbox__input(type="checkbox")
+                        span.checkbox__mask
+                        span.checkbox__label Производитель 3
+                    label.checkbox
+                        input.checkbox__input(type="checkbox")
+                        span.checkbox__mask
+                        span.checkbox__label Производитель 3
+                    label.checkbox
+                        input.checkbox__input(type="checkbox")
+                        span.checkbox__mask
+                        span.checkbox__label Производитель 3
+                    label.checkbox
+                        input.checkbox__input(type="checkbox")
+                        span.checkbox__mask
+                        span.checkbox__label Производитель 3
+                    label.checkbox
+                        input.checkbox__input(type="checkbox")
+                        span.checkbox__mask
+                        span.checkbox__label Производитель 3
+                    label.checkbox
+                        input.checkbox__input(type="checkbox")
+                        span.checkbox__mask
+                        span.checkbox__label Производитель 3
+            .select._alt._bg._range
+                .select__main
+                    a.filter-alt__clear(href="")
+                        i.icon.icon-close
+                    .select__value Скорость, км/ч
+                    input.select__input(type="checkbox")
+                .select__options
+                    .range-double
+                        .input-interval
+                            input.input._border._mini._range1(type='number')
+                            .input-interval__separator —
+                            input.input._border._mini._range2(type='number')
+                        input.input-range(type='text' data-min='0' data-max='100000' data-step='100')
+            .select._alt._bg._range
+                .select__main
+                    a.filter-alt__clear(href="")
+                        i.icon.icon-close
+                    .select__value Запас хода, км
+                    input.select__input(type="checkbox")
+                .select__options
+                    .range-double
+                        .input-interval
+                            input.input._border._mini._range1(type='number')
+                            .input-interval__separator —
+                            input.input._border._mini._range2(type='number')
+                        input.input-range(type='text' data-min='0' data-max='100000' data-step='100')
+            .select._alt._bg._range
+                .select__main
+                    a.filter-alt__clear(href="")
+                        i.icon.icon-close
+                    .select__value Диаметр колёс, дюйм
+                    input.select__input(type="checkbox")
+                .select__options
+                    .range-double
+                        .input-interval
+                            input.input._border._mini._range1(type='number')
+                            .input-interval__separator —
+                            input.input._border._mini._range2(type='number')
+                        input.input-range(type='text' data-min='0' data-max='100000' data-step='100')
+            .select._alt._bg._range
+                .select__main
+                    a.filter-alt__clear(href="")
+                        i.icon.icon-close
+                    .select__value Мощность двигателя, Вт
+                    input.select__input(type="checkbox")
+                .select__options
+                    .range-double
+                        .input-interval
+                            input.input._border._mini._range1(type='number')
+                            .input-interval__separator —
+                            input.input._border._mini._range2(type='number')
+                        input.input-range(type='text' data-min='0' data-max='100000' data-step='100')
+            a.btn._fill._large(href="") Показать варианты
+        .picker__bg
+            img._active(src="img/picker1.png" alt="")
+            img(src="img/picker2.png" alt="")
+            img(src="img/picker3.png" alt="")
+            img(src="img/picker4.png" alt="")
+            img(src="img/picker5.png" alt="")
+            img(src="img/picker6.png" alt="")
+            img(src="img/picker7.png" alt="")

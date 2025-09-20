@@ -1,0 +1,61 @@
++desktop()
+  .picker
+    padding: 3rem
+    gap: 5rem
+    &__title
+      font-size: 4rem
+    &__bg
+      img
+        right: -3rem
+        bottom: -3rem
+        height: calc(100% + 6rem)
+        max-width: calc(100% + 6rem)
+
++notebook()
+  .picker
+    background-image: url("../img/double-ellipse_tablet.svg")
+    background-size: 50%
+    background-position: right bottom
+    grid-template-columns: auto 1fr
+    &__bg
+      img
+        height: calc(100% + 10rem)
+    &__title
+      grid-column: span 2
+      width: 100%
+
++tablet()
+  .picker
+    grid-template-columns: initial
+    gap: 2rem
+    justify-content: center
+    border-radius: 0
+    margin: 0 calc(0px - var(--offset))
+    padding: 3rem var(--offset)
+    background-image: url(../img/double-ellipse_mob.svg)
+    background-size: 35rem
+    background-position: top 10% center
+    &__form
+      order: 1
+    &__title
+      text-align: center
+      font-size: 2.6rem
+      text-transform: initial
+      font-weight: 400
+      line-height: 1.2
+      grid-column: initial
+    &__bg
+      height: 30vh
+      width: 100%
+      img
+        height: 100%
+        width: 100%
+        bottom: 0
+        right: 0
+
++small-mobile()
+  .picker
+    &__form
+      min-width: initial
+      gap: 10px
+      width: 100%

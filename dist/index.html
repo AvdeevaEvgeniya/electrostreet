@@ -322,8 +322,9 @@
     <!--        background-color:;-->
     <!--        color:;-->
     <!--    }-->
-    <link rel="stylesheet" href="css/style.css?ver=11" media="all">
+    <link rel="stylesheet" href="css/style.css?ver=14" media="all">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" defer=""></script>
+    <script src="js/_ion.rangeSlider.min.js" defer=""></script>
 </head>
 
 <body class="common__body">
@@ -837,47 +838,1116 @@
             </div>
         </header>
         <main class="main">
-            <div class="index-page bg grid gap-60 pb-60 pt-30">
-                <section class="inner main-screen">
+            <div class="index-page bg grid gap-60 pt-30">
+                <section class="inner main-screen" id="main-screen">
                     <div class="swiper-parent main-slider">
                         <div class="swiper _single">
                             <div class="swiper-wrapper">
                                 <div class="swiper-slide main-slider__item">
                                     <picture>
-                                        <source srcset="img/banner_mob.png" media="(max-width: 530px)"><img src="img/banner.png" alt="">
+                                        <source srcset="img/banner_mob.png" media="(max-width: 767px)"><img src="img/banner.png" alt="">
                                     </picture>
                                     <div class="main-slider__main">
-                                        <div class="h0">Надпись на баннере</div>
+                                        <div class="h0">Надпись на&nbsp;баннере</div>
                                         <p>Сеть официальных велосипедных мастерских компании «ВелоСтрана», где вы можете недорого произвести ремонт велосипеда.</p><a class="btn _fill _big" href="">Перейти в каталог</a>
                                     </div>
                                 </div>
                                 <div class="swiper-slide main-slider__item">
                                     <picture>
-                                        <source srcset="img/banner_mob.png" media="(max-width: 530px)"><img src="img/banner.png" alt="">
+                                        <source srcset="img/banner_mob.png" media="(max-width: 767px)"><img src="img/banner.png" alt="">
                                     </picture>
                                     <div class="main-slider__main">
-                                        <div class="h0">Надпись на баннере</div>
-                                        <p>Сеть официальных велосипедных мастерских компании «ВелоСтрана», где вы можете недорого произвести ремонт велосипеда.</p><a class="btn _fill _big" href="">Перейти в каталог</a>
+                                        <div class="h0">2 Надпись на&nbsp;баннере</div>
+                                        <p>2 Сеть официальных велосипедных мастерских компании «ВелоСтрана», где вы можете недорого произвести ремонт велосипеда.</p><a class="btn _fill _big" href="">Перейти в каталог</a>
                                     </div>
                                 </div>
                             </div>
                         </div>
                         <div class="swiper-pagination"></div>
                     </div>
-                    <div class="grid gap-20">
-                        <div class="mini-banner">
+                    <div class="mini-banners grid notebook">
+                        <div class="mini-banner"><a class="link-full" href=""></a>
                             <div class="mini-banner__header">
-                                <div class="h1">Станьте нашим партнёром</div><i class="icon icon-franchise"></i>
+                                <h2 class="h1">Станьте нашим партнёром</h2><i class="icon icon-franchise"></i>
                             </div>
                             <p>Откройте магазин ElectroStreet в своём городе и присоединяйтесь к команде, которая развивает рынок электротранспорта</p>
                         </div>
-                        <div class="mini-banner">
+                        <div class="mini-banner"><a class="link-full" href=""></a>
                             <div class="mini-banner__header">
-                                <div class="h1">Отремонтируем ваш транспорт</div><i class="icon icon-repair"></i>
+                                <h2 class="h1">Отремонтируем ваш транспорт</h2><i class="icon icon-repair3"></i>
                             </div>
                             <p>Наши эксперты вернут в строй электросамокат, велосипед или скутер — быстро, надёжно и по разумной цене</p>
                         </div>
                     </div>
+                </section>
+                <section class="inner" id="picker">
+                    <div class="picker">
+                        <div class="picker__title">Подберем идеальный <span>транспорт?</span></div>
+                        <div class="picker__form">
+                            <div class="select _alt _bg _filled">
+                                <div class="select__main">
+                                    <div class="select__value">
+                                        <div class="select__placeholder">Тип</div>
+                                    </div>
+                                    <input class="select__input" type="checkbox">
+                                </div>
+                                <div class="select__options">
+                                    <div class="select__option _choosed" data-value="электровелосипед" data-picker="picker1.png">Электровелосипед</div>
+                                    <div class="select__option" data-value="электросамокат" data-picker="picker2.png">Электросамокат</div>
+                                    <div class="select__option" data-value="электромотоцикл" data-picker="picker3.png">Электромотоцикл</div>
+                                    <div class="select__option" data-value="электроквадроцикл" data-picker="picker4.png">Электроквадроцикл</div>
+                                    <div class="select__option" data-value="электроскутер" data-picker="picker5.png">Электроскутер</div>
+                                    <div class="select__option" data-value="электротрицикл" data-picker="picker6.png">Электротрицикл</div>
+                                    <div class="select__option" data-value="электроснегокат" data-picker="picker7.png">Электроснегокат</div>
+                                </div>
+                            </div>
+                            <div class="select _alt _bg _range">
+                                <div class="select__main"><a class="filter-alt__clear" href=""><i class="icon icon-close"></i></a>
+                                    <div class="select__value">Цена</div>
+                                    <input class="select__input" type="checkbox">
+                                </div>
+                                <div class="select__options">
+                                    <div class="range-double">
+                                        <div class="input-interval">
+                                            <input class="input _border _mini _range1" type="number">
+                                            <div class="input-interval__separator">—</div>
+                                            <input class="input _border _mini _range2" type="number">
+                                        </div>
+                                        <input class="input-range" type="text" data-min="0" data-max="100000" data-step="100">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="select _alt _bg _range">
+                                <div class="select__main"><a class="filter-alt__clear" href=""><i class="icon icon-close"></i></a>
+                                    <div class="select__value">Вес, кг</div>
+                                    <input class="select__input" type="checkbox">
+                                </div>
+                                <div class="select__options">
+                                    <div class="range-double">
+                                        <div class="input-interval">
+                                            <input class="input _border _mini _range1" type="number">
+                                            <div class="input-interval__separator">—</div>
+                                            <input class="input _border _mini _range2" type="number">
+                                        </div>
+                                        <input class="input-range" type="text" data-min="0" data-max="100000" data-step="100">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="select _alt _bg _range">
+                                <div class="select__main"><a class="filter-alt__clear" href=""><i class="icon icon-close"></i></a>
+                                    <div class="select__value">Производитель</div>
+                                    <input class="select__input" type="checkbox">
+                                </div>
+                                <div class="select__options">
+                                    <label class="checkbox">
+                                        <input class="checkbox__input" type="checkbox"><span class="checkbox__mask"></span><span class="checkbox__label">Производитель 1</span>
+                                    </label>
+                                    <label class="checkbox">
+                                        <input class="checkbox__input" type="checkbox"><span class="checkbox__mask"></span><span class="checkbox__label">Производитель 2</span>
+                                    </label>
+                                    <label class="checkbox">
+                                        <input class="checkbox__input" type="checkbox"><span class="checkbox__mask"></span><span class="checkbox__label">Производитель 3</span>
+                                    </label>
+                                    <label class="checkbox">
+                                        <input class="checkbox__input" type="checkbox"><span class="checkbox__mask"></span><span class="checkbox__label">Производитель 3</span>
+                                    </label>
+                                    <label class="checkbox">
+                                        <input class="checkbox__input" type="checkbox"><span class="checkbox__mask"></span><span class="checkbox__label">Производитель 3</span>
+                                    </label>
+                                    <label class="checkbox">
+                                        <input class="checkbox__input" type="checkbox"><span class="checkbox__mask"></span><span class="checkbox__label">Производитель 3</span>
+                                    </label>
+                                    <label class="checkbox">
+                                        <input class="checkbox__input" type="checkbox"><span class="checkbox__mask"></span><span class="checkbox__label">Производитель 3</span>
+                                    </label>
+                                    <label class="checkbox">
+                                        <input class="checkbox__input" type="checkbox"><span class="checkbox__mask"></span><span class="checkbox__label">Производитель 3</span>
+                                    </label>
+                                    <label class="checkbox">
+                                        <input class="checkbox__input" type="checkbox"><span class="checkbox__mask"></span><span class="checkbox__label">Производитель 3</span>
+                                    </label>
+                                    <label class="checkbox">
+                                        <input class="checkbox__input" type="checkbox"><span class="checkbox__mask"></span><span class="checkbox__label">Производитель 3</span>
+                                    </label>
+                                    <label class="checkbox">
+                                        <input class="checkbox__input" type="checkbox"><span class="checkbox__mask"></span><span class="checkbox__label">Производитель 3</span>
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="select _alt _bg _range">
+                                <div class="select__main"><a class="filter-alt__clear" href=""><i class="icon icon-close"></i></a>
+                                    <div class="select__value">Скорость, км/ч</div>
+                                    <input class="select__input" type="checkbox">
+                                </div>
+                                <div class="select__options">
+                                    <div class="range-double">
+                                        <div class="input-interval">
+                                            <input class="input _border _mini _range1" type="number">
+                                            <div class="input-interval__separator">—</div>
+                                            <input class="input _border _mini _range2" type="number">
+                                        </div>
+                                        <input class="input-range" type="text" data-min="0" data-max="100000" data-step="100">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="select _alt _bg _range">
+                                <div class="select__main"><a class="filter-alt__clear" href=""><i class="icon icon-close"></i></a>
+                                    <div class="select__value">Запас хода, км</div>
+                                    <input class="select__input" type="checkbox">
+                                </div>
+                                <div class="select__options">
+                                    <div class="range-double">
+                                        <div class="input-interval">
+                                            <input class="input _border _mini _range1" type="number">
+                                            <div class="input-interval__separator">—</div>
+                                            <input class="input _border _mini _range2" type="number">
+                                        </div>
+                                        <input class="input-range" type="text" data-min="0" data-max="100000" data-step="100">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="select _alt _bg _range">
+                                <div class="select__main"><a class="filter-alt__clear" href=""><i class="icon icon-close"></i></a>
+                                    <div class="select__value">Диаметр колёс, дюйм</div>
+                                    <input class="select__input" type="checkbox">
+                                </div>
+                                <div class="select__options">
+                                    <div class="range-double">
+                                        <div class="input-interval">
+                                            <input class="input _border _mini _range1" type="number">
+                                            <div class="input-interval__separator">—</div>
+                                            <input class="input _border _mini _range2" type="number">
+                                        </div>
+                                        <input class="input-range" type="text" data-min="0" data-max="100000" data-step="100">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="select _alt _bg _range">
+                                <div class="select__main"><a class="filter-alt__clear" href=""><i class="icon icon-close"></i></a>
+                                    <div class="select__value">Мощность двигателя, Вт</div>
+                                    <input class="select__input" type="checkbox">
+                                </div>
+                                <div class="select__options">
+                                    <div class="range-double">
+                                        <div class="input-interval">
+                                            <input class="input _border _mini _range1" type="number">
+                                            <div class="input-interval__separator">—</div>
+                                            <input class="input _border _mini _range2" type="number">
+                                        </div>
+                                        <input class="input-range" type="text" data-min="0" data-max="100000" data-step="100">
+                                    </div>
+                                </div>
+                            </div><a class="btn _fill _large" href="">Показать варианты</a>
+                        </div>
+                        <div class="picker__bg"><img class="_active" src="img/picker1.png" alt=""><img src="img/picker2.png" alt=""><img src="img/picker3.png" alt=""><img src="img/picker4.png" alt=""><img src="img/picker5.png" alt=""><img src="img/picker6.png" alt=""><img src="img/picker7.png" alt=""></div>
+                    </div>
+                </section>
+                <section class="inner categories">
+                    <div class="category _main">
+                        <div class="category__img"><img src="img/product7.png" alt=""></div><a class="h1" href="">Электровелосипеды</a>
+                        <div class="tags _alt"><a href="">Взрослые</a><a href="">Детские</a><a href="">Мощные</a><a href="">Прогулочные</a><a href="">Такие</a><a href="">Сякие</a><a href="">Пятые</a><a href="">Десятые</a><a href="">Всякие</a></div>
+                    </div>
+                    <div class="category">
+                        <div class="category__img"><img src="img/product2.png" alt=""></div><a class="h2" href="">Электросамокаты</a>
+                        <div class="tags"><a href="">Взрослые</a><a href="">Детские</a><a href="">Мощные</a><a href="">Прогулочные</a><a href="">Такие</a><a href="">Сякие</a><a href="">Пятые</a><a href="">Десятые</a><a href="">Всякие</a></div>
+                    </div>
+                    <div class="category">
+                        <div class="category__img"><img src="img/product8.png" alt=""></div><a class="h2" href="">Электромотоциклы</a>
+                        <div class="tags"><a href="">Взрослые</a><a href="">Детские</a><a href="">Мощные</a><a href="">Прогулочные</a><a href="">Такие</a><a href="">Сякие</a><a href="">Пятые</a><a href="">Десятые</a><a href="">Всякие</a></div>
+                    </div>
+                    <div class="category">
+                        <div class="category__img"><img src="img/product4.png" alt=""></div><a class="h2" href="">Электроквадроциклы</a>
+                        <div class="tags"><a href="">Взрослые</a><a href="">Детские</a><a href="">Мощные</a><a href="">Прогулочные</a><a href="">Такие</a><a href="">Сякие</a><a href="">Пятые</a><a href="">Десятые</a><a href="">Всякие</a></div>
+                    </div>
+                    <div class="category">
+                        <div class="category__img"><img src="img/product1.png" alt=""></div><a class="h2" href="">Электроскутеры</a>
+                        <div class="tags"><a href="">Взрослые</a><a href="">Детские</a><a href="">Мощные</a><a href="">Прогулочные</a><a href="">Такие</a><a href="">Сякие</a><a href="">Пятые</a><a href="">Десятые</a><a href="">Всякие</a></div>
+                    </div>
+                    <div class="category">
+                        <div class="category__img"><img src="img/product3.png" alt=""></div><a class="h2" href="">Электротрициклы</a>
+                        <div class="tags"><a href="">Взрослые</a><a href="">Детские</a><a href="">Мощные</a><a href="">Прогулочные</a><a href="">Такие</a><a href="">Сякие</a><a href="">Пятые</a><a href="">Десятые</a><a href="">Всякие</a></div>
+                    </div>
+                    <div class="category">
+                        <div class="category__img"><img src="img/product5.png" alt=""></div><a class="h2" href="">Электроснегокаты</a>
+                        <div class="tags"><a href="">Взрослые</a><a href="">Детские</a><a href="">Мощные</a><a href="">Прогулочные</a><a href="">Такие</a><a href="">Сякие</a><a href="">Пятые</a><a href="">Десятые</a><a href="">Всякие</a></div>
+                    </div>
+                </section>
+                <section class="inner swiper-parent" data-filters>
+                    <div class="page-header _no-wrap">
+                        <div class="link-tabs mb-20">
+                            <label class="link-tab">
+                                <input type="radio" name="products" data-filter-btn="new"><span>Новинки</span>
+                            </label>
+                            <label class="link-tab">
+                                <input type="radio" name="products" data-filter-btn="sale"><span>Скидки</span>
+                            </label>
+                            <label class="link-tab">
+                                <input type="radio" name="products" data-filter-btn="hit"><span>Хиты</span>
+                            </label>
+                        </div>
+                        <div class="page-header__links">
+                            <div class="swiper-button-prev"></div>
+                            <div class="swiper-button-next"></div>
+                        </div>
+                    </div>
+                    <div class="swiper product-slider _4-col">
+                        <div class="swiper-wrapper">
+                            <div class="product swiper-slide" data-filter-item="new">
+                                <div class="product__main">
+                                    <div class="product__slider swiper-parent">
+                                        <div class="product__info">
+                                            <div class="label _green">NEW</div>
+                                            <div class="rate"><i class="icon icon-star"></i><span>4.8</span></div>
+                                        </div>
+                                        <div class="swiper _single">
+                                            <div class="swiper-wrapper">
+                                                <div class="swiper-slide"><a href=""><img src="img/product1.jpg" alt="0"></a></div>
+                                                <div class="swiper-slide"><a href=""><img src="img/product2.jpg" alt=""></a></div>
+                                            </div>
+                                            <div class="swiper-pagination"></div>
+                                        </div>
+                                    </div>
+                                    <div class="params">
+                                        <div class="param">
+                                            <div class="param__value">300 куб.см</div>
+                                            <div class="param__label">Объем двигателя</div>
+                                        </div>
+                                        <div class="param">
+                                            <div class="param__value">90 км</div>
+                                            <div class="param__label">Запас хода</div>
+                                        </div>
+                                        <div class="param">
+                                            <div class="param__value">1500 W</div>
+                                            <div class="param__label">Мощность</div>
+                                        </div>
+                                    </div>
+                                </div><a href=""><b>Электровелосипед Coswheel CT20s 48V 35AH</b></a>
+                                <div class="product__price">
+                                    <div class="price">
+                                        <s>255 000 ₽</s><span>199 000 ₽</span>
+                                    </div>
+                                    <div class="product__btns">
+                                        <div class="product__links">
+                                            <label class="add-icon">
+                                                <input class="add-icon__input" type="checkbox"><i class="icon icon-scale"></i>
+                                            </label>
+                                            <label class="add-icon">
+                                                <input class="add-icon__input" type="checkbox"><i class="icon icon-heart-empty"></i>
+                                            </label>
+                                        </div><a class="btn" href="">В корзину</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="product swiper-slide" data-filter-item="new">
+                                <div class="product__main">
+                                    <div class="product__slider swiper-parent">
+                                        <div class="product__info">
+                                            <div class="label _green">NEW</div>
+                                            <div class="rate"><i class="icon icon-star"></i><span>4.8</span></div>
+                                        </div>
+                                        <div class="swiper _single">
+                                            <div class="swiper-wrapper">
+                                                <div class="swiper-slide"><a href=""><img src="img/product1.jpg" alt="1"></a></div>
+                                                <div class="swiper-slide"><a href=""><img src="img/product2.jpg" alt=""></a></div>
+                                            </div>
+                                            <div class="swiper-pagination"></div>
+                                        </div>
+                                    </div>
+                                    <div class="params">
+                                        <div class="param">
+                                            <div class="param__value">300 куб.см</div>
+                                            <div class="param__label">Объем двигателя</div>
+                                        </div>
+                                        <div class="param">
+                                            <div class="param__value">90 км</div>
+                                            <div class="param__label">Запас хода</div>
+                                        </div>
+                                        <div class="param">
+                                            <div class="param__value">1500 W</div>
+                                            <div class="param__label">Мощность</div>
+                                        </div>
+                                    </div>
+                                </div><a href=""><b>Электровелосипед Coswheel CT20s 48V 35AH</b></a>
+                                <div class="product__price">
+                                    <div class="price">
+                                        <s>255 000 ₽</s><span>199 000 ₽</span>
+                                    </div>
+                                    <div class="product__btns">
+                                        <div class="product__links">
+                                            <label class="add-icon">
+                                                <input class="add-icon__input" type="checkbox"><i class="icon icon-scale"></i>
+                                            </label>
+                                            <label class="add-icon">
+                                                <input class="add-icon__input" type="checkbox"><i class="icon icon-heart-empty"></i>
+                                            </label>
+                                        </div><a class="btn" href="">В корзину</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="product swiper-slide" data-filter-item="new">
+                                <div class="product__main">
+                                    <div class="product__slider swiper-parent">
+                                        <div class="product__info">
+                                            <div class="label _green">NEW</div>
+                                            <div class="rate"><i class="icon icon-star"></i><span>4.8</span></div>
+                                        </div>
+                                        <div class="swiper _single">
+                                            <div class="swiper-wrapper">
+                                                <div class="swiper-slide"><a href=""><img src="img/product1.jpg" alt="2"></a></div>
+                                                <div class="swiper-slide"><a href=""><img src="img/product2.jpg" alt=""></a></div>
+                                            </div>
+                                            <div class="swiper-pagination"></div>
+                                        </div>
+                                    </div>
+                                    <div class="params">
+                                        <div class="param">
+                                            <div class="param__value">300 куб.см</div>
+                                            <div class="param__label">Объем двигателя</div>
+                                        </div>
+                                        <div class="param">
+                                            <div class="param__value">90 км</div>
+                                            <div class="param__label">Запас хода</div>
+                                        </div>
+                                        <div class="param">
+                                            <div class="param__value">1500 W</div>
+                                            <div class="param__label">Мощность</div>
+                                        </div>
+                                    </div>
+                                </div><a href=""><b>Электровелосипед Coswheel CT20s 48V 35AH</b></a>
+                                <div class="product__price">
+                                    <div class="price">
+                                        <s>255 000 ₽</s><span>199 000 ₽</span>
+                                    </div>
+                                    <div class="product__btns">
+                                        <div class="product__links">
+                                            <label class="add-icon">
+                                                <input class="add-icon__input" type="checkbox"><i class="icon icon-scale"></i>
+                                            </label>
+                                            <label class="add-icon">
+                                                <input class="add-icon__input" type="checkbox"><i class="icon icon-heart-empty"></i>
+                                            </label>
+                                        </div><a class="btn" href="">В корзину</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="product swiper-slide" data-filter-item="new">
+                                <div class="product__main">
+                                    <div class="product__slider swiper-parent">
+                                        <div class="product__info">
+                                            <div class="label _green">NEW</div>
+                                            <div class="rate"><i class="icon icon-star"></i><span>4.8</span></div>
+                                        </div>
+                                        <div class="swiper _single">
+                                            <div class="swiper-wrapper">
+                                                <div class="swiper-slide"><a href=""><img src="img/product1.jpg" alt="3"></a></div>
+                                                <div class="swiper-slide"><a href=""><img src="img/product2.jpg" alt=""></a></div>
+                                            </div>
+                                            <div class="swiper-pagination"></div>
+                                        </div>
+                                    </div>
+                                    <div class="params">
+                                        <div class="param">
+                                            <div class="param__value">300 куб.см</div>
+                                            <div class="param__label">Объем двигателя</div>
+                                        </div>
+                                        <div class="param">
+                                            <div class="param__value">90 км</div>
+                                            <div class="param__label">Запас хода</div>
+                                        </div>
+                                        <div class="param">
+                                            <div class="param__value">1500 W</div>
+                                            <div class="param__label">Мощность</div>
+                                        </div>
+                                    </div>
+                                </div><a href=""><b>Электровелосипед Coswheel CT20s 48V 35AH</b></a>
+                                <div class="product__price">
+                                    <div class="price">
+                                        <s>255 000 ₽</s><span>199 000 ₽</span>
+                                    </div>
+                                    <div class="product__btns">
+                                        <div class="product__links">
+                                            <label class="add-icon">
+                                                <input class="add-icon__input" type="checkbox"><i class="icon icon-scale"></i>
+                                            </label>
+                                            <label class="add-icon">
+                                                <input class="add-icon__input" type="checkbox"><i class="icon icon-heart-empty"></i>
+                                            </label>
+                                        </div><a class="btn" href="">В корзину</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="product swiper-slide" data-filter-item="new">
+                                <div class="product__main">
+                                    <div class="product__slider swiper-parent">
+                                        <div class="product__info">
+                                            <div class="label _green">NEW</div>
+                                            <div class="rate"><i class="icon icon-star"></i><span>4.8</span></div>
+                                        </div>
+                                        <div class="swiper _single">
+                                            <div class="swiper-wrapper">
+                                                <div class="swiper-slide"><a href=""><img src="img/product1.jpg" alt="4"></a></div>
+                                                <div class="swiper-slide"><a href=""><img src="img/product2.jpg" alt=""></a></div>
+                                            </div>
+                                            <div class="swiper-pagination"></div>
+                                        </div>
+                                    </div>
+                                    <div class="params">
+                                        <div class="param">
+                                            <div class="param__value">300 куб.см</div>
+                                            <div class="param__label">Объем двигателя</div>
+                                        </div>
+                                        <div class="param">
+                                            <div class="param__value">90 км</div>
+                                            <div class="param__label">Запас хода</div>
+                                        </div>
+                                        <div class="param">
+                                            <div class="param__value">1500 W</div>
+                                            <div class="param__label">Мощность</div>
+                                        </div>
+                                    </div>
+                                </div><a href=""><b>Электровелосипед Coswheel CT20s 48V 35AH</b></a>
+                                <div class="product__price">
+                                    <div class="price">
+                                        <s>255 000 ₽</s><span>199 000 ₽</span>
+                                    </div>
+                                    <div class="product__btns">
+                                        <div class="product__links">
+                                            <label class="add-icon">
+                                                <input class="add-icon__input" type="checkbox"><i class="icon icon-scale"></i>
+                                            </label>
+                                            <label class="add-icon">
+                                                <input class="add-icon__input" type="checkbox"><i class="icon icon-heart-empty"></i>
+                                            </label>
+                                        </div><a class="btn" href="">В корзину</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="product swiper-slide" data-filter-item="hit">
+                                <div class="product__main">
+                                    <div class="product__slider swiper-parent">
+                                        <div class="product__info">
+                                            <div class="label _yellow">HIT</div>
+                                            <div class="rate"><i class="icon icon-star"></i><span>4.8</span></div>
+                                        </div>
+                                        <div class="swiper _single">
+                                            <div class="swiper-wrapper">
+                                                <div class="swiper-slide"><a href=""><img src="img/product1.jpg" alt="0"></a></div>
+                                                <div class="swiper-slide"><a href=""><img src="img/product2.jpg" alt=""></a></div>
+                                            </div>
+                                            <div class="swiper-pagination"></div>
+                                        </div>
+                                    </div>
+                                    <div class="params">
+                                        <div class="param">
+                                            <div class="param__value">300 куб.см</div>
+                                            <div class="param__label">Объем двигателя</div>
+                                        </div>
+                                        <div class="param">
+                                            <div class="param__value">90 км</div>
+                                            <div class="param__label">Запас хода</div>
+                                        </div>
+                                        <div class="param">
+                                            <div class="param__value">1500 W</div>
+                                            <div class="param__label">Мощность</div>
+                                        </div>
+                                    </div>
+                                </div><a href=""><b>Электровелосипед Coswheel CT20s 48V 35AH</b></a>
+                                <div class="product__price">
+                                    <div class="price">
+                                        <s>255 000 ₽</s><span>199 000 ₽</span>
+                                    </div>
+                                    <div class="product__btns">
+                                        <div class="product__links">
+                                            <label class="add-icon">
+                                                <input class="add-icon__input" type="checkbox"><i class="icon icon-scale"></i>
+                                            </label>
+                                            <label class="add-icon">
+                                                <input class="add-icon__input" type="checkbox"><i class="icon icon-heart-empty"></i>
+                                            </label>
+                                        </div><a class="btn" href="">В корзину</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="product swiper-slide" data-filter-item="hit">
+                                <div class="product__main">
+                                    <div class="product__slider swiper-parent">
+                                        <div class="product__info">
+                                            <div class="label _yellow">HIT</div>
+                                            <div class="rate"><i class="icon icon-star"></i><span>4.8</span></div>
+                                        </div>
+                                        <div class="swiper _single">
+                                            <div class="swiper-wrapper">
+                                                <div class="swiper-slide"><a href=""><img src="img/product1.jpg" alt="1"></a></div>
+                                                <div class="swiper-slide"><a href=""><img src="img/product2.jpg" alt=""></a></div>
+                                            </div>
+                                            <div class="swiper-pagination"></div>
+                                        </div>
+                                    </div>
+                                    <div class="params">
+                                        <div class="param">
+                                            <div class="param__value">300 куб.см</div>
+                                            <div class="param__label">Объем двигателя</div>
+                                        </div>
+                                        <div class="param">
+                                            <div class="param__value">90 км</div>
+                                            <div class="param__label">Запас хода</div>
+                                        </div>
+                                        <div class="param">
+                                            <div class="param__value">1500 W</div>
+                                            <div class="param__label">Мощность</div>
+                                        </div>
+                                    </div>
+                                </div><a href=""><b>Электровелосипед Coswheel CT20s 48V 35AH</b></a>
+                                <div class="product__price">
+                                    <div class="price">
+                                        <s>255 000 ₽</s><span>199 000 ₽</span>
+                                    </div>
+                                    <div class="product__btns">
+                                        <div class="product__links">
+                                            <label class="add-icon">
+                                                <input class="add-icon__input" type="checkbox"><i class="icon icon-scale"></i>
+                                            </label>
+                                            <label class="add-icon">
+                                                <input class="add-icon__input" type="checkbox"><i class="icon icon-heart-empty"></i>
+                                            </label>
+                                        </div><a class="btn" href="">В корзину</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="product swiper-slide" data-filter-item="hit">
+                                <div class="product__main">
+                                    <div class="product__slider swiper-parent">
+                                        <div class="product__info">
+                                            <div class="label _yellow">HIT</div>
+                                            <div class="rate"><i class="icon icon-star"></i><span>4.8</span></div>
+                                        </div>
+                                        <div class="swiper _single">
+                                            <div class="swiper-wrapper">
+                                                <div class="swiper-slide"><a href=""><img src="img/product1.jpg" alt="2"></a></div>
+                                                <div class="swiper-slide"><a href=""><img src="img/product2.jpg" alt=""></a></div>
+                                            </div>
+                                            <div class="swiper-pagination"></div>
+                                        </div>
+                                    </div>
+                                    <div class="params">
+                                        <div class="param">
+                                            <div class="param__value">300 куб.см</div>
+                                            <div class="param__label">Объем двигателя</div>
+                                        </div>
+                                        <div class="param">
+                                            <div class="param__value">90 км</div>
+                                            <div class="param__label">Запас хода</div>
+                                        </div>
+                                        <div class="param">
+                                            <div class="param__value">1500 W</div>
+                                            <div class="param__label">Мощность</div>
+                                        </div>
+                                    </div>
+                                </div><a href=""><b>Электровелосипед Coswheel CT20s 48V 35AH</b></a>
+                                <div class="product__price">
+                                    <div class="price">
+                                        <s>255 000 ₽</s><span>199 000 ₽</span>
+                                    </div>
+                                    <div class="product__btns">
+                                        <div class="product__links">
+                                            <label class="add-icon">
+                                                <input class="add-icon__input" type="checkbox"><i class="icon icon-scale"></i>
+                                            </label>
+                                            <label class="add-icon">
+                                                <input class="add-icon__input" type="checkbox"><i class="icon icon-heart-empty"></i>
+                                            </label>
+                                        </div><a class="btn" href="">В корзину</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="product swiper-slide" data-filter-item="hit">
+                                <div class="product__main">
+                                    <div class="product__slider swiper-parent">
+                                        <div class="product__info">
+                                            <div class="label _yellow">HIT</div>
+                                            <div class="rate"><i class="icon icon-star"></i><span>4.8</span></div>
+                                        </div>
+                                        <div class="swiper _single">
+                                            <div class="swiper-wrapper">
+                                                <div class="swiper-slide"><a href=""><img src="img/product1.jpg" alt="3"></a></div>
+                                                <div class="swiper-slide"><a href=""><img src="img/product2.jpg" alt=""></a></div>
+                                            </div>
+                                            <div class="swiper-pagination"></div>
+                                        </div>
+                                    </div>
+                                    <div class="params">
+                                        <div class="param">
+                                            <div class="param__value">300 куб.см</div>
+                                            <div class="param__label">Объем двигателя</div>
+                                        </div>
+                                        <div class="param">
+                                            <div class="param__value">90 км</div>
+                                            <div class="param__label">Запас хода</div>
+                                        </div>
+                                        <div class="param">
+                                            <div class="param__value">1500 W</div>
+                                            <div class="param__label">Мощность</div>
+                                        </div>
+                                    </div>
+                                </div><a href=""><b>Электровелосипед Coswheel CT20s 48V 35AH</b></a>
+                                <div class="product__price">
+                                    <div class="price">
+                                        <s>255 000 ₽</s><span>199 000 ₽</span>
+                                    </div>
+                                    <div class="product__btns">
+                                        <div class="product__links">
+                                            <label class="add-icon">
+                                                <input class="add-icon__input" type="checkbox"><i class="icon icon-scale"></i>
+                                            </label>
+                                            <label class="add-icon">
+                                                <input class="add-icon__input" type="checkbox"><i class="icon icon-heart-empty"></i>
+                                            </label>
+                                        </div><a class="btn" href="">В корзину</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="product swiper-slide" data-filter-item="hit">
+                                <div class="product__main">
+                                    <div class="product__slider swiper-parent">
+                                        <div class="product__info">
+                                            <div class="label _yellow">HIT</div>
+                                            <div class="rate"><i class="icon icon-star"></i><span>4.8</span></div>
+                                        </div>
+                                        <div class="swiper _single">
+                                            <div class="swiper-wrapper">
+                                                <div class="swiper-slide"><a href=""><img src="img/product1.jpg" alt="4"></a></div>
+                                                <div class="swiper-slide"><a href=""><img src="img/product2.jpg" alt=""></a></div>
+                                            </div>
+                                            <div class="swiper-pagination"></div>
+                                        </div>
+                                    </div>
+                                    <div class="params">
+                                        <div class="param">
+                                            <div class="param__value">300 куб.см</div>
+                                            <div class="param__label">Объем двигателя</div>
+                                        </div>
+                                        <div class="param">
+                                            <div class="param__value">90 км</div>
+                                            <div class="param__label">Запас хода</div>
+                                        </div>
+                                        <div class="param">
+                                            <div class="param__value">1500 W</div>
+                                            <div class="param__label">Мощность</div>
+                                        </div>
+                                    </div>
+                                </div><a href=""><b>Электровелосипед Coswheel CT20s 48V 35AH</b></a>
+                                <div class="product__price">
+                                    <div class="price">
+                                        <s>255 000 ₽</s><span>199 000 ₽</span>
+                                    </div>
+                                    <div class="product__btns">
+                                        <div class="product__links">
+                                            <label class="add-icon">
+                                                <input class="add-icon__input" type="checkbox"><i class="icon icon-scale"></i>
+                                            </label>
+                                            <label class="add-icon">
+                                                <input class="add-icon__input" type="checkbox"><i class="icon icon-heart-empty"></i>
+                                            </label>
+                                        </div><a class="btn" href="">В корзину</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="product swiper-slide" data-filter-item="sale">
+                                <div class="product__main">
+                                    <div class="product__slider swiper-parent">
+                                        <div class="product__info">
+                                            <div class="label _red">-2 000 ₽</div>
+                                            <div class="rate"><i class="icon icon-star"></i><span>4.8</span></div>
+                                        </div>
+                                        <div class="swiper _single">
+                                            <div class="swiper-wrapper">
+                                                <div class="swiper-slide"><a href=""><img src="img/product1.jpg" alt="0"></a></div>
+                                                <div class="swiper-slide"><a href=""><img src="img/product2.jpg" alt=""></a></div>
+                                            </div>
+                                            <div class="swiper-pagination"></div>
+                                        </div>
+                                    </div>
+                                    <div class="params">
+                                        <div class="param">
+                                            <div class="param__value">300 куб.см</div>
+                                            <div class="param__label">Объем двигателя</div>
+                                        </div>
+                                        <div class="param">
+                                            <div class="param__value">90 км</div>
+                                            <div class="param__label">Запас хода</div>
+                                        </div>
+                                        <div class="param">
+                                            <div class="param__value">1500 W</div>
+                                            <div class="param__label">Мощность</div>
+                                        </div>
+                                    </div>
+                                </div><a href=""><b>Электровелосипед Coswheel CT20s 48V 35AH</b></a>
+                                <div class="product__price">
+                                    <div class="price">
+                                        <s>255 000 ₽</s><span>199 000 ₽</span>
+                                    </div>
+                                    <div class="product__btns">
+                                        <div class="product__links">
+                                            <label class="add-icon">
+                                                <input class="add-icon__input" type="checkbox"><i class="icon icon-scale"></i>
+                                            </label>
+                                            <label class="add-icon">
+                                                <input class="add-icon__input" type="checkbox"><i class="icon icon-heart-empty"></i>
+                                            </label>
+                                        </div><a class="btn" href="">В корзину</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="product swiper-slide" data-filter-item="sale">
+                                <div class="product__main">
+                                    <div class="product__slider swiper-parent">
+                                        <div class="product__info">
+                                            <div class="label _red">-2 000 ₽</div>
+                                            <div class="rate"><i class="icon icon-star"></i><span>4.8</span></div>
+                                        </div>
+                                        <div class="swiper _single">
+                                            <div class="swiper-wrapper">
+                                                <div class="swiper-slide"><a href=""><img src="img/product1.jpg" alt="1"></a></div>
+                                                <div class="swiper-slide"><a href=""><img src="img/product2.jpg" alt=""></a></div>
+                                            </div>
+                                            <div class="swiper-pagination"></div>
+                                        </div>
+                                    </div>
+                                    <div class="params">
+                                        <div class="param">
+                                            <div class="param__value">300 куб.см</div>
+                                            <div class="param__label">Объем двигателя</div>
+                                        </div>
+                                        <div class="param">
+                                            <div class="param__value">90 км</div>
+                                            <div class="param__label">Запас хода</div>
+                                        </div>
+                                        <div class="param">
+                                            <div class="param__value">1500 W</div>
+                                            <div class="param__label">Мощность</div>
+                                        </div>
+                                    </div>
+                                </div><a href=""><b>Электровелосипед Coswheel CT20s 48V 35AH</b></a>
+                                <div class="product__price">
+                                    <div class="price">
+                                        <s>255 000 ₽</s><span>199 000 ₽</span>
+                                    </div>
+                                    <div class="product__btns">
+                                        <div class="product__links">
+                                            <label class="add-icon">
+                                                <input class="add-icon__input" type="checkbox"><i class="icon icon-scale"></i>
+                                            </label>
+                                            <label class="add-icon">
+                                                <input class="add-icon__input" type="checkbox"><i class="icon icon-heart-empty"></i>
+                                            </label>
+                                        </div><a class="btn" href="">В корзину</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="product swiper-slide" data-filter-item="sale">
+                                <div class="product__main">
+                                    <div class="product__slider swiper-parent">
+                                        <div class="product__info">
+                                            <div class="label _red">-2 000 ₽</div>
+                                            <div class="rate"><i class="icon icon-star"></i><span>4.8</span></div>
+                                        </div>
+                                        <div class="swiper _single">
+                                            <div class="swiper-wrapper">
+                                                <div class="swiper-slide"><a href=""><img src="img/product1.jpg" alt="2"></a></div>
+                                                <div class="swiper-slide"><a href=""><img src="img/product2.jpg" alt=""></a></div>
+                                            </div>
+                                            <div class="swiper-pagination"></div>
+                                        </div>
+                                    </div>
+                                    <div class="params">
+                                        <div class="param">
+                                            <div class="param__value">300 куб.см</div>
+                                            <div class="param__label">Объем двигателя</div>
+                                        </div>
+                                        <div class="param">
+                                            <div class="param__value">90 км</div>
+                                            <div class="param__label">Запас хода</div>
+                                        </div>
+                                        <div class="param">
+                                            <div class="param__value">1500 W</div>
+                                            <div class="param__label">Мощность</div>
+                                        </div>
+                                    </div>
+                                </div><a href=""><b>Электровелосипед Coswheel CT20s 48V 35AH</b></a>
+                                <div class="product__price">
+                                    <div class="price">
+                                        <s>255 000 ₽</s><span>199 000 ₽</span>
+                                    </div>
+                                    <div class="product__btns">
+                                        <div class="product__links">
+                                            <label class="add-icon">
+                                                <input class="add-icon__input" type="checkbox"><i class="icon icon-scale"></i>
+                                            </label>
+                                            <label class="add-icon">
+                                                <input class="add-icon__input" type="checkbox"><i class="icon icon-heart-empty"></i>
+                                            </label>
+                                        </div><a class="btn" href="">В корзину</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="product swiper-slide" data-filter-item="sale">
+                                <div class="product__main">
+                                    <div class="product__slider swiper-parent">
+                                        <div class="product__info">
+                                            <div class="label _red">-2 000 ₽</div>
+                                            <div class="rate"><i class="icon icon-star"></i><span>4.8</span></div>
+                                        </div>
+                                        <div class="swiper _single">
+                                            <div class="swiper-wrapper">
+                                                <div class="swiper-slide"><a href=""><img src="img/product1.jpg" alt="3"></a></div>
+                                                <div class="swiper-slide"><a href=""><img src="img/product2.jpg" alt=""></a></div>
+                                            </div>
+                                            <div class="swiper-pagination"></div>
+                                        </div>
+                                    </div>
+                                    <div class="params">
+                                        <div class="param">
+                                            <div class="param__value">300 куб.см</div>
+                                            <div class="param__label">Объем двигателя</div>
+                                        </div>
+                                        <div class="param">
+                                            <div class="param__value">90 км</div>
+                                            <div class="param__label">Запас хода</div>
+                                        </div>
+                                        <div class="param">
+                                            <div class="param__value">1500 W</div>
+                                            <div class="param__label">Мощность</div>
+                                        </div>
+                                    </div>
+                                </div><a href=""><b>Электровелосипед Coswheel CT20s 48V 35AH</b></a>
+                                <div class="product__price">
+                                    <div class="price">
+                                        <s>255 000 ₽</s><span>199 000 ₽</span>
+                                    </div>
+                                    <div class="product__btns">
+                                        <div class="product__links">
+                                            <label class="add-icon">
+                                                <input class="add-icon__input" type="checkbox"><i class="icon icon-scale"></i>
+                                            </label>
+                                            <label class="add-icon">
+                                                <input class="add-icon__input" type="checkbox"><i class="icon icon-heart-empty"></i>
+                                            </label>
+                                        </div><a class="btn" href="">В корзину</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="product swiper-slide" data-filter-item="sale">
+                                <div class="product__main">
+                                    <div class="product__slider swiper-parent">
+                                        <div class="product__info">
+                                            <div class="label _red">-2 000 ₽</div>
+                                            <div class="rate"><i class="icon icon-star"></i><span>4.8</span></div>
+                                        </div>
+                                        <div class="swiper _single">
+                                            <div class="swiper-wrapper">
+                                                <div class="swiper-slide"><a href=""><img src="img/product1.jpg" alt="4"></a></div>
+                                                <div class="swiper-slide"><a href=""><img src="img/product2.jpg" alt=""></a></div>
+                                            </div>
+                                            <div class="swiper-pagination"></div>
+                                        </div>
+                                    </div>
+                                    <div class="params">
+                                        <div class="param">
+                                            <div class="param__value">300 куб.см</div>
+                                            <div class="param__label">Объем двигателя</div>
+                                        </div>
+                                        <div class="param">
+                                            <div class="param__value">90 км</div>
+                                            <div class="param__label">Запас хода</div>
+                                        </div>
+                                        <div class="param">
+                                            <div class="param__value">1500 W</div>
+                                            <div class="param__label">Мощность</div>
+                                        </div>
+                                    </div>
+                                </div><a href=""><b>Электровелосипед Coswheel CT20s 48V 35AH</b></a>
+                                <div class="product__price">
+                                    <div class="price">
+                                        <s>255 000 ₽</s><span>199 000 ₽</span>
+                                    </div>
+                                    <div class="product__btns">
+                                        <div class="product__links">
+                                            <label class="add-icon">
+                                                <input class="add-icon__input" type="checkbox"><i class="icon icon-scale"></i>
+                                            </label>
+                                            <label class="add-icon">
+                                                <input class="add-icon__input" type="checkbox"><i class="icon icon-heart-empty"></i>
+                                            </label>
+                                        </div><a class="btn" href="">В корзину</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <div class="brands-line _alt">
+                    <div class="brands-line__list inner"><a href=""><img src="img/brand1.svg" alt=""></a><a href=""><img src="img/brand2.svg" alt=""></a><a href=""><img src="img/brand3.png" alt=""></a><a href=""><img src="img/brand4.png" alt=""></a><a href=""><img src="img/brand5.png" alt=""></a><a href=""><img src="img/brand6.svg" alt=""></a><a href=""><img src="img/brand7.png" alt=""></a></div>
+                </div>
+                <section class="inner" id="advants">
+                    <div class="page-header mb-20">
+                        <h2 class="h1">ElectroStreet в деталях</h2>
+                    </div>
+                    <div class="swiper-parent advants-slider">
+                        <div class="swiper _mob">
+                            <div class="swiper-wrapper">
+                                <div class="advant swiper-slide"><i class="icon icon-y-map"></i>
+                                    <div class="h2">8 филиалов в крупных городах</div>
+                                    <p class="light">Москва, Екатеринбург, Краснодар, Н. Новгород, Новосибирск, Самара, Пермь, Челябинск</p>
+                                </div>
+                                <div class="advant swiper-slide"><i class="icon icon-y-search"></i>
+                                    <div class="h2">1000+ моделей в каталоге</div>
+                                    <p class="light">Электросамокаты, велосипеды, <br>скутеры, мотоциклы и спецтранспорт</p>
+                                </div>
+                                <div class="advant swiper-slide"><i class="icon icon-y-settings"></i>
+                                    <div class="h2">Официальная гарантия до 2 лет</div>
+                                    <p class="light">Только сертифицированная техника <br>от проверенных производителей</p>
+                                </div>
+                                <div class="advant swiper-slide"><i class="icon icon-y-box"></i>
+                                    <div class="h2">Доставка по всей России</div>
+                                    <p class="light">Отправляем транспорт в любой регион, <br>самовывоз доступен в филиалах</p>
+                                </div>
+                                <div class="advant swiper-slide"><i class="icon icon-y-invoice"></i>
+                                    <div class="h2">Возможность рассрочки и кредита</div>
+                                    <p class="light">Гибкие условия оплаты <br>для частных клиентов и юрлиц</p>
+                                </div>
+                                <div class="advant swiper-slide"><i class="icon icon-y-repair"></i>
+                                    <div class="h2">Собственные сервисные центры</div>
+                                    <p class="light">Профессиональный ремонт и <br>обслуживание с оригинальными запчастями</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-pagination _static"></div>
+                    </div>
+                </section>
+                <section class="inner">
+                    <div class="service">
+                        <div class="service__main">
+                            <h2 class="h1">Сервисный центр</h2>
+                            <p>Официальный сервис ElectroStreet — это надёжность, скорость и уверенность в результате. Тысячи клиентов уже доверили нам обслуживание своей техники — доверьтесь и вы!</p><img src="img/ill-settings.svg" alt="">
+                        </div>
+                        <div class="service__bg">
+                            <picture>
+                                <source srcset="img/service-bg_mob.png" media="(max-width: 767px)"><img src="img/service-bg.jpg" alt="">
+                            </picture>
+                            <div class="service__advantes">
+                                <div class="mini-advants"><i class="icon icon-repair2"></i>
+                                    <div class="h2">ремонт любой сложности</div>
+                                </div>
+                                <div class="mini-advants"><i class="icon icon-repair2"></i>
+                                    <div class="h2">оригинальные запчасти</div>
+                                </div>
+                                <div class="mini-advants"><i class="icon icon-repair2"></i>
+                                    <div class="h2">гарантия на выполненные работы</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="contacts-alt">
+                    <iframe src="https://yandex.ru/map-widget/v1/?ll=37.630538%2C55.733111&amp;mode=search&amp;ol=geo&amp;ouri=ymapsbm1%3A%2F%2Fgeo%3Fdata%3DCgg1MzAwMDA5NBIa0KDQvtGB0YHQuNGPLCDQnNC-0YHQutCy0LAiCg2GeBZCFQEGX0I%2C&amp;z=11.21&amp;scroll=false" width="100%" height="270" frameborder="1" allowfullscreen="true"></iframe>
+                    <div class="contacts-alt__inner inner">
+                        <div class="contacts-alt__main">
+                            <h2 class="h1">Шоурум в Нижнем Новгороде</h2>
+                            <p>ElectroStreet — федеральная сеть магазинов электротранспорта. В нашем каталоге представлены электросамокаты, велосипеды, скутеры, мотоциклы и другая техника от ведущих производителей. Мы предлагаем только сертифицированные модели с официальной гарантией и обеспечиваем сервисное сопровождение. Покупая у нас, вы получаете надёжный транспорт и поддержку экспертов.</p>
+                            <div class="swiper-parent">
+                                <div class="contacts-alt__slider">
+                                    <div class="swiper _single">
+                                        <div class="swiper-wrapper">
+                                            <div class="swiper-slide" data-fancybox="contacts" href="img/shop1.jpg"><img src="img/shop1.jpg" alt=""></div>
+                                            <div class="swiper-slide" data-fancybox="contacts" href="img/shop2.jpg"><img src="img/shop2.jpg" alt=""></div>
+                                            <div class="swiper-slide" data-fancybox="contacts" href="img/shop3.jpg"><img src="img/shop3.jpg" alt=""></div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-button-prev"></div>
+                                    <div class="swiper-button-next"></div>
+                                </div>
+                                <div class="swiper-pagination _static"></div>
+                            </div>
+                            <div class="contacts-alt__list">
+                                <div class="contact"><i class="icon icon-pin"></i>
+                                    <p>ул.Белинского, д.152, к.1</p>
+                                </div>
+                                <div class="contact"><i class="icon icon-time2"></i>
+                                    <p>10-00 до 20-00. Без выходных</p>
+                                </div>
+                                <div class="social _auto _left"><a href=""><img src="img/tg.svg" alt=""></a><a href=""><img src="img/wa.svg" alt=""><span>*</span></a><a href=""><img src="img/max.svg" alt=""></a><a href=""><img src="img/call2.svg" alt=""></a></div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="inner swiper-parent">
+                    <div class="page-header _no-wrap mb-20">
+                        <h2 class="h1">Блог</h2>
+                        <div class="page-header__links"><a class="link-line" href="">Все статьи</a>
+                            <div class="swiper-button-prev"></div>
+                            <div class="swiper-button-next"></div>
+                        </div>
+                    </div>
+                    <div class="swiper _2-col news-slider">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div class="news"><a class="link-full"></a><img src="img/shop1.jpg" alt="">
+                                    <div class="news__main"><b>Короткое содержательное название статьи</b>
+                                        <div class="news__infos">
+                                            <div class="news__info"><i class="icon icon-eye"></i><span>86</span></div>
+                                            <div class="news__info"><i class="icon icon-calendar2"></i><span>25.06.2025</span></div>
+                                        </div>
+                                        <div class="news__text">
+                                            <p>Небольшой текст из статьи, краткое содержание, буквально на две-три строки. Небольшой текст из статьи, краткое содержание, буквально на две-три строки.</p>
+                                        </div><a class="link-arrow" href=""><span>Читать полностью</span><i class="icon icon-long-arrow"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="news"><a class="link-full"></a><img src="img/shop2.jpg" alt="">
+                                    <div class="news__main"><b>Короткое содержательное название статьи</b>
+                                        <div class="news__infos">
+                                            <div class="news__info"><i class="icon icon-eye"></i><span>86</span></div>
+                                            <div class="news__info"><i class="icon icon-calendar2"></i><span>25.06.2025</span></div>
+                                        </div>
+                                        <div class="news__text">
+                                            <p>Небольшой текст из статьи, краткое содержание, буквально на две-три строки. Небольшой текст из статьи, краткое содержание, буквально на две-три строки.</p>
+                                        </div><a class="link-arrow" href=""><span>Читать полностью</span><i class="icon icon-long-arrow"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="news"><a class="link-full"></a><img src="img/shop3.jpg" alt="">
+                                    <div class="news__main"><b>Короткое содержательное название статьи</b>
+                                        <div class="news__infos">
+                                            <div class="news__info"><i class="icon icon-eye"></i><span>86</span></div>
+                                            <div class="news__info"><i class="icon icon-calendar2"></i><span>25.06.2025</span></div>
+                                        </div>
+                                        <div class="news__text">
+                                            <p>Небольшой текст из статьи, краткое содержание, буквально на две-три строки. Небольшой текст из статьи, краткое содержание, буквально на две-три строки.</p>
+                                        </div><a class="link-arrow" href=""><span>Читать полностью</span><i class="icon icon-long-arrow"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-pagination _static _mob"></div>
+                </section>
+                <section class="inner franchise">
+                    <div class="franchise__main">
+                        <h2 class="h1">Франшиза</h2>
+                        <div class="text">
+                            <p>Хотите открыть свой бизнес и зарабатывать на востребованном рынке?</p>
+                            <p>С франшизой ElectroStreet это просто:</p>
+                            <ul>
+                                <li>мы поможем с запуском магазина или сервиса</li>
+                                <li>научим команду</li>
+                                <li>обеспечим поставки техники и</li>
+                                <li>дадим готовые решения для продвижения</li>
+                            </ul>
+                            <p>Присоединяйтесь к сети, которая делает электротранспорт доступным в десятках городов России.</p>
+                        </div><a class="link-arrow _big" href="">Узнать подробнее<i class="icon icon-long-arrow"></i></a>
+                    </div><img src="img/ill-partners.svg" alt="">
                 </section>
             </div>
         </main>
@@ -958,7 +2028,7 @@
         <script src="https://electrostreet.ru/js/_calendar.js" defer=""></script>
         <script src="https://electrostreet.ru/js/_fancybox-min.js?v=with_rutube" defer=""></script>
         <script src="https://electrostreet.ru/js/script-min.js?v=2" defer=""></script>
-        <script src="https://electrostreet.ru/catalog/view/theme/electrostreet/js/megamenu.js?v=2" defer=""></script>
+        <script src="https://electrostreet.ru/catalog/view/theme/electrostreet/js/megamenu.js?v=3" defer=""></script>
         <!--script(src="https://code-ya.jivosite.com/widget/CIUAbbRySb" defer="")-->
         <!--script(src="https://vk.com/js/api/openapi.js?121" defer="")-->
         <!--script(src="https://res.smartwidgets.ru/app.js" defer="")-->
@@ -1091,7 +2161,7 @@
       
       
       -->
-        <script src="js/script.min.js?ver=6" defer=""></script>
+        <script src="js/script.min.js?ver=14" defer=""></script>
     </div>
 </body>
 
