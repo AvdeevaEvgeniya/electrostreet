@@ -55,6 +55,17 @@
 
 +small-mobile()
   .picker
+    .select._range
+      .range-double .input
+        flex-grow: 1
+      &:nth-child(even)
+        .select
+          &__options
+            left: initial
+            right: 0
+      .select
+        &__options
+          width: calc(100vw - var(--offset) * 2)
     &__form
       min-width: initial
       gap: 10px

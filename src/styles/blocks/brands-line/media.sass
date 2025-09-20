@@ -4,11 +4,12 @@
     &._alt
       display: flex
       overflow-x: auto
+      padding-left: var(--offset)
+      padding-right: var(--offset)
       a
         min-width: max-content
       img
         max-height: 3rem
-        min-width: fit-content
       &::-webkit-scrollbar-track
         width: 0
         height: 0
@@ -23,3 +24,4 @@
         background: transparent
     &__list
       width: fit-content
+      padding: 0
