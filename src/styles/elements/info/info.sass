@@ -1,0 +1,31 @@
+.info
+  +flex(row nowrap, space-between, baseline)
+  gap: 10px
+  font-size: 16px
+  font-weight: 300
+  &:after
+    content: ""
+    flex-grow: 1
+    border-bottom: 1px dotted #CACACA
+    min-width: 4.5rem
+  p
+    margin: 0
+    gap: 10px
+  i.icon
+    color: #CACACA
+    font-size: 16px
+    margin-left: 10px
+  b
+    order: 1
+    font-weight: 400
+    text-align: right
+
+.infos
+  &__list
+    display: grid
+    grid-template-columns: 1fr 1fr
+    gap: 10px 3rem
+  &__title
+    font-weight: 400
+    font-size: 18px
+    margin-bottom: 15px

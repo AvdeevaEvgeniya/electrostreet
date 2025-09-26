@@ -1,0 +1,35 @@
+.doc
+  +flex(row nowrap, center, center)
+  background: #F3F3F3
+  gap: 10px
+  padding: 10px 2rem
+  border-radius: var(--border-radius3)
+  &._red
+    b
+      color: #D10000
+  &._green
+    b
+      color: #00AF14
+  &._blue
+    b
+      color: #0042D1
+  &:before
+    content: "\e988"
+    font-family: "icomoon"
+    font-size: 18px
+    color: #777777
+    margin-right: 5px
+  b
+    font-weight: 500
+    text-transform: uppercase
+    flex-grow: 1
+    text-align: right
+    color: #777777
+  span
+    font-weight: 300
+    color: #777777
+
+.docs
+  display: grid
+  grid-template-columns: 1fr 1fr
+  gap: 15px 2rem

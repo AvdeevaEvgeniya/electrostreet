@@ -1,0 +1,22 @@
+.status
+  +flex(row nowrap, flex-start, center)
+  gap: 8px
+  font-weight: 300
+  font-size: 14px
+  &:before
+    content: ""
+    display: block
+    width: 8px
+    min-width: 8px
+    height: 8px
+    border-radius: 100%
+    background: darkgray
+  &._green
+    &:before
+      background: #2DDA95
+  &._orange
+    &:before
+      background: #FF8D28
+  &._red
+    &:before
+      background: var(--color3)

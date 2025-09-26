@@ -1,0 +1,149 @@
+section.inner.swiper-parent(data-filters)
+    .page-header._no-wrap
+        .link-tabs.mb-20
+            label.link-tab
+                input(type="radio" name="products" data-filter-btn="new")
+                span Новинки
+            label.link-tab
+                input(type="radio" name="products" data-filter-btn="sale")
+                span Скидки
+            label.link-tab
+                input(type="radio" name="products" data-filter-btn="hit")
+                span Хиты
+        .page-header__links
+            .swiper-button-prev
+            .swiper-button-next
+    .swiper.product-slider._4-col
+        .swiper-wrapper
+            - var n = 0;
+            while n < 5
+                .product.swiper-slide(data-filter-item="new")
+                    .product__main
+                        .product__slider.swiper-parent
+                            .product__info
+                                .label._green NEW
+                                .rate
+                                    i.icon.icon-star
+                                    span 4.8
+                            .swiper._single
+                                .swiper-wrapper
+                                    .swiper-slide
+                                        a(href="")
+                                            img(src="img/product1.jpg" alt="" + n++)
+                                    .swiper-slide
+                                        a(href="")
+                                            img(src="img/product2.jpg" alt="")
+                                .swiper-pagination
+                        .params
+                            .param
+                                .param__value 300 куб.см
+                                .param__label Объем двигателя
+                            .param
+                                .param__value 90 км
+                                .param__label Запас хода
+                            .param
+                                .param__value 1500 W
+                                .param__label Мощность
+                    a(href="")
+                        b Электровелосипед Coswheel CT20s 48V 35AH
+                    .product__price
+                        .price
+                            s 255 000 ₽
+                            span 199 000 ₽
+                        .product__btns
+                            .product__links
+                                label.add-icon
+                                    input.add-icon__input(type="checkbox")
+                                    i.icon.icon-scale
+                                label.add-icon
+                                    input.add-icon__input(type="checkbox")
+                                    i.icon.icon-heart-empty
+                            a.btn(href="") В корзину
+            - var i = 0;
+            while i < 5
+                .product.swiper-slide(data-filter-item="hit")
+                    .product__main
+                        .product__slider.swiper-parent
+                            .product__info
+                                .label._yellow HIT
+                                .rate
+                                    i.icon.icon-star
+                                    span 4.8
+                            .swiper._single
+                                .swiper-wrapper
+                                    .swiper-slide
+                                        a(href="")
+                                            img(src="img/product1.jpg" alt="" + i++)
+                                    .swiper-slide
+                                        a(href="")
+                                            img(src="img/product2.jpg" alt="")
+                                .swiper-pagination
+                        .params
+                            .param
+                                .param__value 300 куб.см
+                                .param__label Объем двигателя
+                            .param
+                                .param__value 90 км
+                                .param__label Запас хода
+                            .param
+                                .param__value 1500 W
+                                .param__label Мощность
+                    a(href="")
+                        b Электровелосипед Coswheel CT20s 48V 35AH
+                    .product__price
+                        .price
+                            s 255 000 ₽
+                            span 199 000 ₽
+                        .product__btns
+                            .product__links
+                                label.add-icon
+                                    input.add-icon__input(type="checkbox")
+                                    i.icon.icon-scale
+                                label.add-icon
+                                    input.add-icon__input(type="checkbox")
+                                    i.icon.icon-heart-empty
+                            a.btn(href="") В корзину
+            - var m = 0;
+            while m < 5
+                .product.swiper-slide(data-filter-item="sale")
+                    .product__main
+                        .product__slider.swiper-parent
+                            .product__info
+                                .label._red -2 000 ₽
+                                .rate
+                                    i.icon.icon-star
+                                    span 4.8
+                            .swiper._single
+                                .swiper-wrapper
+                                    .swiper-slide
+                                        a(href="")
+                                            img(src="img/product1.jpg" alt="" + m++)
+                                    .swiper-slide
+                                        a(href="")
+                                            img(src="img/product2.jpg" alt="")
+                                .swiper-pagination
+                        .params
+                            .param
+                                .param__value 300 куб.см
+                                .param__label Объем двигателя
+                            .param
+                                .param__value 90 км
+                                .param__label Запас хода
+                            .param
+                                .param__value 1500 W
+                                .param__label Мощность
+                    a(href="")
+                        b Электровелосипед Coswheel CT20s 48V 35AH
+                    .product__price
+                        .price
+                            s 255 000 ₽
+                            span 199 000 ₽
+                        .product__btns
+                            .product__links
+                                label.add-icon
+                                    input.add-icon__input(type="checkbox")
+                                    i.icon.icon-scale
+                                label.add-icon
+                                    input.add-icon__input(type="checkbox")
+                                    i.icon.icon-heart-empty
+                            a.btn(href="") В корзину

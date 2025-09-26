@@ -1,5 +1,5 @@
 const initFillSelect = function () {
-    if (!document.querySelector(".select._range") && !document.querySelector(".select._multi").length) {
+    if (!document.querySelector(".select._range") && !document.querySelector(".select._multi")) {
         return;
     }
     const fillSelect = function (e) {

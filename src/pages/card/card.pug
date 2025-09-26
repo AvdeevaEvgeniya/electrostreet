@@ -1,0 +1,12 @@
+extends ../layout/layout
+block title
+    | index
+block head
+    script(src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" defer="")
+block content
+    .card-page.bg.grid.gap-60
+        include _card
+        include _products
+        include _callback
+block end
+
