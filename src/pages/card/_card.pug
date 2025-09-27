@@ -1,466 +1,380 @@
-section.card-new.inner
-    include _header
-    .card-new__body
-        .card-new__main
-            .card-new__slider.scrollwatch2
-                .anchor#tab0
-                .swiper.gallery-thumbs._card
-                    .swiper-wrapper
-                        .swiper-slide
-                            img(src="img/product1.jpg" alt="" loading="lazy")
-                        .swiper-slide
-                            img(src="img/product1.jpg" alt="" loading="lazy")
-                        .swiper-slide
-                            img(src="img/product1.jpg" alt="" loading="lazy")
-                        .swiper-slide
-                            img(src="img/product1.jpg" alt="" loading="lazy")
-                        .swiper-slide
-                            img(src="img/product1.jpg" alt="" loading="lazy")
-                        .swiper-slide
-                            img(src="img/product1.jpg" alt="" loading="lazy")
-                .card-new__slider-main
-                    a.card-new__video-btn(href="javascript:;" data-src="https://vkvideo.ru/video_ext.php?oid=-227203050&id=456239087&hd=2&autoplay=1" data-fancybox="video" data-type="iframe")
-                        i.icon.icon-yb
-                    .card-new__label
-                        .label._big._red - 12 568 ₽
-                    .card-new__add-icons
-                        label.add-icon
-                            input.add-icon__input(type="checkbox")
-                            i.icon.icon-heart-empty
-                        label.add-icon
-                            input.add-icon__input(type="checkbox")
-                            i.icon.icon-scale
-                    .swiper.gallery-top._card
-                        .swiper-wrapper
-                            .swiper-slide(data-fancybox="card" href="img/product1.jpg")
-                                img(src="img/product1.jpg" alt="" loading="lazy")
-                            .swiper-slide(data-fancybox="card" href="img/product1.jpg")
-                                img(src="img/product1.jpg" alt="" loading="lazy")
-                            .swiper-slide(data-fancybox="card" href="img/product1.jpg")
-                                img(src="img/product1.jpg" alt="" loading="lazy")
-                            .swiper-slide(data-fancybox="card" href="img/product1.jpg")
-                                img(src="img/product1.jpg" alt="" loading="lazy")
-                            .swiper-slide(data-fancybox="card" href="img/product1.jpg")
-                                img(src="img/product1.jpg" alt="" loading="lazy")
-                            .swiper-slide(data-fancybox="card" href="img/product1.jpg")
-                                img(src="img/product1.jpg" alt="" loading="lazy")
-                        .card-new__nav
-                            .swiper-button-prev._card
-                            .swiper-pagination._card
-                            .swiper-button-next._card
-            .card-new__tabs
-                a.anchorlink(href="#tab0") Фото
-                a.anchorlink(href="#tab1") Описание
-                a.anchorlink(href="#tab2") Характеристики
-                a.anchorlink.hidden(href="#tab3") Сертификаты
-                a.anchorlink(href="#tab4") Доставка и Оплата
-                a.anchorlink(href="#tab5") Инструкции
-                    i.icon.icon-yb
-                a.anchorlink(href="#tab6") Отзывы
-            .card-new__block._main.scrollwatch2
-                .anchor#tab1
-                .h3 Описание
-                .text.fz-16.gap-20
-                    p Электровелосипед HIPER KEMONO UMA поможет сочетать физические нагрузки с удовольствием от вело путешествий.
-                    p Модель оснащена 500-ваттным мотором, который позволяет развивать скорость до 25 км/ч. А ёмкость аккумулятора 13 Ач даёт возможность совершить маршрут длиной до 45 км.
-                    p Высокопрочная рама выдерживает нагрузку до 130 кг. Рама заниженной конструкции особенно удобна женщинам, пожилым людям, подросткам. Кататься можно и в платье, и в длинных куртках. Чтобы оседлать электро велосипед, не нужно высоко приподнимать ногу.
-                    p Диаметр колёс 20 дюймов позволяет использовать велосипед как в городе, так и вне дорог. Шины и камеры модели совместимы с обычными велосипедами.
-                    p Дисковая тормозная система и наличие фары способствуют безопасности передвижения на велосипеде.
-                    p
-                        b Особенности HIPER KEMONO UMA:
-                    ul
-                        li Передняя фара для поездок в темное время суток
-                        li Тормоза дисковые передние и задние с ручным приводом
-                        li Дисплей с индикатором заряда батареи
-                        li IPX4 (защита от водяных брызг с любого направления)
-                        li Изогнутый руль с крепежом
-                        li Передняя вилка с амортизацией (базовая)
-                        li Подсидельный штырь с амортизацией
-                        li Улучшенная ручка газа (половинчитая) с эргономическими грипсами
-            .card-new__block._main.scrollwatch2
-                .anchor#tab2
-                .h3 Характеристики
-                .grid.gap-30
-                    .infos
-                        .infos__title Двигатель
-                        .infos__list
-                            .info
-                                p Мощность двигателя (Вт)
-                                    a(href="")
-                                        i.icon.icon-info-circle
-                                b 700
-                            .info
-                                p Тип двигателя
-                                    a(href="")
-                                        i.icon.icon-info-circle
-                                b Электрический
-                            .info
-                                p Привод
-                                    a(href="")
-                                        i.icon.icon-info-circle
-                                b Задний
-                            .info
-                                p Тип привода
-                                    a(href="")
-                                        i.icon.icon-info-circle
-                                b 2 мотор-колеса
-                    .infos
-                        .infos__title Аккумуляторная батарея
-                        .infos__list
-                            .info
-                                p Емкость аккумулятора (А/ч)
-                                    a(href="")
-                                        i.icon.icon-info-circle
-                                b 10
-                            .info
-                                p Тип аккумулятора
-                                    a(href="")
-                                        i.icon.icon-info-circle
-                                b Li-ion (Литий-ионный)
-                            .info
-                                p Напряжение (В)
-                                    a(href="")
-                                        i.icon.icon-info-circle
-                                b 48
-                            .info
-                                p Емкость (Вт/ч)
-                                    a(href="")
-                                        i.icon.icon-info-circle
-                                b 480
-                            .info
-                                p Время полной зарядки (ч)
-                                    a(href="")
-                                        i.icon.icon-info-circle
-                                b 7
-                            .info
-                                p Быстросъемная батарея
-                                    a(href="")
-                                        i.icon.icon-info-circle
-                                b Нет
-                    .infos
-                        .infos__title Эксплуатационные характеристики
-                        .infos__list
-                            .info
-                                p Максимальная скорость (км/ч)
-                                    a(href="")
-                                        i.icon.icon-info-circle
-                                b 25
-                            .info
-                                p Максимальный запас хода (км)
-                                    a(href="")
-                                        i.icon.icon-info-circle
-                                b 30
-                            .info
-                                p Максимальная нагрузка (кг)
-                                    a(href="")
-                                        i.icon.icon-info-circle
-                                b 130
-                    .infos
-                        .infos__title Конструкция и компоненты
-                        .infos__list
-                            .info
-                                p Диаметр колес (дюймы)
-                                    a(href="")
-                                        i.icon.icon-info-circle
-                                b 10
-                            .info
-                                p Конструкция рамы
-                                    a(href="")
-                                        i.icon.icon-info-circle
-                                b Складная
-                            .info
-                                p Материал рамы
-                                    a(href="")
-                                        i.icon.icon-info-circle
-                                b Высокоуглеродистая сталь
-                            .info
-                                p Информационная панель
-                                    a(href="")
-                                        i.icon.icon-info-circle
-                                b Информационная панель
-                            .info
-                                p Количество колес
-                                    a(href="")
-                                        i.icon.icon-info-circle
-                                b 3
-                            .info
-                                p Количество мест
-                                    a(href="")
-                                        i.icon.icon-info-circle
-                                b 1
-                            .info
-                                p Освещение
-                                    a(href="")
-                                        i.icon.icon-info-circle
-                                b Спереди / Сзади
-                            .info
-                                p Регулировка руля
-                                    a(href="")
-                                        i.icon.icon-info-circle
-                                b Вынос
-                            .info
-                                p Управление скоростью
-                                    a(href="")
-                                        i.icon.icon-info-circle
-                                b Ручка газа
-                    .infos
-                        .infos__title Общая информация
-                        .infos__list
-                            .info
-                                p Тип модели
-                                    a(href="")
-                                        i.icon.icon-info-circle
-                                b 1-местный
-                    .infos
-                        .infos__title Тормозная система
-                        .infos__list
-                            .info
-                                p Тормоза передние
-                                    a(href="")
-                                        i.icon.icon-info-circle
-                                b Отсутствуют
-                            .info
-                                p Тормоза задние
-                                    a(href="")
-                                        i.icon.icon-info-circle
-                                b Барабанные
-                            .info
-                                p Система торможения
-                                    a(href="")
-                                        i.icon.icon-info-circle
-                                b Механическая
-                    .infos
-                        .infos__title Вес и габариты
-                        .infos__list
-                            .info
-                                p Вес (кг)
-                                    a(href="")
-                                        i.icon.icon-info-circle
-                                b 31
-                    .infos
-                        .infos__title Подвеска
-                        .infos__list
-                            .info
-                                p Амортизаторы
-                                    a(href="")
-                                        i.icon.icon-info-circle
-                                b Жесткая подвеска
-                    .infos
-                        .infos__title Комплектация
-                        .infos__list
-                            .info
-                                p Багажник
-                                    a(href="")
-                                        i.icon.icon-info-circle
-                                b Нет
-                            .info
-                                p Зарядное устройство для АКБ
-                                    a(href="")
-                                        i.icon.icon-info-circle
-                                b Есть
-                            .info
-                                p Звуковой сигнал
-                                    a(href="")
-                                        i.icon.icon-info-circle
-                                b Есть
-                            .info
-                                p Зеркала заднего вида
-                                    a(href="")
-                                        i.icon.icon-info-circle
-                                b Опция
-                            .info
-                                p Корзина
-                                    a(href="")
-                                        i.icon.icon-info-circle
-                                b Опция
-                            .info
-                                p Поворотники
-                                    a(href="")
-                                        i.icon.icon-info-circle
-                                b Нет
-                            .info
-                                p Кабина
-                                    a(href="")
-                                        i.icon.icon-info-circle
-                                b Нет
-                            .info
-                                p Крыша
-                                    a(href="")
-                                        i.icon.icon-info-circle
-                                b Нет
-                    .infos
-                        .infos__title Прочие
-                        .infos__list
-                            .info
-                                p Штрихкод
-                                    a(href="")
-                                        i.icon.icon-info-circle
-                                b 2874220134888
-                            .info
-                                p Артикул
-                                    a(href="")
-                                        i.icon.icon-info-circle
-                                b CV07149
-                            .info
-                                p Цвет
-                                    a(href="")
-                                        i.icon.icon-info-circle
-                                b Черный
-            .card-new__block._main.swiper-parent.scrollwatch2
-                .anchor#tab3
-                .card-new__row
-                    .h3 Сертификаты
-                    .page-header__links
-                        .swiper-button-prev
-                        .swiper-button-next
-                .swiper._5-col
-                    .swiper-wrapper
-                        .swiper-slide(href="img/doc.png" data-fancybox="docs")
-                            img(src="img/doc.png" alt="")
-                        .swiper-slide(href="img/doc.png" data-fancybox="docs")
-                            img(src="img/doc.png" alt="")
-                        .swiper-slide(href="img/doc.png" data-fancybox="docs")
-                            img(src="img/doc.png" alt="")
-                        .swiper-slide(href="img/doc.png" data-fancybox="docs")
-                            img(src="img/doc.png" alt="")
-                        .swiper-slide(href="img/doc.png" data-fancybox="docs")
-                            img(src="img/doc.png" alt="")
-                        .swiper-slide(href="img/doc.png" data-fancybox="docs")
-                            img(src="img/doc.png" alt="")
-            .card-new__cols.scrollwatch2
-                .anchor#tab4
-                .card-new__block._main._delivery
-                    .h3 Доставка
-                    .text.fz-16
-                        h3 Самовывоз
-                        p Из магазина / основного пункта выдачи:
-                            br
-                            | ул.5-я Кожуховская, д.14.
-                        h3 По Москве и области
-                        p От 1 000 руб. Возможна доставка в день заказа.
-                        h3 По России
-                        p Транспортными компаниями на ваш выбор по согласованию с магазином.
-                    .payment-imgs
-                        img(src="img/sdek.svg" alt="")
-                        img(src="img/del-line.svg" alt="")
-                        img(src="img/pek.svg" alt="")
-                .card-new__block._main._delivery
-                    .h3 Оплата
-                    .text.fz-16
-                        ul
-                            li наличные
-                            li банковская карта
-                            li кредит / рассрочка
-                            li от юр.лица
-                            li Яндекс.Сплит
-                        a.link-line(href="") Смотреть подробнее
-                    .payment-imgs
-                        img(src="img/sbp.svg" alt="")
-                        img(src="img/mir.svg" alt="")
-                        img(src="img/tpay.svg" alt="")
-                        img(src="img/sber.svg" alt="")
-                        img(src="img/split.svg" alt="")
-            .card-new__block._main.scrollwatch2
-                .anchor#tab5
-                .h3 Инструкции
-                .video-news
-                    a.link-full(href="https://youtu.be/lyh2kAjcmSY?si=L9tyFI5HyDlI4Kfm" data-fancybox="videos" data-caption="Короткое содержательное название видеообзора")
-                    .video-news__img
-                        img(src="img/shop1.jpg" alt="")
-                .docs
-                    a.doc._red(href="") Инструкция по сборке #[span (25 Mb)]
-                        b PDF
-                    a.doc._green(href="") Инструкция по сборке #[span (25 Mb)]
-                        b XLS
-                    a.doc._blue(href="") Инструкция по сборке #[span (25 Mb)]
-                        b DOC
-                    a.doc(href="") Инструкция по сборке #[span (25 Mb)]
-                        b TXT
-            .card-new__block._main.scrollwatch2
-                .anchor#tab6
-                .h3 Отзывы
-                p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi culpa eligendi eum impedit minus modi odit qui quisquam, suscipit tempora ullam veniam voluptatem? Aliquam cum ea eius optio, quidem voluptatum.
-            include _tags
-        aside.card-new__aside
-            .card-new__block
-                .grid.gap-10
-                    .card-new__row
-                        .card-new__article Артикул: #[span 898452954-963]
-                        .status._green В наличии
-                    h1.h1 Электровелосипед Monster Kugoo Kirin V3 PRO PLUS 28.6 Ah
-                .properties
-                    .property
-                        b 50 км/ч
-                        span Скорость
-                    .property
-                        b 90 км
-                        span Запас хода
-                    .property
-                        b 1500 W
-                        span Мощность
-                    .property
-                        b 20"
-                        span Диаметр
-                    .property
-                        b 46 кг
-                        span Вес
-                    .property
-                        a(href="") 4.8
-                        i.icon.icon-star
-            .card-new__block
-                .card-new__row
-                    a.link-icon(href="")
-                        i.icon.icon-shield-tick
-                        b Официальная гарантия
-                    .light.gray 1 год
-            .card-new__block
-                .h3 Дополнительные услуги
-                .grid.gap-10
-                    label.checkbox._gray._start
-                        input.checkbox__input(type="checkbox")
-                        span.checkbox__mask
-                        span.checkbox__label Предпродажная подготовка
-                        span.checkbox__price 6 000 ₽
-                        a.link-info(href="")
-                            i.icon.icon-info-circle
-                    label.checkbox._gray._start
-                        input.checkbox__input(type="checkbox")
-                        span.checkbox__mask
-                        span.checkbox__label Гидроизоляция
-                        span.checkbox__price 12 000 ₽
-                        a.link-info(href="")
-                            i.icon.icon-info-circle
-                    label.checkbox._gray._start
-                        input.checkbox__input(type="checkbox")
-                        span.checkbox__mask
-                        span.checkbox__label Предпродажная подготовка + гидроизоляция
-                        span.checkbox__price 15 000 ₽
-                        a.link-info(href="")
-                            i.icon.icon-info-circle
-            .card-new__block
-                .card-new__row
-                    .price._big._row
-                        b 199 000 ₽
-                        s 255 000 ₽
-                    .flex.gap-10
-                        a(href="")
-                            img(src="img/ya-plus-price.svg" alt="")
-                        a(href="")
-                            img(src="img/ya-split-price.svg" alt="")
-                .card-new__row
-                    a.btn._full._big._gradient(href="") Купить сейчас
-                    a.btn._full._big._light(href="") В корзину
-            .card-new__block
-                .card-new__delivery
-                    p Доставка по городу #[b сегодня] #[span (при наличии товара в магазине)]
-                    ul.list
-                        li курьером #[span (стоимость уточняйте у менеджера)]
-                        li самовывоз #[span (ул.Белинского, д.152, к.1)]
-                .social._auto._left._mini
-                    a(href="")
-                        img(src="img/tg.svg" alt="")
-                    a(href="")
-                        img(src="img/wa.svg" alt="")
-                        span *
-                    a(href="")
-                        img(src="img/max.svg" alt="")
+.card-new__main
+    .card-new__slider.scrollwatch2
+        .anchor#tab0
+        .swiper.gallery-thumbs._card
+            .swiper-wrapper
+                .swiper-slide
+                    img(src="img/product1.jpg" alt="" loading="lazy")
+                .swiper-slide
+                    img(src="img/product1.jpg" alt="" loading="lazy")
+                .swiper-slide
+                    img(src="img/product1.jpg" alt="" loading="lazy")
+                .swiper-slide
+                    img(src="img/product1.jpg" alt="" loading="lazy")
+                .swiper-slide
+                    img(src="img/product1.jpg" alt="" loading="lazy")
+                .swiper-slide
+                    img(src="img/product1.jpg" alt="" loading="lazy")
+        .card-new__slider-main
+            a.card-new__video-btn(href="javascript:;" data-src="https://vkvideo.ru/video_ext.php?oid=-227203050&id=456239087&hd=2&autoplay=1" data-fancybox="video" data-type="iframe")
+                i.icon.icon-yb
+            .card-new__label
+                .label._big._red - 12 568 ₽
+            .card-new__add-icons
+                label.add-icon
+                    input.add-icon__input(type="checkbox")
+                    i.icon.icon-heart-empty
+                label.add-icon
+                    input.add-icon__input(type="checkbox")
+                    i.icon.icon-scale
+            .swiper.gallery-top._card
+                .swiper-wrapper
+                    .swiper-slide(data-fancybox="card" href="img/product1.jpg")
+                        img(src="img/product1.jpg" alt="" loading="lazy")
+                    .swiper-slide(data-fancybox="card" href="img/product1.jpg")
+                        img(src="img/product1.jpg" alt="" loading="lazy")
+                    .swiper-slide(data-fancybox="card" href="img/product1.jpg")
+                        img(src="img/product1.jpg" alt="" loading="lazy")
+                    .swiper-slide(data-fancybox="card" href="img/product1.jpg")
+                        img(src="img/product1.jpg" alt="" loading="lazy")
+                    .swiper-slide(data-fancybox="card" href="img/product1.jpg")
+                        img(src="img/product1.jpg" alt="" loading="lazy")
+                    .swiper-slide(data-fancybox="card" href="img/product1.jpg")
+                        img(src="img/product1.jpg" alt="" loading="lazy")
+                .card-new__nav
+                    .swiper-button-prev._card
+                    .swiper-pagination._card
+                    .swiper-button-next._card
+    .card-new__tabs
+        a.anchorlink(href="#tab0") Фото
+        a.anchorlink(href="#tab1") Описание
+        a.anchorlink(href="#tab2") Характеристики
+        a.anchorlink.hidden(href="#tab3") Сертификаты
+        a.anchorlink(href="#tab4") Доставка и Оплата
+        a.anchorlink(href="#tab5") Инструкции
+            i.icon.icon-yb
+        a.anchorlink(href="#tab6") Отзывы
+    .card-new__block._main.scrollwatch2
+        .anchor#tab1
+        .h3 Описание
+        .text.fz-16.gap-20
+            p Электровелосипед HIPER KEMONO UMA поможет сочетать физические нагрузки с удовольствием от вело путешествий.
+            p Модель оснащена 500-ваттным мотором, который позволяет развивать скорость до 25 км/ч. А ёмкость аккумулятора 13 Ач даёт возможность совершить маршрут длиной до 45 км.
+            p Высокопрочная рама выдерживает нагрузку до 130 кг. Рама заниженной конструкции особенно удобна женщинам, пожилым людям, подросткам. Кататься можно и в платье, и в длинных куртках. Чтобы оседлать электро велосипед, не нужно высоко приподнимать ногу.
+            p Диаметр колёс 20 дюймов позволяет использовать велосипед как в городе, так и вне дорог. Шины и камеры модели совместимы с обычными велосипедами.
+            p Дисковая тормозная система и наличие фары способствуют безопасности передвижения на велосипеде.
+            p
+                b Особенности HIPER KEMONO UMA:
+            ul
+                li Передняя фара для поездок в темное время суток
+                li Тормоза дисковые передние и задние с ручным приводом
+                li Дисплей с индикатором заряда батареи
+                li IPX4 (защита от водяных брызг с любого направления)
+                li Изогнутый руль с крепежом
+                li Передняя вилка с амортизацией (базовая)
+                li Подсидельный штырь с амортизацией
+                li Улучшенная ручка газа (половинчитая) с эргономическими грипсами
+    .card-new__block._main.scrollwatch2
+        .anchor#tab2
+        .h3 Характеристики
+        .grid.gap-30
+            .infos
+                .infos__title Двигатель
+                .infos__list
+                    .info
+                        p Мощность двигателя (Вт)
+                            a(href="")
+                                i.icon.icon-info-circle
+                        b 700
+                    .info
+                        p Тип двигателя
+                            a(href="")
+                                i.icon.icon-info-circle
+                        b Электрический
+                    .info
+                        p Привод
+                            a(href="")
+                                i.icon.icon-info-circle
+                        b Задний
+                    .info
+                        p Тип привода
+                            a(href="")
+                                i.icon.icon-info-circle
+                        b 2 мотор-колеса
+            .infos
+                .infos__title Аккумуляторная батарея
+                .infos__list
+                    .info
+                        p Емкость аккумулятора (А/ч)
+                            a(href="")
+                                i.icon.icon-info-circle
+                        b 10
+                    .info
+                        p Тип аккумулятора
+                            a(href="")
+                                i.icon.icon-info-circle
+                        b Li-ion (Литий-ионный)
+                    .info
+                        p Напряжение (В)
+                            a(href="")
+                                i.icon.icon-info-circle
+                        b 48
+                    .info
+                        p Емкость (Вт/ч)
+                            a(href="")
+                                i.icon.icon-info-circle
+                        b 480
+                    .info
+                        p Время полной зарядки (ч)
+                            a(href="")
+                                i.icon.icon-info-circle
+                        b 7
+                    .info
+                        p Быстросъемная батарея
+                            a(href="")
+                                i.icon.icon-info-circle
+                        b Нет
+            .infos
+                .infos__title Эксплуатационные характеристики
+                .infos__list
+                    .info
+                        p Максимальная скорость (км/ч)
+                            a(href="")
+                                i.icon.icon-info-circle
+                        b 25
+                    .info
+                        p Максимальный запас хода (км)
+                            a(href="")
+                                i.icon.icon-info-circle
+                        b 30
+                    .info
+                        p Максимальная нагрузка (кг)
+                            a(href="")
+                                i.icon.icon-info-circle
+                        b 130
+            .infos
+                .infos__title Конструкция и компоненты
+                .infos__list
+                    .info
+                        p Диаметр колес (дюймы)
+                            a(href="")
+                                i.icon.icon-info-circle
+                        b 10
+                    .info
+                        p Конструкция рамы
+                            a(href="")
+                                i.icon.icon-info-circle
+                        b Складная
+                    .info
+                        p Материал рамы
+                            a(href="")
+                                i.icon.icon-info-circle
+                        b Высокоуглеродистая сталь
+                    .info
+                        p Информационная панель
+                            a(href="")
+                                i.icon.icon-info-circle
+                        b Информационная панель
+                    .info
+                        p Количество колес
+                            a(href="")
+                                i.icon.icon-info-circle
+                        b 3
+                    .info
+                        p Количество мест
+                            a(href="")
+                                i.icon.icon-info-circle
+                        b 1
+                    .info
+                        p Освещение
+                            a(href="")
+                                i.icon.icon-info-circle
+                        b Спереди / Сзади
+                    .info
+                        p Регулировка руля
+                            a(href="")
+                                i.icon.icon-info-circle
+                        b Вынос
+                    .info
+                        p Управление скоростью
+                            a(href="")
+                                i.icon.icon-info-circle
+                        b Ручка газа
+            .infos
+                .infos__title Общая информация
+                .infos__list
+                    .info
+                        p Тип модели
+                            a(href="")
+                                i.icon.icon-info-circle
+                        b 1-местный
+            .infos
+                .infos__title Тормозная система
+                .infos__list
+                    .info
+                        p Тормоза передние
+                            a(href="")
+                                i.icon.icon-info-circle
+                        b Отсутствуют
+                    .info
+                        p Тормоза задние
+                            a(href="")
+                                i.icon.icon-info-circle
+                        b Барабанные
+                    .info
+                        p Система торможения
+                            a(href="")
+                                i.icon.icon-info-circle
+                        b Механическая
+            .infos
+                .infos__title Вес и габариты
+                .infos__list
+                    .info
+                        p Вес (кг)
+                            a(href="")
+                                i.icon.icon-info-circle
+                        b 31
+            .infos
+                .infos__title Подвеска
+                .infos__list
+                    .info
+                        p Амортизаторы
+                            a(href="")
+                                i.icon.icon-info-circle
+                        b Жесткая подвеска
+            .infos
+                .infos__title Комплектация
+                .infos__list
+                    .info
+                        p Багажник
+                            a(href="")
+                                i.icon.icon-info-circle
+                        b Нет
+                    .info
+                        p Зарядное устройство для АКБ
+                            a(href="")
+                                i.icon.icon-info-circle
+                        b Есть
+                    .info
+                        p Звуковой сигнал
+                            a(href="")
+                                i.icon.icon-info-circle
+                        b Есть
+                    .info
+                        p Зеркала заднего вида
+                            a(href="")
+                                i.icon.icon-info-circle
+                        b Опция
+                    .info
+                        p Корзина
+                            a(href="")
+                                i.icon.icon-info-circle
+                        b Опция
+                    .info
+                        p Поворотники
+                            a(href="")
+                                i.icon.icon-info-circle
+                        b Нет
+                    .info
+                        p Кабина
+                            a(href="")
+                                i.icon.icon-info-circle
+                        b Нет
+                    .info
+                        p Крыша
+                            a(href="")
+                                i.icon.icon-info-circle
+                        b Нет
+            .infos
+                .infos__title Прочие
+                .infos__list
+                    .info
+                        p Штрихкод
+                            a(href="")
+                                i.icon.icon-info-circle
+                        b 2874220134888
+                    .info
+                        p Артикул
+                            a(href="")
+                                i.icon.icon-info-circle
+                        b CV07149
+                    .info
+                        p Цвет
+                            a(href="")
+                                i.icon.icon-info-circle
+                        b Черный
+    .card-new__block._main.swiper-parent.scrollwatch2
+        .anchor#tab3
+        .card-new__row
+            .h3 Сертификаты
+            .page-header__links
+                .swiper-button-prev
+                .swiper-button-next
+        .swiper._5-col
+            .swiper-wrapper
+                .swiper-slide(href="img/doc.png" data-fancybox="docs")
+                    img(src="img/doc.png" alt="")
+                .swiper-slide(href="img/doc.png" data-fancybox="docs")
+                    img(src="img/doc.png" alt="")
+                .swiper-slide(href="img/doc.png" data-fancybox="docs")
+                    img(src="img/doc.png" alt="")
+                .swiper-slide(href="img/doc.png" data-fancybox="docs")
+                    img(src="img/doc.png" alt="")
+                .swiper-slide(href="img/doc.png" data-fancybox="docs")
+                    img(src="img/doc.png" alt="")
+                .swiper-slide(href="img/doc.png" data-fancybox="docs")
+                    img(src="img/doc.png" alt="")
+    .card-new__cols.scrollwatch2
+        .anchor#tab4
+        .card-new__block._main._delivery
+            .h3 Доставка
+            .text.fz-16
+                h3 Самовывоз
+                p Из магазина / основного пункта выдачи:
+                    br
+                    | ул.5-я Кожуховская, д.14.
+                h3 По Москве и области
+                p От 1 000 руб. Возможна доставка в день заказа.
+                h3 По России
+                p Транспортными компаниями на ваш выбор по согласованию с магазином.
+            .payment-imgs
+                img(src="img/sdek.svg" alt="")
+                img(src="img/del-line.svg" alt="")
+                img(src="img/pek.svg" alt="")
+        .card-new__block._main._delivery
+            .h3 Оплата
+            .text.fz-16
+                ul
+                    li наличные
+                    li банковская карта
+                    li кредит / рассрочка
+                    li от юр.лица
+                    li Яндекс.Сплит
+                a.link-line(href="") Смотреть подробнее
+            .payment-imgs
+                img(src="img/sbp.svg" alt="")
+                img(src="img/mir.svg" alt="")
+                img(src="img/tpay.svg" alt="")
+                img(src="img/sber.svg" alt="")
+                img(src="img/split.svg" alt="")
+    .card-new__block._main.scrollwatch2
+        .anchor#tab5
+        .h3 Инструкции
+        .video-news
+            a.link-full(href="https://youtu.be/lyh2kAjcmSY?si=L9tyFI5HyDlI4Kfm" data-fancybox="videos" data-caption="Короткое содержательное название видеообзора")
+            .video-news__img
+                img(src="img/shop1.jpg" alt="")
+        .docs
+            a.doc._red(href="") Инструкция по сборке #[span (25 Mb)]
+                b PDF
+            a.doc._green(href="") Инструкция по сборке #[span (25 Mb)]
+                b XLS
+            a.doc._blue(href="") Инструкция по сборке #[span (25 Mb)]
+                b DOC
+            a.doc(href="") Инструкция по сборке #[span (25 Mb)]
+                b TXT
+    .card-new__block._main.scrollwatch2
+        .anchor#tab6
+        .h3 Отзывы
+        p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi culpa eligendi eum impedit minus modi odit qui quisquam, suscipit tempora ullam veniam voluptatem? Aliquam cum ea eius optio, quidem voluptatum.
+    include _tags

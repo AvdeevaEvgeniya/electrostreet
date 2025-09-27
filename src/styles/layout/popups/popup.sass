@@ -1,41 +1,7 @@
 .popup
-  +flex(row wrap, center, center)
-  position: fixed
-  top: 0
-  left: 0
-  width: 100%
-  height: 100%
-  display: none
-  z-index: 1000
-  &.active
-    display: flex
-  &__close
-    +flex(row wrap, center, center)
-    position: absolute
-    cursor: pointer
-    top: 0
-    right: 0
-    padding: 16px
-    z-index: 15
-    i.icon
-      font-size: 2rem
   &__content
-    width: 100%
-    max-width: 100%
-    position: relative
-    z-index: 1
-    margin: auto
-    &._bg
-      padding: 5rem
+    &._bg2
+      padding: 2rem 3rem
       background: white
+      border-radius: var(--border-radius3)
       width: auto
-  &__scroll
-    +full()
-    +flex(row wrap, center, flex-start)
-    overflow: auto
-    overflow-x: hidden
-    position: relative
-    background: rgba(1, 3, 5, 0.8)
-    padding: 3rem
-
-@import "media"

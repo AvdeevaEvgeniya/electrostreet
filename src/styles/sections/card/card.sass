@@ -2,10 +2,6 @@
   font-size: 16px
   .tags
     margin-top: 10px
-  .social
-    position: absolute
-    right: 2rem
-    bottom: 15px
   .swiper-button-prev,
   .swiper-button-next
     +flex(row nowrap, center, center)
@@ -80,6 +76,28 @@
       gap: 2rem
     &._delivery
       grid-auto-rows: auto 1fr
+    .social
+      position: absolute
+      right: 2rem
+      bottom: 15px
+  &__manager
+    background: white
+    border-radius: var(--border-radius3)
+    padding: 4rem
+    display: grid
+    gap: 2.5rem
+    position: relative
+    overflow: hidden
+    z-index: 1
+    p
+      margin: 0
+      line-height: 1.4
+    & > img
+      position: absolute
+      bottom: 0
+      right: 0
+      max-height: 80%
+      z-index: -1
   &__nav
     +flex(row nowrap, center, center)
     gap: 10px

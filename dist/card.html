@@ -322,7 +322,7 @@
     <!--        background-color:;-->
     <!--        color:;-->
     <!--    }-->
-    <link rel="stylesheet" href="css/style.css?ver=20" media="all">
+    <link rel="stylesheet" href="css/style.css?ver=21" media="all">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" defer=""></script>
 </head>
 
@@ -845,7 +845,7 @@
                             <div class="page-nav__item"><a href="">Электротранспорт</a></div>
                             <div class="page-nav__item"><a href="">Электровелосипеды</a></div>
                             <div class="page-nav__item"><a href="">Электровелосипед Coswheel F1 10Ah</a></div>
-                        </div><a class="link-icon" href=""><i class="icon icon-label"></i><span>Официальный дилер KUGOO</span></a>
+                        </div><a class="link-icon popupActivation" href="" data-popup="certificate"><i class="icon icon-label"></i><span>Официальный дилер KUGOO</span></a>
                     </div>
                     <div class="card-new__body">
                         <div class="card-new__main">
@@ -1176,7 +1176,7 @@
                                 <div class="h3">Дополнительные услуги</div>
                                 <div class="grid gap-10">
                                     <label class="checkbox _gray _start">
-                                        <input class="checkbox__input" type="checkbox"><span class="checkbox__mask"></span><span class="checkbox__label">Предпродажная подготовка</span><span class="checkbox__price">6 000 ₽</span><a class="link-info" href=""><i class="icon icon-info-circle"></i></a>
+                                        <input class="checkbox__input" type="checkbox"><span class="checkbox__mask"></span><span class="checkbox__label">Предпродажная подготовка</span><span class="checkbox__price">6 000 ₽</span><a class="link-info popupActivation" href="" data-popup="param-info"><i class="icon icon-info-circle"></i></a>
                                     </label>
                                     <label class="checkbox _gray _start">
                                         <input class="checkbox__input" type="checkbox"><span class="checkbox__mask"></span><span class="checkbox__label">Гидроизоляция</span><span class="checkbox__price">12 000 ₽</span><a class="link-info" href=""><i class="icon icon-info-circle"></i></a>
@@ -1191,7 +1191,7 @@
                                     <div class="price _big _row"><b>199 000 ₽</b>
                                         <s>255 000 ₽</s>
                                     </div>
-                                    <div class="flex gap-10"><a href=""><img src="img/ya-plus-price.svg" alt=""></a><a href=""><img src="img/ya-split-price.svg" alt=""></a></div>
+                                    <div class="flex gap-10"><a class="popupActivation" href="" data-popup="ya-plus"><img src="img/ya-plus-price.svg" alt=""></a><a href=""><img src="img/ya-split-price.svg" alt=""></a></div>
                                 </div>
                                 <div class="card-new__row"><a class="btn _full _big _gradient" href="">Купить сейчас</a><a class="btn _full _big _light" href="">В корзину</a></div>
                             </div>
@@ -1940,6 +1940,55 @@
                         </div>
                     </div>
                 </section>
+                <div class="popup" data-popup="certificate">
+                    <div class="popup__scroll">
+                        <div class="popup__content _bg2 info-popup">
+                            <div class="info-popup__illustration"><a href="img/doc.png" data-fancybox="certificate"><img src="img/doc.png" alt=""></a>
+                                <div class="info-popup__main">
+                                    <div class="info-popup__header"><i class="icon icon-label"></i>
+                                        <div class="h2">Официальный дилер KUGOO</div>
+                                        <div class="popup__close"><i class="icon icon-close"></i></div>
+                                    </div>
+                                    <div class="text fz-16">
+                                        <ul>
+                                            <li>Только оригинальные товары</li>
+                                            <li>Ассортимент в наличии и под заказ</li>
+                                            <li>Гарантия от производителя</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="popup" data-popup="ya-plus">
+                    <div class="popup__scroll">
+                        <div class="popup__content _bg2 info-popup">
+                            <div class="info-popup__header">
+                                <div class="h2">Баллы плюса</div><img src="img/ya-plus-price.svg" alt="">
+                                <div class="popup__close"><i class="icon icon-close"></i></div>
+                            </div>
+                            <div class="text fz-16">
+                                <p>Кэшбэк баллами от Яндекс Пэй</p>
+                                <p>Баллы начисляются при полной оплате заказа через Яндекс Пэй - сразу или после получения</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="popup" data-popup="param-info">
+                    <div class="popup__scroll">
+                        <div class="popup__content _bg2 info-popup">
+                            <div class="info-popup__header"><i class="icon icon-info-circle"></i>
+                                <div class="h2">Встроенный микрофон</div>
+                                <div class="popup__close"><i class="icon icon-close"></i></div>
+                            </div>
+                            <div class="text fz-16">
+                                <p>Благодаря встроенному микрофону в колонке пользователь может взаимодействовать с установленным в ней голосовым помощником.</p>
+                                <p>Также аудиосистему с микрофоном можно использовать как устройство громкой связи при соединении со смартфоном.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </main>
         <footer class="footer">
@@ -2152,7 +2201,7 @@
       
       
       -->
-        <script src="js/script.min.js?ver=20" defer=""></script>
+        <script src="js/script.min.js?ver=21" defer=""></script>
     </div>
 </body>
 
