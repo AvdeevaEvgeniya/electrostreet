@@ -2,7 +2,8 @@ section.card-new.inner
     include _header
     .card-new__body
         .card-new__main
-            .card-new__slider
+            .card-new__slider.scrollwatch2
+                .anchor#tab0
                 .swiper.gallery-thumbs._card
                     .swiper-wrapper
                         .swiper-slide
@@ -48,14 +49,15 @@ section.card-new.inner
                             .swiper-pagination._card
                             .swiper-button-next._card
             .card-new__tabs
-                a._active(href="#tab1") Описание
-                a(href="#tab2") Характеристики
-                a(href="#tab3") Сертификаты
-                a(href="#tab4") Доставка и Оплата
-                a(href="#tab5") Инструкции
+                a.anchorlink(href="#tab0") Фото
+                a.anchorlink(href="#tab1") Описание
+                a.anchorlink(href="#tab2") Характеристики
+                a.anchorlink.hidden(href="#tab3") Сертификаты
+                a.anchorlink(href="#tab4") Доставка и Оплата
+                a.anchorlink(href="#tab5") Инструкции
                     i.icon.icon-yb
-                a(href="#tab6") Отзывы
-            .card-new__block._main
+                a.anchorlink(href="#tab6") Отзывы
+            .card-new__block._main.scrollwatch2
                 .anchor#tab1
                 .h3 Описание
                 .text.fz-16.gap-20
@@ -75,7 +77,7 @@ section.card-new.inner
                         li Передняя вилка с амортизацией (базовая)
                         li Подсидельный штырь с амортизацией
                         li Улучшенная ручка газа (половинчитая) с эргономическими грипсами
-            .card-new__block._main
+            .card-new__block._main.scrollwatch2
                 .anchor#tab2
                 .h3 Характеристики
                 .grid.gap-30
@@ -304,7 +306,7 @@ section.card-new.inner
                                     a(href="")
                                         i.icon.icon-info-circle
                                 b Черный
-            .card-new__block._main.swiper-parent
+            .card-new__block._main.swiper-parent.scrollwatch2
                 .anchor#tab3
                 .card-new__row
                     .h3 Сертификаты
@@ -325,7 +327,7 @@ section.card-new.inner
                             img(src="img/doc.png" alt="")
                         .swiper-slide(href="img/doc.png" data-fancybox="docs")
                             img(src="img/doc.png" alt="")
-            .card-new__cols
+            .card-new__cols.scrollwatch2
                 .anchor#tab4
                 .card-new__block._main._delivery
                     .h3 Доставка
@@ -358,7 +360,7 @@ section.card-new.inner
                         img(src="img/tpay.svg" alt="")
                         img(src="img/sber.svg" alt="")
                         img(src="img/split.svg" alt="")
-            .card-new__block._main
+            .card-new__block._main.scrollwatch2
                 .anchor#tab5
                 .h3 Инструкции
                 .video-news
@@ -374,9 +376,10 @@ section.card-new.inner
                         b DOC
                     a.doc(href="") Инструкция по сборке #[span (25 Mb)]
                         b TXT
-            .card-new__block._main
+            .card-new__block._main.scrollwatch2
                 .anchor#tab6
                 .h3 Отзывы
+                p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi culpa eligendi eum impedit minus modi odit qui quisquam, suscipit tempora ullam veniam voluptatem? Aliquam cum ea eius optio, quidem voluptatum.
             include _tags
         aside.card-new__aside
             .card-new__block
@@ -453,3 +456,11 @@ section.card-new.inner
                     ul.list
                         li курьером #[span (стоимость уточняйте у менеджера)]
                         li самовывоз #[span (ул.Белинского, д.152, к.1)]
+                .social._auto._left._mini
+                    a(href="")
+                        img(src="img/tg.svg" alt="")
+                    a(href="")
+                        img(src="img/wa.svg" alt="")
+                        span *
+                    a(href="")
+                        img(src="img/max.svg" alt="")

@@ -2,14 +2,14 @@ section.inner.swiper-parent(data-filters)
     .page-header._no-wrap
         .link-tabs.mb-20
             label.link-tab
-                input(type="radio" name="products" data-filter-btn="new")
-                span Новинки
+                input(type="radio" name="products" data-filter-btn="accessories")
+                span Аксессуары
             label.link-tab
-                input(type="radio" name="products" data-filter-btn="sale")
-                span Скидки
+                input(type="radio" name="products" data-filter-btn="similar")
+                span Похожие
             label.link-tab
-                input(type="radio" name="products" data-filter-btn="hit")
-                span Хиты
+                input(type="radio" name="products" data-filter-btn="previously")
+                span Ранее смотрели
         .page-header__links
             .swiper-button-prev
             .swiper-button-next
@@ -17,7 +17,7 @@ section.inner.swiper-parent(data-filters)
         .swiper-wrapper
             - var n = 0;
             while n < 5
-                .product.swiper-slide(data-filter-item="new")
+                .product.swiper-slide(data-filter-item="accessories")
                     .product__main
                         .product__slider.swiper-parent
                             .product__info
@@ -61,7 +61,7 @@ section.inner.swiper-parent(data-filters)
                             a.btn(href="") В корзину
             - var i = 0;
             while i < 5
-                .product.swiper-slide(data-filter-item="hit")
+                .product.swiper-slide(data-filter-item="similar")
                     .product__main
                         .product__slider.swiper-parent
                             .product__info
@@ -105,7 +105,7 @@ section.inner.swiper-parent(data-filters)
                             a.btn(href="") В корзину
             - var m = 0;
             while m < 5
-                .product.swiper-slide(data-filter-item="sale")
+                .product.swiper-slide(data-filter-item="previously")
                     .product__main
                         .product__slider.swiper-parent
                             .product__info

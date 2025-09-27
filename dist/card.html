@@ -849,7 +849,8 @@
                     </div>
                     <div class="card-new__body">
                         <div class="card-new__main">
-                            <div class="card-new__slider">
+                            <div class="card-new__slider scrollwatch2">
+                                <div class="anchor" id="tab0"></div>
                                 <div class="swiper gallery-thumbs _card">
                                     <div class="swiper-wrapper">
                                         <div class="swiper-slide"><img src="img/product1.jpg" alt="" loading="lazy"></div>
@@ -889,8 +890,8 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="card-new__tabs"><a class="_active" href="#tab1">Описание</a><a href="#tab2">Характеристики</a><a href="#tab3">Сертификаты</a><a href="#tab4">Доставка и Оплата</a><a href="#tab5">Инструкции<i class="icon icon-yb"></i></a><a href="#tab6">Отзывы</a></div>
-                            <div class="card-new__block _main">
+                            <div class="card-new__tabs"><a class="anchorlink" href="#tab0">Фото</a><a class="anchorlink" href="#tab1">Описание</a><a class="anchorlink" href="#tab2">Характеристики</a><a class="anchorlink hidden" href="#tab3">Сертификаты</a><a class="anchorlink" href="#tab4">Доставка и Оплата</a><a class="anchorlink" href="#tab5">Инструкции<i class="icon icon-yb"></i></a><a class="anchorlink" href="#tab6">Отзывы</a></div>
+                            <div class="card-new__block _main scrollwatch2">
                                 <div class="anchor" id="tab1"></div>
                                 <div class="h3">Описание</div>
                                 <div class="text fz-16 gap-20">
@@ -912,7 +913,7 @@
                                     </ul>
                                 </div>
                             </div>
-                            <div class="card-new__block _main">
+                            <div class="card-new__block _main scrollwatch2">
                                 <div class="anchor" id="tab2"></div>
                                 <div class="h3">Характеристики</div>
                                 <div class="grid gap-30">
@@ -1085,7 +1086,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="card-new__block _main swiper-parent">
+                            <div class="card-new__block _main swiper-parent scrollwatch2">
                                 <div class="anchor" id="tab3"></div>
                                 <div class="card-new__row">
                                     <div class="h3">Сертификаты</div>
@@ -1105,7 +1106,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="card-new__cols">
+                            <div class="card-new__cols scrollwatch2">
                                 <div class="anchor" id="tab4"></div>
                                 <div class="card-new__block _main _delivery">
                                     <div class="h3">Доставка</div>
@@ -1133,7 +1134,7 @@
                                     <div class="payment-imgs"><img src="img/sbp.svg" alt=""><img src="img/mir.svg" alt=""><img src="img/tpay.svg" alt=""><img src="img/sber.svg" alt=""><img src="img/split.svg" alt=""></div>
                                 </div>
                             </div>
-                            <div class="card-new__block _main">
+                            <div class="card-new__block _main scrollwatch2">
                                 <div class="anchor" id="tab5"></div>
                                 <div class="h3">Инструкции</div>
                                 <div class="video-news"><a class="link-full" href="https://youtu.be/lyh2kAjcmSY?si=L9tyFI5HyDlI4Kfm" data-fancybox="videos" data-caption="Короткое содержательное название видеообзора"></a>
@@ -1141,9 +1142,10 @@
                                 </div>
                                 <div class="docs"><a class="doc _red" href="">Инструкция по сборке <span>(25 Mb)</span><b>PDF</b></a><a class="doc _green" href="">Инструкция по сборке <span>(25 Mb)</span><b>XLS</b></a><a class="doc _blue" href="">Инструкция по сборке <span>(25 Mb)</span><b>DOC</b></a><a class="doc" href="">Инструкция по сборке <span>(25 Mb)</span><b>TXT</b></a></div>
                             </div>
-                            <div class="card-new__block _main">
+                            <div class="card-new__block _main scrollwatch2">
                                 <div class="anchor" id="tab6"></div>
                                 <div class="h3">Отзывы</div>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi culpa eligendi eum impedit minus modi odit qui quisquam, suscipit tempora ullam veniam voluptatem? Aliquam cum ea eius optio, quidem voluptatum.</p>
                             </div>
                             <div class="tags"><a href="">1000W</a><a href="">Велоприцепы</a><a href="">Для взрослых</a><a href="">Грузовые</a><a href="">Фэтбайки</a><a href="">С корзиной и багажником</a><a href="">GreenCame</a></div>
                         </div>
@@ -1201,6 +1203,7 @@
                                         <li>самовывоз <span>(ул.Белинского, д.152, к.1)</span></li>
                                     </ul>
                                 </div>
+                                <div class="social _auto _left _mini"><a href=""><img src="img/tg.svg" alt=""></a><a href=""><img src="img/wa.svg" alt=""><span>*</span></a><a href=""><img src="img/max.svg" alt=""></a></div>
                             </div>
                         </aside>
                     </div>
@@ -1209,13 +1212,13 @@
                     <div class="page-header _no-wrap">
                         <div class="link-tabs mb-20">
                             <label class="link-tab">
-                                <input type="radio" name="products" data-filter-btn="new"><span>Новинки</span>
+                                <input type="radio" name="products" data-filter-btn="accessories"><span>Аксессуары</span>
                             </label>
                             <label class="link-tab">
-                                <input type="radio" name="products" data-filter-btn="sale"><span>Скидки</span>
+                                <input type="radio" name="products" data-filter-btn="similar"><span>Похожие</span>
                             </label>
                             <label class="link-tab">
-                                <input type="radio" name="products" data-filter-btn="hit"><span>Хиты</span>
+                                <input type="radio" name="products" data-filter-btn="previously"><span>Ранее смотрели</span>
                             </label>
                         </div>
                         <div class="page-header__links">
@@ -1225,7 +1228,7 @@
                     </div>
                     <div class="swiper product-slider _4-col">
                         <div class="swiper-wrapper">
-                            <div class="product swiper-slide" data-filter-item="new">
+                            <div class="product swiper-slide" data-filter-item="accessories">
                                 <div class="product__main">
                                     <div class="product__slider swiper-parent">
                                         <div class="product__info">
@@ -1271,7 +1274,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="product swiper-slide" data-filter-item="new">
+                            <div class="product swiper-slide" data-filter-item="accessories">
                                 <div class="product__main">
                                     <div class="product__slider swiper-parent">
                                         <div class="product__info">
@@ -1317,7 +1320,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="product swiper-slide" data-filter-item="new">
+                            <div class="product swiper-slide" data-filter-item="accessories">
                                 <div class="product__main">
                                     <div class="product__slider swiper-parent">
                                         <div class="product__info">
@@ -1363,7 +1366,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="product swiper-slide" data-filter-item="new">
+                            <div class="product swiper-slide" data-filter-item="accessories">
                                 <div class="product__main">
                                     <div class="product__slider swiper-parent">
                                         <div class="product__info">
@@ -1409,7 +1412,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="product swiper-slide" data-filter-item="new">
+                            <div class="product swiper-slide" data-filter-item="accessories">
                                 <div class="product__main">
                                     <div class="product__slider swiper-parent">
                                         <div class="product__info">
@@ -1455,7 +1458,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="product swiper-slide" data-filter-item="hit">
+                            <div class="product swiper-slide" data-filter-item="similar">
                                 <div class="product__main">
                                     <div class="product__slider swiper-parent">
                                         <div class="product__info">
@@ -1501,7 +1504,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="product swiper-slide" data-filter-item="hit">
+                            <div class="product swiper-slide" data-filter-item="similar">
                                 <div class="product__main">
                                     <div class="product__slider swiper-parent">
                                         <div class="product__info">
@@ -1547,7 +1550,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="product swiper-slide" data-filter-item="hit">
+                            <div class="product swiper-slide" data-filter-item="similar">
                                 <div class="product__main">
                                     <div class="product__slider swiper-parent">
                                         <div class="product__info">
@@ -1593,7 +1596,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="product swiper-slide" data-filter-item="hit">
+                            <div class="product swiper-slide" data-filter-item="similar">
                                 <div class="product__main">
                                     <div class="product__slider swiper-parent">
                                         <div class="product__info">
@@ -1639,7 +1642,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="product swiper-slide" data-filter-item="hit">
+                            <div class="product swiper-slide" data-filter-item="similar">
                                 <div class="product__main">
                                     <div class="product__slider swiper-parent">
                                         <div class="product__info">
@@ -1685,7 +1688,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="product swiper-slide" data-filter-item="sale">
+                            <div class="product swiper-slide" data-filter-item="previously">
                                 <div class="product__main">
                                     <div class="product__slider swiper-parent">
                                         <div class="product__info">
@@ -1731,7 +1734,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="product swiper-slide" data-filter-item="sale">
+                            <div class="product swiper-slide" data-filter-item="previously">
                                 <div class="product__main">
                                     <div class="product__slider swiper-parent">
                                         <div class="product__info">
@@ -1777,7 +1780,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="product swiper-slide" data-filter-item="sale">
+                            <div class="product swiper-slide" data-filter-item="previously">
                                 <div class="product__main">
                                     <div class="product__slider swiper-parent">
                                         <div class="product__info">
@@ -1823,7 +1826,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="product swiper-slide" data-filter-item="sale">
+                            <div class="product swiper-slide" data-filter-item="previously">
                                 <div class="product__main">
                                     <div class="product__slider swiper-parent">
                                         <div class="product__info">
@@ -1869,7 +1872,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="product swiper-slide" data-filter-item="sale">
+                            <div class="product swiper-slide" data-filter-item="previously">
                                 <div class="product__main">
                                     <div class="product__slider swiper-parent">
                                         <div class="product__info">

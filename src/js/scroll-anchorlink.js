@@ -22,10 +22,10 @@ initScrollWatcher = function () {
         let minTop = 60000;
         visibleElements.forEach((ratio, element) => {
             const top = element.getBoundingClientRect().top;
-            // if (ratio > maxRatio) {
-            //     maxRatio = ratio;
-            //     maxVisibleElement = element;
-            // }
+            if (ratio > maxRatio) {
+                maxRatio = ratio;
+                maxVisibleElement = element;
+            }
             if (top < minTop && top > 0) {
                 minTop = top;
                 maxVisibleElement = element;
@@ -69,3 +69,57 @@ initScrollToAnchor = function () {
 
 initScrollWatcher();
 initScrollToAnchor();
+
+const initScrollWatcherAlt = function () {
+    if (!document.querySelector(".scrollwatch2")) {
+        return;
+    }
+    const blocks = document.querySelectorAll('.scrollwatch2');
+    const scrollWatcher = function () {
+        let maxBlock = null,
+            maxHeight = 0,
+            priority = null,
+            maxHeightPriority = 0;
+        const wh = window.innerHeight;
+        blocks.forEach(function (block) {
+            let blockVisible = 0;
+            const rect = block.getBoundingClientRect(),
+                t = rect.top,
+                b = rect.bottom,
+                h = block.offsetHeight;
+            if ((t < 0 && b < 0) || t >= wh) {
+                return;
+            }
+            else if (t > 0 && b <= wh) {
+                blockVisible = h;
+                if (blockVisible > maxHeightPriority) {
+                    maxHeightPriority = h;
+                    priority = block;
+                }
+            }
+            else if (t < 0 && b <= wh) {
+                blockVisible = b;
+            }
+            else if (t > 0 && b >= wh) {
+                blockVisible = wh - t;
+            }
+            else if (t < 0 && b >= wh) {
+                blockVisible = wh;
+            }
+            if (maxHeightPriority || blockVisible > maxHeight) {
+                maxHeight = maxHeightPriority || blockVisible;
+                maxBlock = priority || block;
+            }
+        });
+        const name = maxBlock.querySelector(".anchor")?.id,
+            activeLink = document.querySelector(".anchorlink._active");
+        activeLink?.classList.remove("_active");
+        if (name) {
+            const link = document.querySelector(`.anchorlink[href="#${name}"]`);
+            link?.classList.add("_active");
+        }
+    }
+    scrollWatcher();
+    window.addEventListener("scroll", scrollWatcher);
+}
+initScrollWatcherAlt();
