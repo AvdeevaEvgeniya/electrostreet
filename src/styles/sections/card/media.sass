@@ -1,0 +1,100 @@
++desktop()
+  .card-new
+    .gallery-thumbs
+      display: none
+    .gallery-top
+      img
+        height: 60rem
+    &__slider
+      grid-template-columns: initial
+    &__tabs
+      font-size: 14px
+      gap: 2rem
+    &__cols
+      grid-template-columns: initial
+
++notebook()
+  .card-new
+    .gallery-thumbs
+      display: block
+      height: 60rem
+    &__body
+      grid-template-columns: initial
+    &__aside
+      position: static
+      padding-bottom: 0
+    &__tabs
+      top: 6.5rem
+    &__slider
+      grid-template-columns: 13rem 1fr
+
++mobile()
+  .card-new
+    .gallery-thumbs
+      display: none
+    &__slider
+      grid-template-columns: initial
+    &__tabs
+      gap: 15px 3rem
+      font-size: 14px
+      flex-wrap: wrap
+      justify-content: center
+      top: 5.5rem
+
++small-mobile()
+  .card-new
+    padding: 0
+    .social
+      position: static
+    .gallery-top
+      img
+        height: auto
+        aspect-ratio: 1/1
+    .h1
+      font-size: 2rem
+      margin-bottom: 10px
+      padding: 0 var(--offset)
+    .price
+      display: grid
+      gap: 0
+      margin-bottom: -5px
+      s
+        order: -1
+    &__nav
+      padding: 0 10px 10px 0
+      background: none
+      &:after,
+      &:before
+        content: none
+    &__block
+      padding: 15px var(--offset)
+      border-radius: 0
+      &._main
+        padding: 15px var(--offset)
+        gap: 15px
+    &__row
+      &._price
+        align-items: end
+    &__tabs
+      flex-wrap: nowrap
+      font-size: 16px
+      gap: 2rem
+      white-space: nowrap
+      overflow-y: auto
+      justify-content: flex-start
+      &::-webkit-scrollbar-track
+        width: 0
+        height: 0
+        background: transparent
+      &::-webkit-scrollbar
+        width: 0
+        height: 0
+        background: transparent
+      &::-webkit-scrollbar-thumb
+        width: 0
+        height: 0
+        background: transparent
+    &__slider
+      .swiper-button-prev,
+      .swiper-button-next
+        display: none

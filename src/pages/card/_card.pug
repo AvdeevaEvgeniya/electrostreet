@@ -1,4 +1,5 @@
 .card-new__main
+    div(data-replace-to="2")
     .card-new__slider.scrollwatch2
         .anchor#tab0
         .swiper.gallery-thumbs._card
@@ -27,7 +28,7 @@
                 label.add-icon
                     input.add-icon__input(type="checkbox")
                     i.icon.icon-scale
-            .swiper.gallery-top._card
+            .swiper.gallery-top._card._start
                 .swiper-wrapper
                     .swiper-slide(data-fancybox="card" href="img/product1.jpg")
                         img(src="img/product1.jpg" alt="" loading="lazy")
@@ -45,11 +46,11 @@
                     .swiper-button-prev._card
                     .swiper-pagination._card
                     .swiper-button-next._card
+    div(data-replace-to="1")
     .card-new__tabs
         a.anchorlink(href="#tab0") Фото
         a.anchorlink(href="#tab1") Описание
         a.anchorlink(href="#tab2") Характеристики
-        a.anchorlink.hidden(href="#tab3") Сертификаты
         a.anchorlink(href="#tab4") Доставка и Оплата
         a.anchorlink(href="#tab5") Инструкции
             i.icon.icon-yb

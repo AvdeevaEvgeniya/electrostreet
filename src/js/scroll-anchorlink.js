@@ -117,9 +117,32 @@ const initScrollWatcherAlt = function () {
         if (name) {
             const link = document.querySelector(`.anchorlink[href="#${name}"]`);
             link?.classList.add("_active");
+            if (link) {
+                const cont = link.closest(".card-new__tabs");
+                scrollChildIntoViewX(cont, link, { align: 'center', behavior: 'smooth' });
+            }
+            // link?.scrollIntoView({
+            //     behavior: 'smooth',
+            //     inline: 'center',
+            //     block: 'nearest'
+            // });
         }
     }
     scrollWatcher();
     window.addEventListener("scroll", scrollWatcher);
 }
 initScrollWatcherAlt();
+function scrollChildIntoViewX(container, el, {
+    align = 'center', behavior = 'smooth', onlyIfNeeded = false, offset = 0
+} = {}) {
+    if (!container || !el) return;
+    const c = container.getBoundingClientRect();
+    const e = el.getBoundingClientRect();
+    if (onlyIfNeeded && e.left >= c.left && e.right <= c.right) return;
+
+    let left = e.left - c.left + container.scrollLeft - offset;
+    if (align === 'center') left -= (c.width - e.width) / 2;
+    if (align === 'end')    left -= (c.width - e.width);
+    left = Math.max(0, Math.min(left, container.scrollWidth - container.clientWidth));
+    container.scrollTo({ left: Math.round(left), behavior });
+}

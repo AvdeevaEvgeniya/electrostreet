@@ -9,7 +9,8 @@ block content
             include _header
             .card-new__body
                 include _card
-                include _aside2
+                div(data-replace-from="1")
+                    include _aside2
         include _products
         include _callback
 block end

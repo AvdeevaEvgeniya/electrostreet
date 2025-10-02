@@ -4,7 +4,8 @@ aside.card-new__aside
             .card-new__row
                 .card-new__article Артикул: #[span 898452954-963]
                 .status._green В наличии
-            h1.h1 Электровелосипед Monster Kugoo Kirin V3 PRO PLUS 28.6 Ah
+            div(data-replace-from="2")
+                h1.h1 Электровелосипед Monster Kugoo Kirin V3 PRO PLUS 28.6 Ah
         .properties
             .property
                 b 50 км/ч
@@ -50,12 +51,12 @@ aside.card-new__aside
             label.checkbox._gray._start
                 input.checkbox__input(type="checkbox")
                 span.checkbox__mask
-                span.checkbox__label Предпродажная подготовка + гидроизоляция
+                span.checkbox__label Предпродажная подготовка +&nbsp;гидроизоляция
                 span.checkbox__price 15 000 ₽
                 a.link-info(href="")
                     i.icon.icon-info-circle
     .card-new__block
-        .card-new__row
+        .card-new__row._price
             .price._big._row
                 b 199 000 ₽
                 s 255 000 ₽
@@ -81,3 +82,10 @@ aside.card-new__aside
                 span *
             a(href="")
                 img(src="img/max.svg" alt="")
+    .card-new__block.notebook
+        a.card-new__row.popupActivation(href="" data-popup="certificate")
+            span.link-icon
+                i.icon.icon-label
+                b
+                    span Официальный дилер
+            span.light.gray KUGOO

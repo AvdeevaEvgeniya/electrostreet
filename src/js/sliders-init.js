@@ -151,7 +151,7 @@ const initOtherSliders = function () {
                 loop = cont.dataset.loop;
             }
             new Swiper(item, {
-                slidesPerView: 1,
+                slidesPerView: 2,
                 spaceBetween: 10,
                 loop: loop ? true : false,
                 navigation: {
@@ -167,6 +167,14 @@ const initOtherSliders = function () {
                     clickable: true,
                 },
                 breakpoints: {
+                    420: {
+                        slidesPerView: 3,
+                        spaceBetween: 10
+                    },
+                    530: {
+                        slidesPerView: 4,
+                        spaceBetween: 10
+                    },
                     767: {
                         slidesPerView: 5,
                         spaceBetween: 20
@@ -294,8 +302,36 @@ const initOtherSliders = function () {
                 clickable: true,
                 // dynamicBullets: true,
             },
+            on: {
+                slideChangeTransitionEnd: function (e) {
+                    const slider = e.$el[0];
+                    e.isBeginning ? slider.classList.add("_start") : slider.classList.remove("_start");
+                    e.isEnd ? slider.classList.add("_end") : slider.classList.remove("_end");
+                }
+            }
         });
     }
 }
 
 initOtherSliders();
+
+const initLoopCardSlider = function () {
+    if (!document.querySelector(".swiper-button-prev._card")) {
+        return;
+    }
+    const loopCardSlider = function (e) {
+        const btn = e.target.closest(".swiper-button-prev._card") || e.target.closest(".swiper-button-next._card");
+        if (!btn) {
+            return;
+        }
+        const swiper = btn.closest(".swiper");
+        if (btn.classList.contains("swiper-button-prev") && swiper.classList.contains("_start")) {
+            swiper.swiper.slideTo(swiper.swiper.slides.length - 1);
+        }
+        if (btn.classList.contains("swiper-button-next") && swiper.classList.contains("_end")) {
+            swiper.swiper.slideTo(0);
+        }
+    }
+    document.addEventListener("click", loopCardSlider);
+}
+initLoopCardSlider();
