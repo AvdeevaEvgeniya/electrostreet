@@ -10,8 +10,6 @@ const initReplaceBlocks = function() {
         if (window.innerWidth >= viewport) {
             if (point.children.length > 0) {
                 item.append(point.children[0]);
-                point.style.display = "none";
-                item.style.display = null;
             }
             // point.children.length > 0 ? item.innerHTML = point.innerHTML : null;
             // point.innerHTML = null;
@@ -19,8 +17,6 @@ const initReplaceBlocks = function() {
         else {
             if (item.children.length > 0) {
                 point.append(item.children[0]);
-                item.style.display = "none";
-                point.style.display = null;
             }
             // item.children.length > 0 ? point.innerHTML = item.innerHTML : null;
             // item.innerHTML = null;
