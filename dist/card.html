@@ -1198,7 +1198,7 @@
                                         </div>
                                         <div class="flex gap-10"><a class="popupActivation" href="" data-popup="ya-plus"><img src="img/ya-plus-price.svg" alt=""></a><a href=""><img src="img/ya-split-price.svg" alt=""></a></div>
                                     </div>
-                                    <div class="card-new__row"><a class="btn _full _big _gradient" href="">Купить сейчас</a><a class="btn _full _big _light" href="">В корзину</a></div>
+                                    <div class="card-new__row"><a class="btn _full _big _gradient popupActivation" href="" data-popup="cart">Купить сейчас</a><a class="btn _full _big _light" href="">В корзину</a></div>
                                 </div>
                                 <div class="card-new__block">
                                     <div class="card-new__delivery">
@@ -1992,6 +1992,64 @@
                             <div class="text fz-16">
                                 <p>Благодаря встроенному микрофону в колонке пользователь может взаимодействовать с установленным в ней голосовым помощником.</p>
                                 <p>Также аудиосистему с микрофоном можно использовать как устройство громкой связи при соединении со смартфоном.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="popup" data-popup="cart">
+                    <div class="popup__scroll">
+                        <div class="popup__content info-popup _cart">
+                            <div class="info-popup__header">
+                                <div class="h1">Оформление заказа</div>
+                                <div class="popup__close"><i class="icon icon-close"></i></div>
+                            </div>
+                            <div class="product-cart"><img src="img/product1.jpg" alt="">
+                                <div class="product-cart__main">
+                                    <div class="product-cart__header">
+                                        <p>Электровелосипед Coswheel CT20s 48V 35AH</p>
+                                    </div>
+                                    <div class="product-cart__price">
+                                        <div class="product-cart__count">
+                                            <div class="quantity">
+                                                <div class="quantity__btn _minus">—</div>
+                                                <input type="number" value="1">
+                                                <div class="quantity__btn _plus">+</div>
+                                            </div>
+                                        </div>
+                                        <div class="price _right">
+                                            <s>305 000 ₽</s><span>1 389 000 ₽</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--если нет допов, вот эту обертку .grid.gap-2 все равно оставляем, просто пустая она будет, нужно для правильных расстояний-->
+                            <div class="grid gap-2">
+                                <div class="price-rows _bg">
+                                    <div class="price-row">
+                                        <div class="price-row__label">Предпродажная подготовка</div>
+                                        <div class="price-row__value">28 000 ₽</div>
+                                    </div>
+                                    <div class="price-row">
+                                        <div class="price-row__label">Гидроизоляция</div>
+                                        <div class="price-row__value">6 000 ₽</div>
+                                    </div>
+                                    <div class="price-row">
+                                        <div class="price-row__label">Предпродажная подготовка +&nbsp;гидроизоляция</div>
+                                        <div class="price-row__value">12 000 ₽</div>
+                                    </div>
+                                </div>
+                                <div class="price-rows _total">
+                                    <div class="total">
+                                        <div class="total__main">
+                                            <p>Итого:</p>
+                                            <div class="price">1 256 000 ₽</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="grid gap-10">
+                                <input class="input _big mask" type="" placeholder="Ваш телефон *"><a class="btn _fill _full _big" href="">Оформить заказ</a>
+                                <div class="info-popup__footnote">Или перейдите <a class="link" href="">в корзину</a>, чтобы указать дополнительные сведения или комментарии к заказу</div>
                             </div>
                         </div>
                     </div>

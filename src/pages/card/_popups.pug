@@ -39,3 +39,45 @@
             .text.fz-16
                 p Благодаря встроенному микрофону в колонке пользователь может взаимодействовать с установленным в ней голосовым помощником.
                 p Также аудиосистему с микрофоном можно использовать как устройство громкой связи при соединении со смартфоном.
+.popup(data-popup="cart")
+    .popup__scroll
+        .popup__content.info-popup._cart
+            .info-popup__header
+                .h1 Оформление заказа
+                .popup__close
+                    i.icon.icon-close
+            .product-cart
+                img(src="img/product1.jpg" alt="")
+                .product-cart__main
+                    .product-cart__header
+                        p Электровелосипед Coswheel CT20s 48V 35AH
+                    .product-cart__price
+                        .product-cart__count
+                            .quantity
+                                .quantity__btn._minus —
+                                input(type="number" value="1")
+                                .quantity__btn._plus +
+                        .price._right
+                            s 305 000 ₽
+                            span 1 389 000 ₽
+            //если нет допов, вот эту обертку .grid.gap-2 все равно оставляем, просто пустая она будет, нужно для правильных расстояний
+            .grid.gap-2
+                .price-rows._bg
+                    .price-row
+                        .price-row__label Предпродажная подготовка
+                        .price-row__value 28 000 ₽
+                    .price-row
+                        .price-row__label Гидроизоляция
+                        .price-row__value 6 000 ₽
+                    .price-row
+                        .price-row__label Предпродажная подготовка +&nbsp;гидроизоляция
+                        .price-row__value 12 000 ₽
+                .price-rows._total
+                    .total
+                        .total__main
+                            p Итого:
+                            .price 1 256 000 ₽
+            .grid.gap-10
+                input.input._big.mask(type="" placeholder="Ваш телефон *")
+                a.btn._fill._full._big(href="") Оформить заказ
+                .info-popup__footnote Или перейдите #[a.link(href="") в корзину], чтобы указать дополнительные сведения или комментарии к заказу

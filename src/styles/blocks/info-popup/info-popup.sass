@@ -1,5 +1,21 @@
 .info-popup
   max-width: 65rem
+  &._cart
+    display: grid
+    gap: 2rem
+    padding: 2rem
+    background: white
+    border-radius: var(--border-radius3)
+    width: auto
+    max-width: 42rem
+    align-content: start
+    .price-rows
+      margin: 0 -2rem
+    .info-popup
+      &__header
+        border-bottom: 1px solid #DFDFDF
+        padding-bottom: 2rem
+        margin-bottom: 0
   .popup__close
     padding: 0
     top: 2px
@@ -25,5 +41,10 @@
     grid-template-columns: 10rem 1fr
     img
       border-radius: var(--border-radius3)
+  &__footnote
+    text-align: center
+    font-size: 14px
+    color: #9C9C9C
+    line-height: 1.4
 
 @import "media"
