@@ -1,29 +1,8 @@
 .main-slider
   min-width: 0
   position: relative
-  background: var(--color03)
   border-radius: var(--border-radius3)
   overflow: hidden
-  &._alt
-    background: white
-    .swiper-pagination
-      left: 0
-      right: initial
-      padding-bottom: 2rem
-    .main-slider
-      &__main
-        width: 40rem
-        right: initial
-        left: 0
-        background: none
-        backdrop-filter: none
-        box-shadow: none
-        grid-auto-rows: auto 1fr auto
-        color: black
-  &._color-w
-    .main-slider
-      &__main
-        color: white
   p
     margin: 0
     display: -webkit-box
@@ -43,14 +22,29 @@
     background: var(--color1)
   .swiper-pagination
     position: absolute
-    width: 35rem
-    right: 0
+    width: 100%
+    left: 0
     bottom: 0
     justify-content: flex-start
     display: flex
-    padding: 0 5rem 3rem 5rem
+    padding: 0 5rem 2rem 5rem
   &__item
     position: relative
+    &._color-w
+      .main-slider
+        &__main
+          color: white
+    &._alt
+      .main-slider
+        &__main
+          width: 40rem
+          right: initial
+          left: 0
+          background: none
+          backdrop-filter: none
+          box-shadow: none
+          grid-auto-rows: auto 1fr auto
+          color: black
   &__main
     position: absolute
     right: 0

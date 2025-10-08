@@ -1,35 +1,40 @@
 +desktop()
   .main-slider
     .swiper-pagination
-      width: 30rem
-      padding: 3rem
+      padding: 0 3rem 2rem 3rem
     &__main
       padding: 3rem
       width: 30rem
+    &__item
+      &._alt
+        .main-slider
+          &__main
+            padding: 3rem 3rem 5rem 3rem
 
 +mobile()
   .main-slider
     margin-top: -3rem
     margin-bottom: -6rem
     border-radius: 0
-    &._alt
-      .main-slider
-        &__main
-          width: 100%
-    &._mob-color-w
-      .main-slider
-        &__main
-          color: white
-    &._mob-color-b
-      .main-slider
-        &__main
-          color: black
     img
       height: calc(100vh - 5rem)
     .swiper-pagination
       width: 100%
       justify-content: center
       padding: 2rem
+    &__item
+      &._mob-color-w
+        .main-slider
+          &__main
+            color: white
+      &._mob-color-b
+        .main-slider
+          &__main
+            color: black
+      &._alt
+        .main-slider
+          &__main
+            width: 100%
     &__main
       width: 100%
       background: none
