@@ -4,6 +4,26 @@
   background: var(--color03)
   border-radius: var(--border-radius3)
   overflow: hidden
+  &._alt
+    background: white
+    .swiper-pagination
+      left: 0
+      right: initial
+      padding-bottom: 2rem
+    .main-slider
+      &__main
+        width: 40rem
+        right: initial
+        left: 0
+        background: none
+        backdrop-filter: none
+        box-shadow: none
+        grid-auto-rows: auto 1fr auto
+        color: black
+  &._color-w
+    .main-slider
+      &__main
+        color: white
   p
     margin: 0
     display: -webkit-box
