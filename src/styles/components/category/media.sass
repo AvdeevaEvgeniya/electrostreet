@@ -56,6 +56,13 @@
       grid-row: 1
       grid-column: 3
       justify-self: end
+    &._no-tags
+      grid-template-columns: 7.5rem 1fr
+      align-items: stretch
+      a
+        +flex(row nowrap, flex-start, center)
+      &:after
+        content: none
     .h1
       font-size: 18px
     .tags

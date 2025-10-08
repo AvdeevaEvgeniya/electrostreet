@@ -792,7 +792,7 @@ const initToogelCategory = function () {
     }
     const toogelCategory = function (e) {
         const category = e.target.closest(".category");
-        if (!category) {
+        if (!category || e.target.closest("._no-tags")) {
             return;
         }
         category.classList.toggle("_active");
