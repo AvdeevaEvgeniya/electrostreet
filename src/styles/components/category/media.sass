@@ -59,8 +59,11 @@
     &._no-tags
       grid-template-columns: 7.5rem 1fr
       align-items: stretch
+      position: relative
       a
+        +full()
         +flex(row nowrap, flex-start, center)
+        padding-left: 10rem
       &:after
         content: none
     .h1
