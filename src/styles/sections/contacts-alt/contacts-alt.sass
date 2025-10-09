@@ -13,8 +13,6 @@
     +full()
     z-index: -1
     filter: grayscale(1)
-  img
-    border-radius: var(--border-radius3)
   &__inner
     pointer-events: none
   &__main
@@ -32,6 +30,11 @@
     gap: 10px
   &__slider
     position: relative
+    img
+      border-radius: var(--border-radius3)
+      width: 100%
+      aspect-ratio: 1/0.7
+      object-fit: cover
     .swiper-button-prev,
     .swiper-button-next
       &:after
