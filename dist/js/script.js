@@ -13,7 +13,9 @@ initBreadCrumbs();
 const initCounter = function () {
     const counter = function (e) {
         const btn =  e.target.closest(".quantity__btn");
-        if (!btn) {return}
+        if (!btn || btn.closest(".product-cart__price")) {
+            return
+        }
         e.preventDefault();
         const input = btn.closest(".quantity").querySelector("input");
         if (btn.classList.contains("_plus")) {
@@ -115,6 +117,8 @@ const initFilterItems = function () {
                 sliders.forEach(function (item) {
                     item.swiper?.slideTo(0);
                     item.swiper?.update();
+                    const bullet = item.querySelector(".swiper-pagination-bullet");
+                    bullet ? bullet.click() : null;
                 })
             }
     },
@@ -542,6 +546,9 @@ const initOtherSliders = function () {
                 fraction = cont.dataset.fraction;
                 autoheight = cont.dataset.autoheight;
                 loop = cont.dataset.loop;
+                if (pagination.closest(".product__slider.swiper-parent")) {
+                    pagination = false;
+                }
             }
             new Swiper(item, {
                 slidesPerView: 1,

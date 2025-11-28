@@ -23,6 +23,8 @@ const initFilterItems = function () {
                 sliders.forEach(function (item) {
                     item.swiper?.slideTo(0);
                     item.swiper?.update();
+                    const bullet = item.querySelector(".swiper-pagination-bullet");
+                    bullet ? bullet.click() : null;
                 })
             }
     },

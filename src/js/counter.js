@@ -1,7 +1,9 @@
 const initCounter = function () {
     const counter = function (e) {
         const btn =  e.target.closest(".quantity__btn");
-        if (!btn) {return}
+        if (!btn || btn.closest(".product-cart__price")) {
+            return
+        }
         e.preventDefault();
         const input = btn.closest(".quantity").querySelector("input");
         if (btn.classList.contains("_plus")) {

@@ -92,6 +92,9 @@ const initOtherSliders = function () {
                 fraction = cont.dataset.fraction;
                 autoheight = cont.dataset.autoheight;
                 loop = cont.dataset.loop;
+                if (pagination.closest(".product__slider.swiper-parent")) {
+                    pagination = false;
+                }
             }
             new Swiper(item, {
                 slidesPerView: 1,
