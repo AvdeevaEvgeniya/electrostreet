@@ -757,6 +757,7 @@ const initOtherSliders = function () {
                 el: '.swiper-pagination._card',
                 type: 'bullets',
                 clickable: true,
+                dynamicBullets: true,
                 // dynamicBullets: true,
             },
             on: {
