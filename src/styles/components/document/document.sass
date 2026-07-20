@@ -1,0 +1,22 @@
+.document
+  position: relative
+  background: white
+  padding: 2rem
+  border-radius: var(--border-radius3)
+  display: grid
+  gap: 10px
+  img
+    width: 100%
+    aspect-ratio: 1/1.6
+    object-fit: cover
+    border-radius: var(--border-radius3)
+  &__info
+    +flex(row nowrap, space-between, center)
+    gap: 2rem
+  &__imgs
+    display: none
+
+.documents
+  +grid2(20rem, 1fr, 2rem, 2rem)
+
+@import "media"

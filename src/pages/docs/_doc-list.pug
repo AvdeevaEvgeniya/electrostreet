@@ -1,0 +1,13 @@
+.documents
+    - var n = 0;
+    while n < 8
+        .document
+            a.link-full(href="img/doc.png" data-fancybox="doc" + ++n + "" data-caption="Документ 1")
+            img(src="img/doc.png" alt="")
+            .document__imgs
+                a(href="img/shop.png" data-fancybox="doc" + n + "" data-thumb="img/shop.png" data-caption="Документ 2")
+                a(href="img/shop1.jpg" data-fancybox="doc" + n + "" data-thumb="img/shop1.jpg" data-caption="Документ 3")
+                a(href="img/shop2.jpg" data-fancybox="doc" + n + "" data-thumb="img/shop2.jpg" data-caption="Документ 4")
+            .document__info
+                .h2 Bars
+                small.gray 4 шт
