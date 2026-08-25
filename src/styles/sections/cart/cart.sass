@@ -7,7 +7,7 @@
   p
     margin: 0
   &__block
-    background: white
+    background: white!important
     display: grid
     gap: 2rem
     border-radius: var(--border-radius3)
@@ -26,5 +26,33 @@
         border-radius: 0 0 var(--border-radius3) var(--border-radius3)
   &__title
     display: none
+
+.cart__block
+  .select
+    input:not([class])
+      display: none
+    &__options
+      border: none
+      top: 100%
+      & > div
+        border-bottom: 1px solid lightgrey
+        &:last-of-type
+          border-bottom: none
+    &__option
+      padding: 12px !important
+      &:last-of-type
+        border-bottom: none
+
+.simple-content .simplecheckout-block input[type="text"],
+.simple-content .simplecheckout-block input[type="email"],
+.simple-content .simplecheckout-block input[type="tel"],
+.simple-content .simplecheckout-block input[type="password"],
+.simple-content .simplecheckout-block textarea,
+.app .input-alt._gray
+  background: none
+  border: none
+  border-bottom: 1px solid
+  border-radius: 0
+  padding: 0
 
 @import "media"
